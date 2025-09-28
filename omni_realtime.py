@@ -11,10 +11,14 @@ import dashscope
 DASHSCOPE_API_KEY = 'sk-21a49acda5994dadad615d4c7e549bc5'
 # 如果没有设置环境变量，请用您的 API Key 将下行替换为dashscope.api_key = "sk-xxx"
 dashscope.api_key = DASHSCOPE_API_KEY
-voice = 'Cherry'
 conversation = None
 
 class MyCallback(OmniRealtimeCallback):
+    def __init__(self):
+        super().__init__()
+        self.bot_started = False      # 标志是否已打印过"Bot:"
+        self.last_user_input = ""    # 缓存用户语音输入
+
     def on_open(self) -> None:
         global pya
         global mic_stream
@@ -34,15 +38,30 @@ class MyCallback(OmniRealtimeCallback):
             type = response['type']
             if type == 'session.created':
                 print('start session: {}'.format(response['session']['id']))
+
+            # 用户语音转写完成，打印语音输入内容
             if type == 'conversation.item.input_audio_transcription.completed':
-                print('question: {}'.format(response['transcript']))
+                user_text = response.get('transcript', '').strip()
+                if user_text:
+                    self.last_user_input = user_text
+                    print(f"\nUser: {user_text}")
+
+            # Bot流式输出
             if type == 'response.audio_transcript.delta':
                 text = response['delta']
-                print("got llm response delta: {}".format(text))
+                if not self.bot_started:
+                    print("Bot:", end='', flush=True)
+                    self.bot_started = True
+                print(text, end='', flush=True)
+
+            # Bot输出完成，换行并重置标志
+            if type == 'response.done':
+                if self.bot_started:
+                    print()  # 换行
+                self.bot_started = False
+
             if type == 'input_audio_buffer.speech_started':
                 print('======VAD Speech Start======')
-            if type == 'response.done':
-                print('======RESPONSE DONE======')
         except Exception as e:
             print('[Error] {}'.format(e))
             return
