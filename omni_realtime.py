@@ -8,6 +8,9 @@ import pyaudio
 from dashscope.audio.qwen_omni import *
 import dashscope
 
+# 新增：导入PromptComposer
+from utils.prompt import PromptComposer
+
 DASHSCOPE_API_KEY = 'sk-21a49acda5994dadad615d4c7e549bc5'
 # 如果没有设置环境变量，请用您的 API Key 将下行替换为dashscope.api_key = "sk-xxx"
 dashscope.api_key = DASHSCOPE_API_KEY
@@ -16,8 +19,9 @@ conversation = None
 class MyCallback(OmniRealtimeCallback):
     def __init__(self):
         super().__init__()
-        self.bot_started = False      # 标志是否已打印过"Bot:"
-        self.last_user_input = ""    # 缓存用户语音输入
+        self.bot_started = False
+        self.last_user_input = ""
+        self.first_bot_done = False  # 新增：标志首轮Bot回答是否完成
 
     def on_open(self) -> None:
         global pya
@@ -57,7 +61,7 @@ class MyCallback(OmniRealtimeCallback):
             # Bot输出完成，换行并重置标志
             if type == 'response.done':
                 if self.bot_started:
-                    print()  # 换行
+                    print()
                 self.bot_started = False
 
             if type == 'input_audio_buffer.speech_started':
@@ -68,6 +72,16 @@ class MyCallback(OmniRealtimeCallback):
 
 if __name__  == '__main__':
     print('Initializing ...')
+
+    # 新增：读取prompt
+    TEMPLATE_FILE = r"D:\data\project\qwen\templates\teaching.yaml"
+    TEXTBOOK_FILE = r"D:\data\project\textbook\57_HeRuns.json"
+    PAGE_NUMBER = 3  # 可根据实际需求调整
+    composer = PromptComposer(template_file=TEMPLATE_FILE)
+    textbook_data = composer.load_textbook(TEXTBOOK_FILE)
+    page_info = composer.extract_page_info(textbook_data, page_number=PAGE_NUMBER)
+    prompt_text = composer.compose_prompt(page_info)
+
     callback = MyCallback()
     conversation = OmniRealtimeConversation(
         model='qwen-omni-turbo-realtime-latest',
@@ -75,14 +89,19 @@ if __name__  == '__main__':
     )
     conversation.connect()
     conversation.update_session(
-        output_modalities=[MultiModality.TEXT], # 只返回文本
-        voice="Cherry", # 必须补全该参数
+        output_modalities=[MultiModality.TEXT],
+        voice="Cherry",
         input_audio_format=AudioFormat.PCM_16000HZ_MONO_16BIT,
         enable_input_audio_transcription=True,
         input_audio_transcription_model='gummy-realtime-v1',
         enable_turn_detection=True,
-        turn_detection_type='server_vad', # 启用VAD
+        turn_detection_type='server_vad',
+        system_prompt=prompt_text,  # 你的提示词
     )
+
+    # 新增：先发送prompt文本
+    # conversation.send_text(prompt_text)  # 修正方法名为 send_text
+
     def signal_handler(sig, frame):
         print('Ctrl+C pressed, stop recognition ...')
         conversation.close()
@@ -90,6 +109,8 @@ if __name__  == '__main__':
         sys.exit(0)
     signal.signal(signal.SIGINT, signal_handler)
     print("Press 'Ctrl+C' to stop conversation...")
+
+    # 修改：不再限制语音输入，始终允许麦克风输入
     while True:
         if mic_stream:
             audio_data = mic_stream.read(3200, exception_on_overflow=False)
