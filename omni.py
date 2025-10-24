@@ -30,13 +30,14 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 def make_image_contents(image_paths):
-    return [
-        {
+    output = []
+    for path in image_paths:
+        item = {
             "type": "image_url",
             "image_url": {"url": f"data:image/png;base64,{encode_image(path)}"},
         }
-        for path in image_paths
-    ]
+        output.append(item)
+    return output
 
 if __name__ == "__main__":
     client = OpenAI(
@@ -46,7 +47,11 @@ if __name__ == "__main__":
 
     # pdf_path = r"D:\data\PythonProject\HITProject\education_agent\textbook\57_HeRuns.pdf"
     # image_paths = pdf_to_images(pdf_path)
-    image_paths = [r"pdf_images\page_1.png", r"pdf_images\page_2.png", r"pdf_images\page_3.png", r"pdf_images\page_4.png", r"pdf_images\page_5.png"]
+    image_paths = [
+        r"pdf_images\page_1.png", r"pdf_images\page_2.png", r"pdf_images\page_3.png", r"pdf_images\page_4.png", r"pdf_images\page_5.png",
+        r"pdf_images\page_6.png", r"pdf_images\page_7.png", r"pdf_images\page_8.png", r"pdf_images\page_9.png", r"pdf_images\page_10.png",
+        r"pdf_images\page_11.png", r"pdf_images\page_12.png"
+    ]
     image_contents = make_image_contents(image_paths[0:4])  # 假设只用第一页
 
     system_prompt = """
@@ -66,25 +71,45 @@ if __name__ == "__main__":
     messages = [
         {
             "role": "system",
-            "content": system_prompt,
+            "content": [
+                {
+                    "type": "text",
+                    "text": system_prompt,
+                }
+            ],
         }
     ]
+
     # 初始 user 输入内容
     initial_user_content = "开始今天的英语课吧，教材是这本新绘本"
+
+    image_contents.append(
+        {
+            "type": "text",
+            "text": initial_user_content
+        },
+    )
+
     round_num = 1
     DEBUG_MODE = True  # True=命令行输入，False=语音输入
     # DEBUG_MODE = False  # True=命令行输入，False=语音输入
 
-    first_round = True  # 新增：首轮标志
+    first_round = True  # 首轮标志
 
     while True:
-        # 首轮时，先加入初始 user 输入
+        # 首轮时，加入初始 user 输入 + 图片内容
         if first_round:
             messages.append({
                 "role": "user",
-                "content": initial_user_content,
+                "content": image_contents,
             })
             first_round = False
+        else:
+            # 之后用户的输入只包含文字或语音识别结果
+            messages.append({
+                "role": "user",
+                "content": user_input,
+            })
 
         # 1. 流式打印模型回复（不自动换行）
         print(f"模型：", end="")
@@ -104,24 +129,15 @@ if __name__ == "__main__":
                 if content:
                     print(content, end="", flush=True)
                     reply_text += content
-            # if chunk.choices and hasattr(chunk.choices[0], "delta"):
-            #     delta = chunk.choices[0].delta
-            #     if isinstance(delta, dict) and "content" in delta:
-            #         print(delta["content"], end="", flush=True)
-            #         reply_text += delta["content"]
-            #     elif isinstance(delta, str):
-            #         print(delta, end="", flush=True)
-            #         reply_text += delta
-            # usage信息不打印
-        print()  # 本轮模型回复后换行
+        print()  # 模型回复后换行
 
-        # 2. 将模型回复加入 messages
+        # 2. 记录模型回复
         messages.append({
             "role": "assistant",
             "content": reply_text,
         })
 
-        # 3. 用户输入（根据调试模式选择）
+        # 3. 用户输入（根据调试模式）
         if DEBUG_MODE:
             user_input = input("你：")
         else:
@@ -129,12 +145,4 @@ if __name__ == "__main__":
         if user_input.strip().lower() == "exit":
             print("对话结束。")
             break
-        print()  # 用户回复后换行
-
-        # 4. 用户回复加入 messages
-        messages.append({
-            "role": "user",
-            "content": user_input,
-        })
-
-        round_num += 1
+        print()
