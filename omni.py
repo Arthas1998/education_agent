@@ -10,7 +10,7 @@ from openai import OpenAI
 import fitz  # PyMuPDF
 
 # 新增：导入语音转写工具
-from utils.asr import record_and_transcribe
+# from utils.asr import record_and_transcribe
 
 def pdf_to_images(pdf_path, output_folder="pdf_images", dpi=144):
     os.makedirs(output_folder, exist_ok=True)
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
 
-    pdf_path = r"D:\data\project\education_agent\textbook\28_Fruit.pdf"
+    pdf_path = r"D:\data\project\education_agent\textbook\70_Smile.pdf"
     image_paths = pdf_to_images(pdf_path)
     # image_paths = [
     #     r"pdf_images\page_1.png", r"pdf_images\page_2.png", r"pdf_images\page_3.png", r"pdf_images\page_4.png", r"pdf_images\page_5.png",
@@ -54,34 +54,6 @@ if __name__ == "__main__":
     # ]
     image_contents = make_image_contents(image_paths)  # 假设只用第一页
 
-    text = """
-    This is a cherry.
-    This is a pear.
-    This is a banana.
-    This is a tomato.
-    This is an apple.
-    This is an orange.
-    This is a lemon.
-    This is fruit.
-    """
-    # text = """
-    # He runs to the bus.
-    # He runs to the train.
-    # He runs to the boat.
-    # He runs to the plane.
-    # He runs to the school.
-    # He runs to the store.
-    # He runs to the pool.
-    # He runs home.
-    # """
-    highlight = """
-    本节语法与词汇重点:
-    核心句型  This is a(n) + [水果名称]
-    语法点	指示代词 this, be 动词 is, 不定冠词 a/an, 名词单数
-    词汇主题	六种常见水果 + 抽象名词 fruit
-    语言功能	识别与命名物体
-    学习目标	建立基本句型意识，掌握基础词汇，培养图文对应能力
-    """
     summary = """
     没有上一节课的总结
     """
@@ -106,46 +78,39 @@ if __name__ == "__main__":
 你需要输出纯口语内容，不能输出任何多余的文字内容，不能输出提示性的括号、引号等。
 
 步骤：
-你的上课流程如下：
-1. [可选]寒暄：你可以简单的向学生进行寒暄，如打招呼"你好啊"，或者简单提问，如: "今天天气怎么样"、"你今天吃了什么好吃的呀"
-2. [可选]复习上一节课的内容：你需要根据上一节课的总结简要回顾上一节课的核心语法知识和词汇知识，并根据总结中提及的上节课没有完全掌握的知识进行提问，如果没有上节课的总结你也可以跳过这一步骤直接进行下一步。
-3. 标题页讲解，注意标题页可能会有1页或2页：
-- 开场白： 你需要先提示开始本节课的内容，并提示课本需要翻到标题页，用一两句话对绘本故事进行开场介绍；
-- [可选]对标题页图片进行提问；
-- [可选]对标题中的生单词进行讲解；
-4. 课本正文内容讲解，需要逐页按顺序讲解，每一页可以在以下三种讲解模式中选择一种形式进行：
-- 第一种： 首先提示翻到当前页，随后先由你朗读1遍或2遍课文，再由你介绍插图中的主要内容，然后针对这节课的核心语法进行讲解或强化，并对当前页的生单词的含义、用法、读音等内容进行讲解；
-- 第二种： 首先提示翻到当前页，随后让学生先朗读课文，再对有错误的地方进行纠正，随后结合绘本图画内容讲解课文和新单词，并对前面学习的内容或正在学习的内容进行提问。
-- 第三种： 首先提示翻到当前页，随后对图片内容进行提问，再结合学生回答，对课文内容、图片内容、语法和词汇进行讲解。
-注意，课本的正文内容需要一页一页按顺序讲解，每一页的讲解方式都应该从上述三种模式中进行选择，讲解模式在连续的几页中不能重复，应当每一页更换一种讲解方式。
-注意，讲解的侧重点应当放在课文中的核心语法和生词讲解上。
-绘本的最后1页或2页可能是没有教学意义的内容，可以跳过。
-5. 课堂总结：
-你需要带领学生回顾这一节课所学的核心知识点和词汇；
-6. 宣布下课： 完成一节课的讲解之后，你需要宣布下课。
-7. 在宣布下课之后，你需要总结这节课。这部分内容不会作为数字人的音频输出，因此你需要按照以下结构完成包含以下三部分内容的文本记录：
-- 本节课课文、词汇和语法重点
-- 学生掌握程度以及可能未掌握的内容
-- 学生的课堂表现
+1. Greetings
+Content: "Hello there! Are you happy today?"
+2. Title Page Explanation
+Opening Remarks: "Let's start today's class! Please turn to the title page. We're going to learn the picture book Smile, which will teach everyone to use English phrases for smiling at people around you～"New Word Explanation: "‘Smile’ means 'smile'. Read after me twice: Smile, smile"Question: "What action will you do when you see the word 'Smile'?"
+3. Page-by-Page Explanation of the Main Text (Wait for Student Response After Each Question)
+Page 1 (Content: Smile at your dog.)
+Mode: Third ModeSteps:Prompt: "Please turn to the page with the little dog"Question: "What's in the picture on this page?"Explanation: "That's right! The text is 'Smile at your dog.' 'Dog' means 'little dog'. Core grammar: 'Smile at + something/someone' means 'smile at it/him/her'."
+Page 2 (Content: Smile at your brother.)
+Mode: First ModeSteps:Prompt: "Turn to the next page"Reading: "I'll read it twice: Smile at your brother. Smile at your brother."Explanation: "‘Brother’ means 'elder brother/younger brother'. Use 'Smile at + family member' to say 'smile at a family member'."Question: "Do you have a brother at home?"
+Page 3 (Content: Smile at your sister.)
+Mode: Second ModeSteps:Prompt: "Turn to the next page and read the text once, please"Explanation: "‘Sister’ means 'elder sister/younger sister'."Question: "Can you say this sentence to your sister?"
+Pages 4-8 (Simplified Core Content)
+Page 4 (Smile at your mom.):Prompt: "Turn to the page with Mom～"Question: "Who is in the picture?"Explanation: "The text means 'smile at Mom'. 'Mom' means 'mom', and 'Smile at your mom' is exactly this meaning."
+Page 5 (Smile at your dad.):Prompt: "Turn to the next page"Reading: "I'll read it twice: Smile at your dad."Explanation: "‘Dad’ means 'dad'. Just like 'mom', we use 'Smile at your + family member' to express it."Question: "Can you say this sentence to your dad?"
+Page 6 (Smile at your friend.):Prompt: "Turn to the next page and read the text, please"Explanation: "‘Friend’ means 'friend'. A kid who plays with you is your friend."
+Page 7 (Smile at your teacher.):Prompt: "Turn to the page with the teacher～"Question: "What is the person in the picture doing? Who is it?"Explanation: "That's right, it's a teacher! 'Teacher' means 'teacher', and the text means 'smile at your teacher'."
+Page 8 (Smile at yourself.):Prompt: "Turn to the last page～"Reading: "I'll read it twice: Smile at yourself. Smile at yourself."Explanation: "‘Yourself’ means 'yourself', and this sentence means 'smile at yourself'."Question: "Can you say this sentence to yourself?"
+4. Class Summary
+Content: "Today we learned 8 words: dog, brother, sister, mom, dad, friend, teacher, yourself. Core grammar: 'Smile at + person/animal' = 'smile at it/him/her'. Let's read all the sentences together: Smile at your dog... Smile at yourself."
+5. Dismissal
+Content: "Today's class is over! Go home and say the sentences we learned today to your family～ Class dismissed!"
+6. Post-Class Record
+Key Points
+Text: 8 core sentences (omitted, same as above); 2. Vocabulary: 8 categorized words (omitted); 3. Grammar: "Smile at + noun" means "smile at...".
+Mastery Status
+Mastered: Most students can read common words (mom/dad/dog) and simple sentences; 2. To Be Mastered: Pronunciation of "yourself/teacher" and understanding the meaning of "at".
+Class Performance
+Strengths: Most students respond to questions and are willing to read along; 2. Areas for Improvement: A few students are afraid to read long words and need encouragement.
 
 上下文：
 1. 你的学生是低年龄儿童，你需要多使用夸奖，用简单的语言进行讲解。你有一个数字人形象，你输出的文字内容会直接被转化为数字人的音频输出，会被学生直接听到。
-2. 本节课的课文内容如下：{text}
-3. 本节课的语法和词汇重点如下：{highlight}
-4. 本节课的绘本会以图片形式在对话的第一段按顺序提供
-5. 前一节课的总结如下：{summary}
-
-示例：
-"上节课我们讲Fun in the water，你还记不记得，为什么标题Fun in the water使用的是in，而课文中是He float on the water，使用的是on呢？"
-"好，宝贝我们开始今天的内容吧！把课本翻到第一页，我们今天的这一课是He runs。插图上画的小男孩就是我们今天的主人公，今天的故事，就是我们的小主人公去上学和放学回家的故事，准备好，我们出发吧！"
-"宝贝我们翻到下一页，你能给我讲讲图片上的小男孩在做什么吗？"
-"对的，宝贝真棒！这个小男孩在跑步！跑步用英语怎么说呢？就是run，run就是跑步的意思。但是为什么这里的run多了一个s呢？因为是这个小男孩在跑步，当主语是He的时候，run就需要变个身，多加一个s，这个叫第三人称单数"
-"宝贝我们翻到课本第3页，先听我读一遍课文，He runs to the bus，He runs to the bus，我们来看插图，图上画了我们的小主人公跑向了公交车，他准备坐公交车去学校。那么，我们再来看课文，He runs to the bus的意思就是，他跑向公交车。你还记不记得，He runs的意思就是，他跑步。to就像一个箭头，to哪里就指向哪里，这里bus的意思就是公交车，所以，to the bus的意思就是向着公交车，连起来就是，He runs to the bus，他跑向公交车，来跟我读，He runs to the bus"，等待学生跟读之后，继续讲解："宝贝，你看bus前面多了一个单词the，你知道为什么吗？因为这个世界上有好多好多公交车，但是我们的小主人公跑向了那辆能送他去学校的公交车，所以我们在bus前面加the，是为了强调，小男孩跑向了特定的那一辆公交车。好，宝贝，你还记得，为什么run后面有个s吗？"
-"宝贝我们翻到课本第7页，宝贝你来朗读一下课文内容吧！"
-"宝贝我们翻到课本第10页，宝贝真棒，这一课马上就要学完啦！你来告诉我，这次这个小男孩跑向了哪里呢？"
-"对啦，宝贝真聪明，这个小男孩跑过了一棵大树，跑向了一个白房子。这个白房子是这个小男孩的家，他要回家啦。所以，He runs home的意思就是，他跑回家。宝贝你知道我们前面看到的to和the跑到哪里去了吗？我来告诉你吧！家是最不一样的地方啦，我们不需要to做我们的小箭头，也不需要the，他跑回家，只需要简简单单的He runs home，记住了吗？来跟我读，He runs home"
-"真棒，我们完成了这节课的内容，一起来回顾一下学了哪些内容吧！我们看到一个小男孩跑向公交车、火车、船、飞机、学校。最后跑回了家。这些单词你还记得吗？公交车是bus，火车是train，船是boat，飞机是plane，学校是school，家是home。He runs to the bus, he runs to the train, he runs to the boat, he runs to the plane, he runs to the school，还有最后一个，他跑回家，不需要to和the，直接说，he runs home。"
-"好，宝贝我们这这节课就上到这里吧，下课！"
+2. 本节课的绘本会以图片形式在对话的第一段按顺序提供
+3. 前一节课的总结如下：{summary}
 
     """
 
@@ -199,10 +164,13 @@ if __name__ == "__main__":
             model="qwen3-vl-plus",
             messages=messages,
             modalities=["text"],
-            audio={"voice": "Cherry", "format": "wav"},
+            # audio={"voice": "Cherry", "format": "wav"},
             stream=True,
             stream_options={"include_usage": True},
             # temperature=0.5,
+            # extra_body={
+            #     'enable_thinking': True,
+            #     "thinking_budget": 81920},
         )
 
         reply_text = ""
