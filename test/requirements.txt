@@ -1,0 +1,4 @@
+requests>=2.25
+# Optional: if you prefer an SSE client, you can pip install sseclient-py
+# sseclient-py>=1.7
+

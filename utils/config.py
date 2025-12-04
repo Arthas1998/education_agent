@@ -84,7 +84,7 @@ BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DEFAULT_CHAT_MODEL = "qwen3-vl-plus"
 
 # PromptLoader 默认路径
-DEFAULT_PROMPT_PATH = "prompt/config/zh_temp_2.yaml"
+DEFAULT_PROMPT_PATH = r"D:\data\project\education_agent\prompt\config\eh\70_Smile.yaml"
 
 # 是否只加载 prompt 中前 N 条 user
 # None 表示全部
