@@ -11,7 +11,6 @@ import yaml
 import base64
 import fitz  # PyMuPDF
 from typing import List, Optional, Dict, Any
-from pprint import pprint
 
 
 class PromptLoader:
@@ -153,19 +152,12 @@ class PromptLoader:
 
         return {"role": "system", "content": content}
 
-    def load_initial_user_prompt(self, include_first_n: Optional[int] = None) -> Dict[str, Any]:
+    def load_initial_user_prompt(self, use_textbook: Optional[bool] = False, include_first_n: Optional[int] = None) -> Dict[str, Any]:
         """Load initial user prompt: include course images (from configured course pdf) and initial template text.
 
         include_first_n: if provided, only render the first N pages; otherwise render all pages.
         Returns a dict suitable for messages.append().
         """
-        # Build image items from current course pdf
-        if not self.current_course_pdf or not os.path.exists(self.current_course_pdf):
-            raise FileNotFoundError(f"Configured current course PDF not found: {self.current_course_pdf}")
-
-        dataurls = self._pdf_pages_to_dataurls(self.current_course_pdf, max_pages=include_first_n)
-        image_items = self._make_image_contents_from_dataurls(dataurls)
-
         # load initial user template and apply placeholders
         template = self.initial_conf.get("template")
         components = self.initial_conf.get("components", {})
@@ -174,10 +166,17 @@ class PromptLoader:
 
         # assemble content: images followed by text
         content = []
-        content.extend(image_items)
+        if use_textbook:
+            # Build image items from current course pdf
+            if not self.current_course_pdf or not os.path.exists(self.current_course_pdf):
+                raise FileNotFoundError(f"Configured current course PDF not found: {self.current_course_pdf}")
+            dataurls = self._pdf_pages_to_dataurls(self.current_course_pdf, max_pages=include_first_n)
+            image_items = self._make_image_contents_from_dataurls(dataurls)
+            content.extend(image_items)
         content.append({"type": "text", "text": final_text})
 
         return {"role": "user", "content": content}
+
 
 
 # --------------------- Script test runner ---------------------
@@ -185,7 +184,10 @@ if __name__ == "__main__":
     try:
         loader = PromptLoader("prompt/config/zh_temp_1.yaml")
         sys_prompt = loader.load_system_prompt()
-        user_prompt = loader.load_initial_user_prompt(include_first_n=13)
+        user_prompt = loader.load_initial_user_prompt(
+            use_textbook=True,
+            include_first_n=13
+        )
 
         print("System prompt dict:")
         print(sys_prompt)

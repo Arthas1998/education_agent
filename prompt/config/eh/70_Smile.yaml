@@ -4,8 +4,10 @@ current_course: "70_Smile.pdf"
 system_prompts:
   template: "prompt/src/template/rascef_E_temp.txt"
   components:
+
     lesson_plans: "prompt/src/lesson_plans/70_Smile_E.txt"
     summary: "prompt/src/no_summary_E.txt"
 
 initial_user_prompts:
   template: "prompt/src/init_content_E.txt"
+

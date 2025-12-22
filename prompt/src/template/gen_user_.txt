@@ -1,0 +1,6 @@
+当前节教案：
+{plan}
+
+学生回答:
+{student_answer}
+

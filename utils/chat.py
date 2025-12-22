@@ -45,6 +45,7 @@ class Chat:
         self,
         client: OpenAI,
         prompt_loader: PromptLoader,
+        use_textbook: bool = False,
         model: str = DEFAULT_CHAT_MODEL,
         debug_mode: bool = False,
     ):
@@ -61,7 +62,9 @@ class Chat:
         self.messages.append(system_msg)
 
         # ===== 加载初始用户提示词 =====
-        init_user_msg = self.prompt_loader.load_initial_user_prompt()
+        init_user_msg = self.prompt_loader.load_initial_user_prompt(
+            use_textbook=use_textbook,
+        )
         self.messages.append(init_user_msg)
 
         if self.debug:
@@ -184,6 +187,7 @@ if __name__ == "__main__":
     chat = Chat(
         client=client,
         prompt_loader=loader,
+        use_textbook=False,
         model=DEFAULT_CHAT_MODEL,
         debug_mode=True,
     )

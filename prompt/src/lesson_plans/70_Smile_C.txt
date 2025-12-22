@@ -1,59 +1,118 @@
-1. 寒暄
-内容：“你好呀！今天开心吗？”
+1. 寒暄环节
+
+问学生：“What do you do in the morning before school?”
+等待学生回答，可以鼓励学生提到具体的早晨活动，如吃早餐、刷牙、穿衣服、和家人打招呼等。
+在学生回答后给予鼓励并简短总结，继续引导他们用英语表达。
+
+问学生：“What makes you smile?”
+等待学生回答后，鼓励学生用英语描述自己让他们微笑的事物。
+可能的回答包括：favorite toy, pet, family, friends 等，确保鼓励学生开口并给予积极的反馈。
+
 2. 标题页讲解
-开场白：“开始今天的课啦！请翻到标题页，我们学绘本《Smile》，教大家对着身边人微笑说英语～”
-生词讲解：“‘Smile’是‘微笑’，跟我读 2 遍：Smile，微笑”
-提问：“看到‘Smile’，你会做什么动作呀？”
-3. 正文逐页讲解（提问必等回应）
-第 1 页（内容：Smile at your dog.）
-模式：第三种
-步骤：
-提示：“请翻到下一页”
-提问：“这页图片里有什么呀？”
-讲解：“对啦！课文是‘Smile at your dog.’。‘dog’是‘小狗’，核心语法：‘Smile at + 东西 / 人’就是‘对着它 / 他微笑’。”
-第 2 页（内容：Smile at your brother.）
-模式：第一种
-步骤：
-提示：“翻到下一页”
-朗读：“我读 2 遍：Smile at your brother. Smile at your brother.”
-讲解：“‘brother’是‘哥哥 / 弟弟’，用‘Smile at + 家人’说‘对着家人微笑’。”
-提问：“你家有 brother 吗？”
-第 3 页（内容：Smile at your sister.）
-模式：第二种
-步骤：
-提示：“翻下一页，你来读一遍课文吧”
-讲解：“‘sister’是‘姐姐 / 妹妹’”
-提问：“你会对 sister 说这句话吗？”
-第 4-8 页（精简核心）
-第 4 页（Smile at your mom.）：
-提示：“翻到有妈妈的页～”
-提问：“图片里是谁呀？”
-讲解：“课文是‘对着妈妈微笑’，‘mom’是‘妈妈’，‘Smile at your mom’就是这个意思。”
-第 5 页（Smile at your dad.）：
-提示：“翻下一页”
-朗读：“我读 2 遍：Smile at your dad.”
-讲解：“‘dad’是‘爸爸’，和 mom 一样，用‘Smile at your + 家人’说。”
-提问：“你会对 dad 说这句话吗？”
-第 6 页（Smile at your friend.）：
-提示：“翻下一页，你来读课文”
-讲解：“‘friend’是‘朋友’，和你玩的小朋友就是 friend。”
-第 7 页（Smile at your teacher.）：
-提示：“翻到有老师的页～”
-提问：“图片里的人在做什么？是谁呀？”
-讲解：“对啦是老师！‘teacher’是‘老师’，课文是‘对着老师微笑’。”
-第 8 页（Smile at yourself.）：
-提示：“翻到最后一页～”
-朗读：“我读 2 遍：Smile at yourself. Smile at yourself.”
-讲解：“‘yourself’是‘你自己’，这句话是‘对着自己微笑’。”
-提问：“你会对着自己说这句话吗？”
+
+开场白：简短介绍：“Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life.”
+提示学生翻到封面页，并说明：“Let’s see who the boy is smiling at.”
+通过封面上的图片，激发学生兴趣。
+
+封面问题：提问：“Who do you think the boy is smiling at on this page?”
+等待学生的回答。根据学生的猜测进行反馈，并鼓励他们用英语表达自己的想法。
+
+翻页提示：告知学生翻到下一页。若第二页无教学内容，可以直接提示翻到第三页。
+
+3. 课本正文逐页讲解
+第1页
+
+模式一：老师先读 + 讲解
+提示学生翻到第1页，“Now let’s look at the first page. I will read it first.”
+老师朗读第一页：“Smile at your friend.”
+描述插图：图片中，男孩与朋友在公交车上都在微笑。
+提问：“Who is the boy smiling at in the picture?”
+等待学生回答：“He’s smiling at his friend!”
+鼓励学生用英语回答，并根据学生的反馈进一步展开讨论。
+
+第2页
+
+模式二：学生先读 + 老师纠正与提问
+提示学生翻到第2页，“Now, can you read this page?”
+学生朗读，“Smile at your dog.”
+老师纠正学生发音（如果有必要），然后提问：“What do you see in the picture? Who is the boy smiling at?”
+等待学生回答：“He’s smiling at his dog!”
+鼓励学生继续表达自己的想法，并进行适当的互动。
+
+第3页
+
+模式三：先看图提问 + 讲解
+提示学生翻到第3页，“Look at the picture on this page. Who is the boy smiling at?”
+图片显示男孩和他的弟弟，提问：“Can you point to the boy and say, ‘Smile at your brother’?”
+等待学生回答，鼓励他们正确使用句型，并在需要时提供纠正或帮助。
+
+第4页
+
+模式一：老师先读 + 讲解
+提示学生翻到第4页，“Let’s turn to page 4. I will read it first.”
+老师朗读：“Smile at your sister.”
+描述插图：图片中男孩与妹妹微笑。
+提问：“Who is the boy smiling at?”
+等待学生回答：“He’s smiling at his sister.”
+激励学生继续互动。
+
+第5页
+
+模式二：学生先读 + 老师纠正与提问
+提示学生翻到第5页，“Can you read this page for me?”
+学生朗读，“Smile at your mom.”
+老师纠正发音后提问：“Who is the boy smiling at in the kitchen?”
+等待学生回答：“He’s smiling at his mom.”
+根据学生回答进行鼓励，并提供适当的反馈。
+
+第6页
+
+模式三：先看图提问 + 讲解
+提示学生翻到第6页，“Look at the picture on this page. Who is the boy smiling at?”
+图片展示男孩和爸爸，提问：“Can you say ‘Smile at your dad’?”
+等待学生回答并提供鼓励。
+
+第7页
+
+模式一：老师先读 + 讲解
+提示学生翻到第7页，“Now let’s look at page 7. I’ll read it first.”
+老师朗读：“Smile at your friend.”
+描述插图：图片中男孩和朋友再次微笑。
+提问：“Who is the boy smiling at in this picture?”
+等待学生回答：“He’s smiling at his friend.”
+鼓励学生再次使用英语表达。
+
+第8页
+
+模式二：学生先读 + 老师纠正与提问
+提示学生翻到第8页，“Can you read this page now?”
+学生朗读，“Smile at your teacher.”
+提问：“Who is the boy smiling at?”
+等待学生回答：“He’s smiling at his teacher.”
+鼓励学生继续朗读并积极参与互动。
+
+第9页
+
+模式三：先看图提问 + 讲解
+提示学生翻到第9页，“Look at the last page. Who is the boy smiling at now?”
+提问：“Is he smiling at someone else?”
+等待学生回答，并引导他们理解男孩是如何在镜子中微笑的。
+提醒学生：“He’s smiling at himself! Great job!”
+
 4. 课堂总结
-内容：“今天学了 8 个词：dog、brother、sister、mom、dad、friend、teacher、yourself。核心语法：‘Smile at + 人 / 动物’=‘对着它 / 他微笑’。我们一起读所有句子：Smile at your dog.……Smile at yourself.”
+
+回顾今天学到的内容，通过提问引导学生回顾：“Who did the boy smile at first? Who did he smile at last?”
+总结每一页的内容，帮助学生加深记忆。
+
 5. 宣布下课
-内容：“今天的课结束啦！回家对家人说今天学的句子哦～下课！”
-6. 课后记录
-重点
-课文：8 个核心句（略，同前）；2. 词汇：8 个分类词（略）；3. 语法：“Smile at + 名词” 表 “对着… 微笑”。
-掌握情况
-已会：多数会读常见词（mom/dad/dog）、读简单句；2. 待会：yourself/teacher 发音、理解 “at” 的含义。
-课堂表现
-优点：多数回应提问、愿跟读；2. 待改进：少数怕读长词，需鼓励。
+
+简短宣布：“Great job today! You smiled with every page! See you next time!”
+确保学生感到鼓励和自信。
+
+6. 课后总结
+
+本节课的课文和词汇: 学生学习了“smile at”句型，并复习了家庭成员和朋友的词汇。
+
+学生掌握情况: 大部分学生能够熟练使用“Smile at…”句型并正确回答每一页的问题。部分学生可能需要更多的互动来加强“smile at”句型的理解。
+
+课堂表现: 学生在回答问题时表现积极，朗读流利。部分学生可能对某些单词（如“brother”或“teacher”）还不够熟悉，下一节课可以继续复习这些词汇。

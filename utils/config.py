@@ -60,8 +60,7 @@ ENGINE = "realtime"
 3. 如果仍为空，则调用时抛异常。
 """
 
-API_KEY = 'sk-21a49acda5994dadad615d4c7e549bc5'
-# ⚠️ 强烈建议：生产环境使用环境变量，不要写在代码里
+API_KEY = 'sk-0932fa1904874a43a9a7593e8441e30b'
 
 
 # =========================
@@ -81,10 +80,10 @@ TTS_MODEL_NAME = "cosyvoice-tts"   # 占位，tts.py 中可用
 BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 # 默认对话模型
-DEFAULT_CHAT_MODEL = "qwen3-vl-plus"
+DEFAULT_CHAT_MODEL = "qwen3-max"
 
 # PromptLoader 默认路径
-DEFAULT_PROMPT_PATH = r"D:\data\project\education_agent\prompt\config\eh\70_Smile.yaml"
+DEFAULT_PROMPT_PATH = r"prompt/config/zh/70_Smile.yaml"
 
 # 是否只加载 prompt 中前 N 条 user
 # None 表示全部
