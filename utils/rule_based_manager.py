@@ -279,7 +279,7 @@ class SimpleRuleDialogueManager:
 # -------------------------
 if __name__ == "__main__":
     # 1) load from your lesson plan yaml (with policies filled)
-    mgr = SimpleRuleDialogueManager.from_yaml("./lesson_plan_70_smile.yaml")
+    mgr = SimpleRuleDialogueManager.from_yaml("./70_smile.yaml")
 
     # 2) first decision (before any turn happens)
     d0 = mgr.decide()

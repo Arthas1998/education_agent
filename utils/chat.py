@@ -1,196 +1,177 @@
-# -*- coding: utf-8 -*-
-"""
-utils/chat.py
-
-封装一个多轮文本对话 Chat 类：
-- 使用 PromptLoader 初始化 system + initial user
-- 支持流式转发回复
-- 支持 input() 或外部文本驱动
-- 提供读取最新 assistant 完整输出接口
-- 可直接运行：python -m utils.chat
-"""
-
-import os
-from typing import Optional, Callable, List, Dict, Any, Iterator
-
-# ===== 统一包式导入，禁止相对路径 =====
-from utils.prompt import PromptLoader
-from utils.config import (
-    API_KEY,
-    BASE_URL,
-    DEFAULT_CHAT_MODEL,
-    DEFAULT_STREAM_OPTIONS,
-    DEBUG_MODE,
-    DEFAULT_PROMPT_PATH,
-    DEFAULT_INCLUDE_FIRST_N,
-)
-
-
 # utils/chat.py
 # -*- coding: utf-8 -*-
 
-from openai import OpenAI
-from typing import List, Dict, Any, Optional, Iterable
+from __future__ import annotations
 
-from utils.config import DEFAULT_CHAT_MODEL, CHAT_STREAM_PRINT
-from utils.prompt import PromptLoader
+from openai import OpenAI
+from typing import List, Dict, Any, Optional, Iterable, cast
+
+from utils.prompt_loader import PromptLoader, RenderWarning
+
+model_name = "gpt-4"  # 默认模型名称，可根据需要修改
 
 
 class Chat:
-    """
-    多轮对话封装类
+    """多轮对话封装类（适配新版 PromptLoader.render_message）。
+
+    约定：
+    - system 提示词仅渲染一次
+    - user 提示词每轮都渲染（将真实用户输入渲染进模板）
+    - 业务层通过直接赋值 chat.params = {...} 决定每轮渲染的教案/页码等
+    - 对外接口保持不变：add_user_text/stream_reply/get_last_assistant_reply/is_started/set_started
     """
 
     def __init__(
         self,
         client: OpenAI,
         prompt_loader: PromptLoader,
-        use_textbook: bool = False,
-        model: str = DEFAULT_CHAT_MODEL,
+        model: str = None,
         debug_mode: bool = False,
+        use_textbook: bool = False,
+        include_first_n: Optional[int] = None,
     ):
         self.client = client
-        self.model = model
+        self.model = model or model_name
         self.debug = debug_mode
         self.prompt_loader = prompt_loader
+        self.include_first_n = include_first_n
+
+        # 业务层可直接覆盖/替换该 dict：chat.params = {...}
+        self.params: Dict[str, Any] = {}
+
+        # 内部可选：给 prompt_loader.registry runtime/memory 提供数据
+        self._memory: Dict[str, Any] = {}
 
         # 消息池
         self.messages: List[Dict[str, Any]] = []
 
-        # ===== 加载系统提示词 =====
-        system_msg = self.prompt_loader.load_system_prompt()
-        self.messages.append(system_msg)
+        # 是否已完成首次启动（讲课）
+        self._started = False
 
-        # ===== 加载初始用户提示词 =====
-        init_user_msg = self.prompt_loader.load_initial_user_prompt(
-            use_textbook=use_textbook,
+        # system 是否已渲染（每个对话只做一次）
+        self._system_rendered = False
+
+        # 旧参数保留（不再在 Chat 内使用）；避免调用方传参报错
+        _ = use_textbook
+
+    @staticmethod
+    def _normalize_openai_message(msg: Dict[str, Any]) -> Dict[str, Any]:
+        """把 render_message 输出统一成 OpenAI parts 结构。
+
+        OpenAI chat.completions:
+        - 文本消息可以是 content: str
+        - 也可以是 content: [{type:'text',text:'...'}, {type:'image_url',...}]
+
+        为了简化下游处理，这里统一转为 parts list。
+        """
+        if not isinstance(msg, dict):
+            raise TypeError(f"Expected message dict, got: {type(msg)}")
+        role = msg.get("role")
+        if not isinstance(role, str):
+            raise ValueError("Message missing 'role'.")
+
+        content = msg.get("content")
+        if isinstance(content, str):
+            msg = dict(msg)
+            msg["content"] = [{"type": "text", "text": content}]
+            return msg
+
+        if isinstance(content, list):
+            # assume already parts
+            return msg
+
+        raise ValueError(f"Unsupported message content type: {type(content)}")
+
+    def _ensure_system_message(self) -> None:
+        if self._system_rendered:
+            return
+
+        warnings_out: List[RenderWarning] = []
+        system_msg = self.prompt_loader.render_message(
+            template="generator",
+            message="system",
+            runtime_vars={},
+            memory=self._memory,
+            params=self.params,
+            warnings_out=warnings_out,
         )
-        self.messages.append(init_user_msg)
+        self.messages.append(self._normalize_openai_message(system_msg))
+        self._system_rendered = True
 
-        if self.debug:
-            print("[DEBUG] System Prompt Loaded")
-            # print(system_msg)
-            print("[DEBUG] Initial User Prompt Loaded")
-            # print(init_user_msg)
-
-    # ======================
-    # 基础接口
-    # ======================
+        if self.debug and warnings_out:
+            # 不改变接口：仅在 debug_mode 下打印，帮助定位缺参/selector 未命中
+            for w in warnings_out:
+                print(f"[PromptWarning][{w.code}] {w.message} ctx={w.context}")
 
     def add_user_text(self, text: str):
-        """
-        正常对话时，用户输入转为 messages
-        """
-        self.messages.append({
-            "role": "user",
-            "content": [
-                {"type": "text", "text": text}
-            ]
-        })
+        """添加用户文本消息（每一轮都通过 PromptLoader 渲染 user 模板）。"""
+        self._ensure_system_message()
 
-    # ======================
-    # 模型回复
-    # ======================
+        warnings_out: List[RenderWarning] = []
+        user_msg = self.prompt_loader.render_message(
+            template="generator",
+            message="user",
+            runtime_vars={"student_answer": text},
+            memory=self._memory,
+            params=self.params,
+            warnings_out=warnings_out,
+        )
+        self.messages.append(self._normalize_openai_message(user_msg))
+
+        if self.debug and warnings_out:
+            for w in warnings_out:
+                print(f"[PromptWarning][{w.code}] {w.message} ctx={w.context}")
 
     def stream_reply(self) -> Iterable[str]:
-        """
-        流式向模型请求回复，并实时输出
-        """
+        """流式向模型请求回复"""
+        self._ensure_system_message()
+
         response = self.client.chat.completions.create(
             model=self.model,
-            messages=self.messages,
+            # OpenAI SDK 的类型定义比较严格，这里保持运行时兼容即可
+            messages=cast(Any, self.messages),
             stream=True,
+            stream_options={"include_usage": True},
         )
 
         full = ""
-
         for chunk in response:
-            delta = chunk.choices[0].delta
-            if hasattr(delta, "content") and delta.content:
-                text = delta.content
-                full += text
-                if CHAT_STREAM_PRINT:
-                    print(text, end="", flush=True)
-                yield text
+            if len(chunk.choices) > 0:
+                delta = chunk.choices[0].delta
+                if hasattr(delta, "content") and delta.content:
+                    text = delta.content
+                    full += text
+                    yield text
 
         # 把 assistant 回复加入 messages
-        self.messages.append({
-            "role": "assistant",
-            "content": [{"type": "text", "text": full}]
-        })
+        self.messages.append(
+            {
+                "role": "assistant",
+                "content": [{"type": "text", "text": full}],
+            }
+        )
 
     def get_last_assistant_reply(self) -> Optional[str]:
-        """
-        读取最近一条 assistant 消息
-        """
+        """读取最近一条 assistant 消 Messages"""
         for msg in reversed(self.messages):
-            if msg["role"] == "assistant":
-                content = msg.get("content", [])
-                if content and content[0].get("type") == "text":
-                    return content[0].get("text")
+            if msg.get("role") != "assistant":
+                continue
+            content = msg.get("content")
+            if isinstance(content, str):
+                return content
+            if isinstance(content, list):
+                texts: List[str] = []
+                for part in content:
+                    if isinstance(part, dict) and part.get("type") == "text" and isinstance(part.get("text"), str):
+                        texts.append(part["text"])
+                return "".join(texts) if texts else None
         return None
 
-    # ======================
-    # 启动第一轮（讲课）
-    # ======================
+    def is_started(self) -> bool:
+        """是否已完成首次启动"""
+        return self._started
 
-    def startup(self):
-        """
-        使用系统提示词 + 初始用户提示词
-        触发首次模型讲课（只调用一次）
-        """
-        print("Assistant:", end=" ")
-        for _ in self.stream_reply():
-            pass
-        print("\n------ 进入对话模式 ------\n")
+    def set_started(self):
+        """标记已完成首次启动"""
+        self._started = True
 
-    # ======================
-    # Debug 交互循环
-    # ======================
-
-    def run(self):
-        """
-        调试模式用：input 多轮对话
-        """
-        self.startup()
-
-        while True:
-            user = input("\n你: ").strip()
-            if not user:
-                continue
-            self.add_user_text(user)
-            print("Assistant:", end=" ")
-            for _ in self.stream_reply():
-                pass
-            print()
-
-
-# =========================
-# 命令行测试入口
-# =========================
-if __name__ == "__main__":
-    try:
-        from openai import OpenAI
-    except ImportError:
-        raise RuntimeError("请先安装 openai SDK")
-
-    # 初始化 PromptLoader
-    loader = PromptLoader(DEFAULT_PROMPT_PATH)
-
-    # 构造 OpenAI Compatible Client
-    client = OpenAI(
-        api_key=API_KEY,
-        base_url=BASE_URL,
-    )
-
-    # 创建 Chat 实例
-    chat = Chat(
-        client=client,
-        prompt_loader=loader,
-        use_textbook=False,
-        model=DEFAULT_CHAT_MODEL,
-        debug_mode=True,
-    )
-
-    # 启动对话
-    chat.run()

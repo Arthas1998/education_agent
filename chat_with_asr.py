@@ -14,7 +14,7 @@ import queue
 
 from utils.asr import RealtimeASRSession
 from utils.chat import Chat
-from utils.prompt import PromptLoader
+from utils.prompt_loader import PromptLoader
 from utils.config import (
     API_KEY,
     BASE_URL,
@@ -51,7 +51,7 @@ def main():
     print("=== 启动 ASR 讲课系统 ===")
 
     # ===== Chat 初始化 =====
-    loader = PromptLoader(DEFAULT_PROMPT_PATH)
+    loader = PromptLoader.from_yaml(DEFAULT_PROMPT_PATH)
 
     client = OpenAI(
         api_key=API_KEY,
@@ -65,9 +65,13 @@ def main():
         debug_mode=False
     )
 
-    # ===== 模型先讲课 =====
+    # ===== 模型先讲课（首次启动） =====
     print("\n[系统] 正在加载讲课内容...\n")
-    chat.startup()
+    if not chat.is_started():
+        print("Assistant:", end=" ")
+        for _ in chat.stream_reply():
+            pass
+        chat.set_started()
 
     # ===== ASR 初始化 =====
     session = RealtimeASRSession()

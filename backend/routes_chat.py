@@ -1,7 +1,7 @@
 from flask import Blueprint, request, current_app, jsonify, Response
 import os
 
-from utils.prompt import PromptLoader
+from utils.prompt_loader import PromptLoader
 from utils.chat import Chat
 from utils.config import DEFAULT_PROMPT_PATH, ALLOWED_AUDIO_EXTS, MAX_UPLOAD_MB
 
@@ -34,7 +34,8 @@ def text_chat():
         # fallback to DEFAULT_PROMPT_PATH from utils.config
         prompt_path = os.path.join(current_app.config.get("PROJECT_ROOT"), DEFAULT_PROMPT_PATH)
 
-    loader = PromptLoader(prompt_path)
+    # 新版 PromptLoader
+    loader = PromptLoader.from_yaml(prompt_path)
 
     # build a minimal prompt: append user question to messages
     # re-use utils.chat.Chat infrastructure by constructing a client stub if network unavailable
