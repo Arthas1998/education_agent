@@ -1,6 +1,7 @@
-当前节教案：
+The lesson plan for the current step：
+[System]
 {plan}
 
-学生回答:
+Student answer:
 {student_answer}
-
+{material_pdf}

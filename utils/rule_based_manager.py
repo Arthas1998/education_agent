@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -35,7 +35,7 @@ class DialogueState:
     step_index: int = 0
     # 当前 step 内的轮次（1-based）
     step_turn_index: int = 1
-    # 总轮次（1-based）
+    # 总轮次（1-based）——注意：从外部输入同步，不再由 manager 内部自增
     total_turn_index: int = 1
     # 是否已结束（当 end_behavior=return_none 时会用到）
     ended: bool = False
@@ -56,7 +56,19 @@ class SimpleRuleDialogueManager:
     最简单的规则调度器：
       - 按 steps 顺序推进
       - 每个 step 执行 policies.step_turns[step_id] 轮（未配置则用 default_step_turns）
-      - 每轮返回当前 step_id
+
+    重要：total_turn_index 必须由外部输入驱动。
+      - decide(total_turn=...) / next_state(total_turn=...) 每次调用都会同步 state.total_turn_index。
+      - 规则判断（当前 step / step_turn）也以外部 total_turn 为准，避免重试/回放导致漂移。
+
+    轮次约定：
+      - total_turn 使用 1-based（第一轮为 1）。
+      - 若你的外部计数是 0-based（例如 Chat.turn_count），请传 total_turn = chat.turn_count + 1。
+
+    边界行为：
+      - total_turn 与当前 state.total_turn_index 相同：认为是同一轮的重复调用（幂等，不推进）。
+      - total_turn 向前跳跃：快速推进到对应轮次并返回当轮决策，同时给出 warnings。
+      - total_turn 回退：允许回退并重算状态（用于回放/撤销），同时给出 warnings。
     """
 
     def __init__(self, steps: List[Step], policy: Policy):
@@ -144,23 +156,84 @@ class SimpleRuleDialogueManager:
         else:
             self.state = DialogueState(step_index=0, step_turn_index=1, total_turn_index=1, ended=False)
 
-    def _max_turns_for(self, step_id: str, warnings_out: List[str]) -> int:
-        if step_id in self.policy.step_turns:
-            return self.policy.step_turns[step_id]
-        warnings_out.append(
-            f"policies.step_turns missing for step_id='{step_id}', using defaults.step_turns={self.policy.default_step_turns}"
-        )
-        return self.policy.default_step_turns
+    def _build_prefix_sums(self, warnings_out: List[str]) -> List[Tuple[int, int]]:
+        """Return list of (start_turn_inclusive, end_turn_inclusive) for each step.
 
-    def get_current_step(self) -> Step:
-        return self.steps[self.state.step_index]
+        Turns are 1-based. Example with 2 steps of 2 turns each:
+          step0: (1,2)
+          step1: (3,4)
+        """
+        ranges: List[Tuple[int, int]] = []
+        start = 1
+        for s in self.steps:
+            mt = self._max_turns_for(s.id, warnings_out)
+            end = start + mt - 1
+            ranges.append((start, end))
+            start = end + 1
+        return ranges
 
-    def decide(self) -> StepDecision:
-        """
-        返回当前应执行的 step 信息（不推进状态）。
-        你可以在每轮对话开始时调用它，拿 step_id 去 PromptLoader 渲染。
-        """
+    def _resync_to_total_turn(self, total_turn: int, warnings_out: List[str]) -> None:
+        """Sync internal state to an externally supplied total_turn (1-based)."""
+        if not isinstance(total_turn, int) or total_turn < 1:
+            raise ValueError(f"total_turn must be an int >= 1, got: {total_turn!r}")
+
+        prev_total = self.state.total_turn_index
+        if total_turn == prev_total:
+            # same turn: idempotent
+            return
+
+        if total_turn > prev_total + 1:
+            warnings_out.append(
+                f"external total_turn jumped forward from {prev_total} to {total_turn}; fast-forwarding state"
+            )
+        elif total_turn < prev_total:
+            warnings_out.append(
+                f"external total_turn moved backward from {prev_total} to {total_turn}; rewinding state"
+            )
+
+        # Update total turn first
+        self.state.total_turn_index = total_turn
+
+        # If dialogue had ended earlier but external turn is within range again, allow rewind
+        self.state.ended = False
+
+        ranges = self._build_prefix_sums(warnings_out)
+        if not ranges:
+            # should be impossible due to __init__ check
+            self.state.step_index = 0
+            self.state.step_turn_index = 1
+            return
+
+        # Locate which step the total_turn lands in
+        found = False
+        for idx, (start, end) in enumerate(ranges):
+            if start <= total_turn <= end:
+                self.state.step_index = idx
+                self.state.step_turn_index = (total_turn - start) + 1
+                found = True
+                break
+
+        if found:
+            return
+
+        # total_turn is beyond the whole plan
+        last_idx = len(self.steps) - 1
+        last_start, last_end = ranges[last_idx]
+        last_max_turns = last_end - last_start + 1
+
+        if self.policy.end_behavior == "return_none":
+            self.state.step_index = last_idx
+            self.state.step_turn_index = last_max_turns
+            self.state.ended = True
+        else:
+            # stay_last
+            self.state.step_index = last_idx
+            self.state.step_turn_index = last_max_turns
+
+    def decide(self, *, total_turn: int) -> StepDecision:
+        """Return current step decision for the given external total_turn (does not advance)."""
         warnings_out: List[str] = []
+        self._resync_to_total_turn(total_turn, warnings_out)
 
         if self.state.ended:
             return StepDecision(
@@ -173,7 +246,7 @@ class SimpleRuleDialogueManager:
             )
 
         step = self.get_current_step()
-        _ = self._max_turns_for(step.id, warnings_out)  # 用于触发默认 warning（可选）
+        _ = self._max_turns_for(step.id, warnings_out)  # trigger missing-policy warning if any
         return StepDecision(
             step_id=step.id,
             step_index=self.state.step_index,
@@ -183,16 +256,16 @@ class SimpleRuleDialogueManager:
             warnings=warnings_out,
         )
 
-    def next_state(self) -> StepDecision:
-        """
-        推进“一轮对话”后的状态，并返回推进后的当前 step（即下一轮应执行的 step）。
-        建议调用时机：
-          - 每完成一轮（你定义的 turn）后调用一次。
+    def next_state(self, *, total_turn: int) -> StepDecision:
+        """Sync to external total_turn and return the StepDecision for that turn.
+
+        Note: because total_turn is externally driven, next_state() does not increment turns.
+        It exists mainly for backward-compatible call sites that expect a "state update" API.
         """
         warnings_out: List[str] = []
+        self._resync_to_total_turn(total_turn, warnings_out)
 
         if self.state.ended:
-            # 已结束直接返回
             return StepDecision(
                 step_id=None,
                 step_index=self.state.step_index,
@@ -202,74 +275,34 @@ class SimpleRuleDialogueManager:
                 warnings=warnings_out,
             )
 
-        current = self.get_current_step()
-        max_turns = self._max_turns_for(current.id, warnings_out)
-
-        # 先增加 total_turn
-        self.state.total_turn_index += 1
-
-        # step 内轮次推进
-        if self.state.step_turn_index < max_turns:
-            self.state.step_turn_index += 1
-            nxt = self.get_current_step()
-            return StepDecision(
-                step_id=nxt.id,
-                step_index=self.state.step_index,
-                step_turn_index=self.state.step_turn_index,
-                total_turn_index=self.state.total_turn_index,
-                pages=list(nxt.pages),
-                warnings=warnings_out,
-            )
-
-        # step 内轮次已达上限，切到下一个 step
-        if self.state.step_index < len(self.steps) - 1:
-            self.state.step_index += 1
-            self.state.step_turn_index = 1
-            nxt = self.get_current_step()
-            return StepDecision(
-                step_id=nxt.id,
-                step_index=self.state.step_index,
-                step_turn_index=self.state.step_turn_index,
-                total_turn_index=self.state.total_turn_index,
-                pages=list(nxt.pages),
-                warnings=warnings_out,
-            )
-
-        # 已是最后一个 step
-        if self.policy.end_behavior == "return_none":
-            self.state.ended = True
-            return StepDecision(
-                step_id=None,
-                step_index=self.state.step_index,
-                step_turn_index=self.state.step_turn_index,
-                total_turn_index=self.state.total_turn_index,
-                pages=[],
-                warnings=warnings_out,
-            )
-
-        # stay_last：保持最后一个 step
-        self.state.step_turn_index = max_turns  # 保持在上限
-        last = self.get_current_step()
+        step = self.get_current_step()
+        _ = self._max_turns_for(step.id, warnings_out)
         return StepDecision(
-            step_id=last.id,
+            step_id=step.id,
             step_index=self.state.step_index,
             step_turn_index=self.state.step_turn_index,
             total_turn_index=self.state.total_turn_index,
-            pages=list(last.pages),
+            pages=list(step.pages),
             warnings=warnings_out,
         )
 
-    def get_prompt_params(self, decision: StepDecision, *, include_pdf_pages: bool = True) -> Dict[str, Any]:
-        """
-        给 PromptLoader 的 params（最简版）：
-          - step_ids: 当前 step id
-          - pdf_pages: 直接用 step.pages（如果有）
-        """
-        params: Dict[str, Any] = {}
+    def _max_turns_for(self, step_id: str, warnings_out: List[str]) -> int:
+        if step_id in self.policy.step_turns:
+            return self.policy.step_turns[step_id]
+        warnings_out.append(
+            f"policies.step_turns missing for step_id='{step_id}', using defaults.step_turns={self.policy.default_step_turns}"
+        )
+        return self.policy.default_step_turns
+
+    def get_current_step(self) -> Step:
+        return self.steps[self.state.step_index]
+
+    def get_prompt_params(self, decision: StepDecision, *, include_pdf_pages: bool = True) -> Dict[str, object]:
+        """给 PromptLoader 的 params（最简版）。"""
+        params: Dict[str, object] = {}
         if decision.step_id is not None:
             params["step_ids"] = decision.step_id
         if include_pdf_pages and decision.pages:
-            # 这里直接把 pages 作为 list[int] 传给 PromptLoader 的 pdf_pages selector（1-based）
             params["pdf_pages"] = decision.pages
         return params
 
@@ -278,16 +311,13 @@ class SimpleRuleDialogueManager:
 # Minimal demo
 # -------------------------
 if __name__ == "__main__":
-    # 1) load from your lesson plan yaml (with policies filled)
-    mgr = SimpleRuleDialogueManager.from_yaml("./70_smile.yaml")
+    mgr = SimpleRuleDialogueManager.from_yaml(r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile.yaml")
 
     # 2) first decision (before any turn happens)
-    d0 = mgr.decide()
+    d0 = mgr.decide(total_turn=1)
     print("DECIDE:", d0)
 
     # 3) simulate a few turns
-    for _ in range(10):
-        d = mgr.next_state()
+    for t in range(1, 11):
+        d = mgr.next_state(total_turn=t)
         print("NEXT:", d, "params:", mgr.get_prompt_params(d))
-
-

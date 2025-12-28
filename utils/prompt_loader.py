@@ -511,6 +511,16 @@ class PdfPageRenderer:
         dpi: int = 200,
         image_format: str = "png",
     ) -> List[bytes]:
+        # Import fitz here as well because _open_pdf caches only Document;
+        # Matrix is a module-level symbol in PyMuPDF and should not be accessed via private doc._fitz.
+        try:
+            import fitz  # PyMuPDF
+        except Exception as e:
+            raise RenderError(
+                "PDF rendering requires PyMuPDF (pip install pymupdf). "
+                "Import 'fitz' failed."
+            ) from e
+
         doc = self._open_pdf(pdf_path)
         # PyMuPDF pages are 0-based
         page_count = doc.page_count
@@ -519,19 +529,32 @@ class PdfPageRenderer:
         # Convert dpi to zoom: 72 DPI is default
         zoom = dpi / 72.0
 
+        fmt = image_format.lower()
+        if fmt not in ("png", "jpg", "jpeg"):
+            raise RenderError("image_format must be 'png' or 'jpg'/'jpeg'.")
+        target = "png" if fmt == "png" else "jpeg"
+
         for p1 in pages_1based:
             p0 = p1 - 1
             if p0 < 0 or p0 >= page_count:
                 raise RenderError(f"PDF page out of range: {p1} (pdf has {page_count} pages).")
 
             page = doc.load_page(p0)
-            mat = doc._fitz.Matrix(zoom, zoom)  # type: ignore[attr-defined]
+            # Use public API (fitz.Matrix). 'doc._fitz' is not available on some PyMuPDF versions.
+            mat = fitz.Matrix(zoom, zoom)
             pix = page.get_pixmap(matrix=mat, alpha=False)
 
-            fmt = image_format.lower()
-            if fmt not in ("png", "jpg", "jpeg"):
-                raise RenderError("image_format must be 'png' or 'jpg'/'jpeg'.")
-            img_bytes = pix.tobytes("png" if fmt == "png" else "jpeg")
+            # PyMuPDF has had minor API changes across versions.
+            # Try the common signatures in order.
+            try:
+                img_bytes = pix.tobytes(target)
+            except TypeError:
+                try:
+                    img_bytes = pix.tobytes(output=target)
+                except TypeError:
+                    # Fallback: some versions ignore output format; returns bytes in default format.
+                    img_bytes = pix.tobytes()
+
             out.append(img_bytes)
         return out
 

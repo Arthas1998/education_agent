@@ -3,176 +3,151 @@
 # =========================
 
 steps:
-  - id: greet
+  - id: greet_1
     title: "寒暄环节"
     pages: []
     plan_nl: |
-      教师提问学生：“What do you do in the morning before school?”
-      等待学生回答，可以鼓励学生提到具体的早晨活动，例如吃早餐、刷牙、穿衣服、和家人打招呼等。
-      在学生回答后给予积极的鼓励，并用简单英语进行简短总结，帮助学生继续用英语表达。
+      The teacher asks the student: "What do you do in the morning before school?"
+      Wait for the student's answer and encourage the student to mention specific morning activities.
 
-      接着提问：“What makes you smile?”
-      等待学生回答后，鼓励学生用英语描述让他们微笑的事物。
-      可能的回答包括：favorite toy, pet, family, friends 等。
-      教师应重点鼓励学生开口，不要求句子完整，只要表达即可，并给予积极反馈。
+  - id: greet_2
+    title: "寒暄环节2"
+    pages: []
+    plan_nl: |
+      Then ask: "What makes you smile?"
+      Wait for the student's answer, and encourage the student to describe in English what makes them smile.
+      Possible answers include: favorite toy, pet, family, friends, and so on.
 
   - id: cover
     title: "标题页讲解"
-    pages: [0]
+    pages: [1]
     plan_nl: |
-      教师开场介绍：“Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life.”
-      提示学生翻到封面页，并说：“Let’s see who the boy is smiling at.”
-      引导学生观察封面图片，激发阅读兴趣。
-
-      提问：“Who do you think the boy is smiling at on this page?”
-      等待学生回答，根据学生的猜测给予反馈，并鼓励他们用英语表达自己的想法。
-
-      提示学生准备翻到下一页。
-      如果第二页没有教学内容，可直接提示学生翻到第三页。
+      The teacher introduces: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life."
+      Guide the student to turn to the cover page and say: "Let’s see who the boy is smiling at."
+      Ask: "Who do you think the boy is smiling at on this page?"
+      Give feedback based on the student’s guesses and encourage them to express their ideas in English.
 
   - id: page_1
     title: "第1页：Smile at your friend"
-    pages: [2]
+    pages: [3]
     plan_nl: |
-      提示学生翻到第1页：“Now let’s look at the first page. I will read it first.”
-      教师朗读句子：“Smile at your friend.”
-
-      引导学生观察插图，描述图片内容：男孩和朋友在公交车上微笑。
-      提问：“Who is the boy smiling at in the picture?”
-      等待学生回答：“He’s smiling at his friend!”
-
-      鼓励学生使用英语完整回答，并根据学生的反馈进行简短互动。
+      Guide the student to turn to page 3: "Now let’s look at the first page. I will read it first."
+      The teacher reads aloud: "Smile at your friend."
+      Guide the student to look at the illustration and describe what is happening: the boy and his friend are smiling on the bus.
+      Ask: "Who is the boy smiling at in the picture?"
+      Wait for the student’s answer: "He’s smiling at his friend!"
+      Encourage the student to answer in a complete sentence in English and have a brief interaction based on the student’s response.
 
   - id: page_2
     title: "第2页：Smile at your dog"
-    pages: [3]
+    pages: [4]
     plan_nl: |
-      提示学生翻到第2页：“Now, can you read this page?”
-      等待学生朗读：“Smile at your dog.”
-
-      如有需要，教师进行简单发音纠正。
-      接着提问：“What do you see in the picture? Who is the boy smiling at?”
-      等待学生回答：“He’s smiling at his dog!”
-
-      鼓励学生继续表达自己的想法，并给予正向反馈。
+      Guide the student to turn to page 2: "Now, can you read this page?"
+      Wait for the student to read aloud: "Smile at your dog."
+      If needed, the teacher gives simple pronunciation correction.
+      Then ask: "What do you see in the picture? Who is the boy smiling at?"
+      Wait for the student’s answer: "He’s smiling at his dog!"
+      Encourage the student to keep sharing their ideas and give positive feedback.
 
   - id: page_3
     title: "第3页：Smile at your brother"
-    pages: [4]
+    pages: [5]
     plan_nl: |
-      提示学生翻到第3页：“Look at the picture on this page. Who is the boy smiling at?”
-      引导学生观察图片，图片中男孩和他的弟弟。
-
-      提问：“Can you point to the boy and say, ‘Smile at your brother’?”
-      等待学生回答，鼓励他们正确使用句型。
-      如有需要，教师提供示范或轻微纠正。
+      Guide the student to turn to page 3: "Look at the picture on this page. Who is the boy smiling at?"
+      Guide the student to observe the picture, which shows the boy and his younger brother.
+      Ask: "Can you point to the boy and say, ‘Smile at your brother’?"
+      Wait for the student’s response and encourage them to use the sentence pattern correctly.
+      If needed, the teacher provides a model or gentle correction.
 
   - id: page_4
     title: "第4页：Smile at your sister"
-    pages: [5]
+    pages: [6]
     plan_nl: |
-      提示学生翻到第4页：“Let’s turn to page 4. I will read it first.”
-      教师朗读：“Smile at your sister.”
-
-      描述插图：男孩与妹妹在微笑。
-      提问：“Who is the boy smiling at?”
-      等待学生回答：“He’s smiling at his sister.”
-
-      对学生的回答给予鼓励，继续保持互动氛围。
+      Guide the student to turn to page 4: "Let’s turn to page 4. I will read it first."
+      The teacher reads aloud: "Smile at your sister."
+      Describe the illustration: the boy is smiling with his sister.
+      Ask: "Who is the boy smiling at?"
+      Wait for the student’s answer: "He’s smiling at his sister."
+      Encourage the student’s answer and keep the interaction going.
 
   - id: page_5
     title: "第5页：Smile at your mom"
-    pages: [6]
+    pages: [7]
     plan_nl: |
-      提示学生翻到第5页：“Can you read this page for me?”
-      等待学生朗读：“Smile at your mom.”
-
-      教师在必要时进行发音纠正。
-      提问：“Who is the boy smiling at in the kitchen?”
-      等待学生回答：“He’s smiling at his mom.”
-
-      根据学生回答给予肯定，并简单延伸互动。
+      Guide the student to turn to page 5: "Can you read this page for me?"
+      Wait for the student to read aloud: "Smile at your mom."
+      Ask: "Who is the boy smiling at in the kitchen?"
+      Wait for the student’s answer: "He’s smiling at his mom."
+      Confirm the student’s answer and extend the interaction briefly in a simple way.
 
   - id: page_6
     title: "第6页：Smile at your dad"
-    pages: [7]
+    pages: [8]
     plan_nl: |
-      提示学生翻到第6页：“Look at the picture on this page. Who is the boy smiling at?”
-      引导学生观察图片，图片中男孩和爸爸。
-
-      提问：“Can you say ‘Smile at your dad’?”
-      等待学生回答，并给予积极鼓励。
+      Guide the student to turn to page 6: "Look at the picture on this page. Who is the boy smiling at?"
+      Guide the student to observe the picture, which shows the boy and his dad.
+      Ask: "Can you say ‘Smile at your dad’?"
+      Wait for the student’s response and give positive encouragement.
 
   - id: page_7
     title: "第7页：Smile at your friend（再次出现）"
-    pages: [8]
+    pages: [9]
     plan_nl: |
-      提示学生翻到第7页：“Now let’s look at page 7. I’ll read it first.”
-      教师朗读：“Smile at your friend.”
-
-      描述插图：男孩和朋友再次微笑。
-      提问：“Who is the boy smiling at in this picture?”
-      等待学生回答：“He’s smiling at his friend.”
-
-      鼓励学生再次使用英语完整表达。
+      Guide the student to turn to page 7: "Now let’s look at page 7. I’ll read it first."
+      The teacher reads aloud: "Smile at your friend."
+      Describe the illustration: the boy and his friend are smiling again.
+      Ask: "Who is the boy smiling at in this picture?"
+      Wait for the student’s answer: "He’s smiling at his friend."
+      Encourage the student to use a complete sentence in English again.
 
   - id: page_8
     title: "第8页：Smile at your teacher"
-    pages: [9]
+    pages: [10]
     plan_nl: |
-      提示学生翻到第8页：“Can you read this page now?”
-      等待学生朗读：“Smile at your teacher.”
-
-      提问：“Who is the boy smiling at?”
-      等待学生回答：“He’s smiling at his teacher.”
-
-      鼓励学生积极参与，并给予肯定反馈。
+      Guide the student to turn to page 8: "Can you read this page now?"
+      Wait for the student to read aloud: "Smile at your teacher."
+      Ask: "Who is the boy smiling at?"
+      Wait for the student’s answer: "He’s smiling at his teacher."
+      Encourage the student to participate actively and give positive feedback.
 
   - id: page_9
     title: "第9页：Smile at yourself"
-    pages: [10]
+    pages: [11]
     plan_nl: |
-      提示学生翻到最后一页：“Look at the last page. Who is the boy smiling at now?”
-      提问：“Is he smiling at someone else?”
-
-      等待学生回答，并引导他们观察镜子中的画面。
-      总结说明：“He’s smiling at himself!”
-      对学生的理解给予高度表扬：“Great job!”
+      Guide the student to turn to the last page: "Look at the last page. Who is the boy smiling at now?"
+      Ask: "Is he smiling at someone else?"
+      Wait for the student’s answer and guide them to look at the mirror in the picture.
+      Summarize: "He’s smiling at himself!"
+      Give the student high praise for understanding: "Great job!"
 
   - id: review
     title: "课堂总结"
     pages: []
     plan_nl: |
-      回顾今天学习的内容，通过提问引导学生回忆：
-      “Who did the boy smile at first?”
-      “Who did he smile at last?”
-
-      简要回顾每一页的内容，帮助学生巩固“Smile at…”句型和相关人物词汇。
+      Review what was learned today by asking questions to help the student remember:
+      "Who did the boy smile at first?"
+      "Who did he smile at last?"
+      Briefly review the content of each page to help the student reinforce the sentence pattern "Smile at..." and the related vocabulary for people.
 
   - id: goodbye
     title: "宣布下课"
     pages: []
     plan_nl: |
-      教师总结并宣布下课：
-      “Great job today! You smiled with every page! See you next time!”
-
-      确保学生感到被鼓励和认可。
+      The teacher gives a summary and ends the class:
+      "Great job today! You smiled with every page! See you next time!"
+      Make sure the student feels encouraged and recognized.
 
   - id: after_class_summary
     title: "课后总结（教师用）"
     pages: []
     plan_nl: |
-      本节课重点句型为“Smile at…”，复习了家庭成员和朋友相关词汇。
-
-      学生掌握情况：大部分学生能够熟练使用“Smile at…”句型并正确回答问题。
-      少数学生可能需要更多互动来巩固句型理解。
-
-      课堂表现整体积极，朗读较为流利。
-      对于“brother”“teacher”等词汇不够熟悉的学生，可在下一节课继续强化练习。
+      The key sentence pattern in this lesson is “Smile at…,” and the student learned vocabulary related to family members and friends.
+      You need to summarize the student’s performance and note the areas the student has not mastered well. 
 
 policies:
   step_turns:
-    greet: 2
+    greet_1: 1
+    greet_2: 2
     cover: 2
 
     page_1: 2

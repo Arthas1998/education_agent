@@ -2,7 +2,8 @@ course:
   id: "70_Smile"  # 课程唯一ID（常量）
 
 paths:
-  base_dir: "./prompt/src"                       # 资源根目录
+#  base_dir: "D:\\data\\project\\education_agent\\prompt\\src"                       # 资源根目录
+  base_dir: "prompt/src"                       # 资源根目录
   template_dir: "{paths.base_dir}/template"       # 模板目录（必须写 {paths.base_dir}，不允许 {base_dir}）
   plan_dir: "{paths.base_dir}/lesson_plans"       # 教案目录
   textbook_dir: "{paths.base_dir}/textbook"       # 教材目录
@@ -37,7 +38,7 @@ registry:
   prev_summary:
     type: text
     default: ""
-    from: { kind: file, path: "{paths.base_dir}/no_summary_C.txt", encoding: "utf-8" }
+    from: { kind: file, path: "{paths.base_dir}/no_summary_E.txt", encoding: "utf-8" }                                          # 外部 runtime_vars.step_ids
 
 templates:
   generator:
