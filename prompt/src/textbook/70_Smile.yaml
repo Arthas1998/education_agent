@@ -1,0 +1,76 @@
+# =========================
+# Textbook description: 70_Smile
+# =========================
+
+pages:
+  - page: 1
+    description: |
+      Title page
+      Title: Smile
+      Illustration: A little boy is smiling in a classroom while giving a red apple to his female teacher. The teacher stands by a desk with a cup, and a green chalkboard behind them shows simple math and chalk drawings.
+
+  - page: 2
+    description: |
+      Front matter page
+      Focus Question: Who is the boy smiling at?
+      Illustration: A little boy sits on a bus with other children. He smiles at a friend while another child reads a book and others wave happily in the background.
+
+  - page: 3
+    description: |
+      Main text page
+      Text: Smile at your dog.
+      Illustration: A little boy lies on his bed smiling as his dog jumps up to greet him. The room looks cozy, and an alarm clock nearby shows early morning time.
+
+  - page: 4
+    description: |
+      Main text page
+      Text: Smile at your brother.
+      Illustration: A little boy smiles at his older brother who is sitting up in bed rubbing his eye, just waking up in their bedroom.
+
+  - page: 5
+    description: |
+      Main text page
+      Text: Smile at your sister.
+      Illustration: A girl sits on her bed while her younger brother smiles at her from the doorway. The room is softly lit, showing a warm morning feeling.
+
+  - page: 6
+    description: |
+      Main text page
+      Text: Smile at your mom.
+      Illustration: A little boy smiles at his mother in the kitchen while eating breakfast. The mom stands beside him wearing an apron and smiling gently.
+
+  - page: 7
+    description: |
+      Main text page
+      Text: Smile at your dad.
+      Illustration: A little boy smiles at his father near the front door. The father kneels down to greet him as the boy gets ready to go out with his backpack.
+
+  - page: 8
+    description: |
+      Main text page
+      Text: Smile at your friend.
+      Illustration: The boy smiles at a friend while sitting together on a bus. Other children are nearby, laughing and waving, creating a cheerful scene.
+
+  - page: 9
+    description: |
+      Main text page
+      Text: Smile at your teacher.
+      Illustration: In a classroom, the boy smiles as he gives an apple to his teacher. The chalkboard behind them shows math problems and simple drawings.
+
+  - page: 10
+    description: |
+      Main text page
+      Text: Smile at yourself.
+      Illustration: The boy stands in front of a mirror at home, smiling at his own reflection while wearing his backpack, ready for school.
+
+  - page: 11
+    description: |
+      Back matter page
+      Words to Know
+      Illustration: A word list showing key vocabulary such as brother, sister, mom, dad, dog, friend, teacher, smile, and yourself.
+
+  - page: 12
+    description: |
+      Back matter page
+      Connections and activities
+      Illustration: A classroom scene with posters, books, and a clock. The page encourages children to draw, write, and talk about what makes them smile.

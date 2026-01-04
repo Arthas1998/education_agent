@@ -28,19 +28,8 @@ steps:
       Give feedback based on the student’s guesses and encourage them to express their ideas in English.
 
   - id: page_1
-    title: "第1页：Smile at your friend"
+    title: "Smile at your dog"
     pages: [3]
-    plan_nl: |
-      Guide the student to turn to page 3: "Now let’s look at the first page. I will read it first."
-      The teacher reads aloud: "Smile at your friend."
-      Guide the student to look at the illustration and describe what is happening: the boy and his friend are smiling on the bus.
-      Ask: "Who is the boy smiling at in the picture?"
-      Wait for the student’s answer: "He’s smiling at his friend!"
-      Encourage the student to answer in a complete sentence in English and have a brief interaction based on the student’s response.
-
-  - id: page_2
-    title: "第2页：Smile at your dog"
-    pages: [4]
     plan_nl: |
       Guide the student to turn to page 2: "Now, can you read this page?"
       Wait for the student to read aloud: "Smile at your dog."
@@ -49,9 +38,9 @@ steps:
       Wait for the student’s answer: "He’s smiling at his dog!"
       Encourage the student to keep sharing their ideas and give positive feedback.
 
-  - id: page_3
-    title: "第3页：Smile at your brother"
-    pages: [5]
+  - id: page_2
+    title: "Smile at your brother"
+    pages: [4]
     plan_nl: |
       Guide the student to turn to page 3: "Look at the picture on this page. Who is the boy smiling at?"
       Guide the student to observe the picture, which shows the boy and his younger brother.
@@ -59,9 +48,9 @@ steps:
       Wait for the student’s response and encourage them to use the sentence pattern correctly.
       If needed, the teacher provides a model or gentle correction.
 
-  - id: page_4
-    title: "第4页：Smile at your sister"
-    pages: [6]
+  - id: page_3
+    title: "Smile at your sister"
+    pages: [5]
     plan_nl: |
       Guide the student to turn to page 4: "Let’s turn to page 4. I will read it first."
       The teacher reads aloud: "Smile at your sister."
@@ -70,9 +59,9 @@ steps:
       Wait for the student’s answer: "He’s smiling at his sister."
       Encourage the student’s answer and keep the interaction going.
 
-  - id: page_5
-    title: "第5页：Smile at your mom"
-    pages: [7]
+  - id: page_4
+    title: "Smile at your mom"
+    pages: [6]
     plan_nl: |
       Guide the student to turn to page 5: "Can you read this page for me?"
       Wait for the student to read aloud: "Smile at your mom."
@@ -80,18 +69,18 @@ steps:
       Wait for the student’s answer: "He’s smiling at his mom."
       Confirm the student’s answer and extend the interaction briefly in a simple way.
 
-  - id: page_6
-    title: "第6页：Smile at your dad"
-    pages: [8]
+  - id: page_5
+    title: "Smile at your dad"
+    pages: [7]
     plan_nl: |
       Guide the student to turn to page 6: "Look at the picture on this page. Who is the boy smiling at?"
       Guide the student to observe the picture, which shows the boy and his dad.
       Ask: "Can you say ‘Smile at your dad’?"
       Wait for the student’s response and give positive encouragement.
 
-  - id: page_7
-    title: "第7页：Smile at your friend（再次出现）"
-    pages: [9]
+  - id: page_6
+    title: "Smile at your friend"
+    pages: [8]
     plan_nl: |
       Guide the student to turn to page 7: "Now let’s look at page 7. I’ll read it first."
       The teacher reads aloud: "Smile at your friend."
@@ -100,9 +89,9 @@ steps:
       Wait for the student’s answer: "He’s smiling at his friend."
       Encourage the student to use a complete sentence in English again.
 
-  - id: page_8
-    title: "第8页：Smile at your teacher"
-    pages: [10]
+  - id: page_7
+    title: "Smile at your teacher"
+    pages: [9]
     plan_nl: |
       Guide the student to turn to page 8: "Can you read this page now?"
       Wait for the student to read aloud: "Smile at your teacher."
@@ -110,9 +99,9 @@ steps:
       Wait for the student’s answer: "He’s smiling at his teacher."
       Encourage the student to participate actively and give positive feedback.
 
-  - id: page_9
-    title: "第9页：Smile at yourself"
-    pages: [11]
+  - id: page_8
+    title: "Smile at yourself"
+    pages: [10]
     plan_nl: |
       Guide the student to turn to the last page: "Look at the last page. Who is the boy smiling at now?"
       Ask: "Is he smiling at someone else?"
@@ -122,7 +111,7 @@ steps:
 
   - id: review
     title: "课堂总结"
-    pages: []
+    pages: [11]
     plan_nl: |
       Review what was learned today by asking questions to help the student remember:
       "Who did the boy smile at first?"
@@ -158,7 +147,6 @@ policies:
     page_6: 2
     page_7: 2
     page_8: 2
-    page_9: 2
 
     review: 2
     goodbye: 1

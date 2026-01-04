@@ -25,6 +25,10 @@ registry:
     type: pdf
     from: { kind: file, path: "{paths.textbook_dir}/{course.id}.pdf" }                  # 整本教材PDF
 
+  textbook_yaml:
+    type: yaml_object
+    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整本教材YAML
+
   student_answer:
     type: text
     default: ""
@@ -78,13 +82,26 @@ templates:
               sep: "\n\n"
 #            render_with_refs: [prev_summary]
 
-        material_pdf:
+        textbook_description:
           select:
-            kind: pdf_pages
-            from: textbook_pdf
-            pages_param: "pdf_pages"    # 外部 params.pdf_pages: 3 / [3,4] / "3-4"
-            output:
-              as: openai_image_url_parts
-              dpi: 200
-              image_format: "png"
-            placeholder_text: ""        # 模板 {material_pdf} 替换为空串，但会追加图片parts
+            kind: yaml_by_id_text
+            from: textbook_yaml
+            list_path: "pages"
+            match:
+              field: "page"
+              input_param: "pdf_pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
+            take:
+              field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
+            join:
+              sep: "\n"
+
+#        material_pdf:
+#          select:
+#            kind: pdf_pages
+#            from: textbook_pdf
+#            pages_param: "pdf_pages"    # 外部 params.pdf_pages: 3 / [3,4] / "3-4"
+#            output:
+#              as: openai_image_url_parts
+#              dpi: 200
+#              image_format: "png"
+#            placeholder_text: ""        # 模板 {material_pdf} 替换为空串，但会追加图片parts

@@ -2,6 +2,9 @@ The lesson plan for the current step：
 [System]
 {plan}
 
+Current textbook description:
+[System]
+{textbook_description}
+
 Student answer:
 {student_answer}
-{material_pdf}
