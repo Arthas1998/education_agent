@@ -324,13 +324,26 @@ class SelectorEngine:
             ))
             return ""
 
-        if isinstance(want_ids, str):
-            ids: List[str] = [want_ids]
-        elif isinstance(want_ids, list) and all(isinstance(x, str) for x in want_ids):
-            ids = want_ids
+        # Normalize IDs: allow str/int (or list of them) and stringify.
+        # Note: bool is a subclass of int in Python; we reject it explicitly.
+        def _to_id_str(x: Any) -> str:
+            if isinstance(x, bool):
+                raise RenderError(
+                    f"params['{input_param}'] contains a boolean value; expected string/int IDs."
+                )
+            if isinstance(x, (str, int)):
+                return str(x)
+            raise RenderError(
+                f"params['{input_param}'] must be a string/int or list[string/int], got element: {type(x)}"
+            )
+
+        if isinstance(want_ids, (str, int)) and not isinstance(want_ids, bool):
+            ids: List[str] = [_to_id_str(want_ids)]
+        elif isinstance(want_ids, list):
+            ids = [_to_id_str(x) for x in want_ids]
         else:
             raise RenderError(
-                f"params['{input_param}'] must be a string or list[str], got: {type(want_ids)}"
+                f"params['{input_param}'] must be a string/int or list[string/int], got: {type(want_ids)}"
             )
 
         # Build index by id (first occurrence wins)

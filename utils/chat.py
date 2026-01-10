@@ -43,6 +43,8 @@ def apply_dialogue_decision_to_chat_params(chat: "Chat", decision: Any) -> None:
         chat.params["step_ids"] = step_ids
     if pdf_pages is not None:
         chat.params["pdf_pages"] = pdf_pages
+    if pages is not None:
+        chat.params["pages"] = pages
 
 
 class Chat:

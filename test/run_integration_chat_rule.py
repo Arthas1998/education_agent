@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
 
@@ -145,27 +146,45 @@ def main() -> int:
     mgr.reset(start_step_id=args.start_step_id)
 
     client = OpenAI(
-        api_key="sk-0932fa1904874a43a9a7593e8441e30b",
+        api_key="sk-4ab9e4105ed44934860ef17cf366a7f6", # 190新账号
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     # By default we run render-only. If you want real LLM calls, pass a real client into Chat.
     chat = Chat(
         client=client,
         prompt_loader=loader,
-        model="qwen3-vl-plus",
+        model="qwen3-max",
         debug_mode=bool(args.debug))
 
     exit_words = {w.lower() for w in _iter_exit_words(args.exit_words)}
 
+    # Perf timing: time from user input submitted (after add_user_text) to first streamed token.
+    t_stream_start: Optional[float] = None
+
     def _stream_print_reply() -> None:
+        nonlocal t_stream_start
         if args.no_llm:
             return
         if chat.client is None:
             print("[WARN] --no-llm not set but Chat.client is None; skipping model call.")
             return
+
         print("Assistant> ", end="", flush=True)
+
+        first_token_printed = False
         for part in chat.stream_reply():
+            # Record the first *non-empty* streamed text chunk.
+            if (not first_token_printed) and isinstance(part, str) and part.strip():
+                first_token_printed = True
+                if t_stream_start is not None:
+                    latency_ms = (time.perf_counter() - t_stream_start) * 1000.0
+                    print(f"\n[METRIC] first_stream_token_latency_ms={latency_ms:.1f}\nAssistant> ", end="", flush=True)
             print(part, end="", flush=True)
+
+        if not first_token_printed and t_stream_start is not None:
+            latency_ms = (time.perf_counter() - t_stream_start) * 1000.0
+            print(f"\n[METRIC] no_stream_token_received_ms={latency_ms:.1f}")
+
         print("\n")
 
     print("\n[CLI] Multi-turn chat started.")
@@ -216,6 +235,8 @@ def main() -> int:
                 break
 
             chat.add_user_text(user_text)
+            # Start timing right after user input is submitted into the chat.
+            t_stream_start = time.perf_counter()
             user_turns += 1
 
             if args.print_messages:

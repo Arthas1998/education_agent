@@ -1,0 +1,131 @@
+[CLI] Multi-turn chat started.
+[CLI] Type your answer and press Enter.
+[CLI] Exit words: /exit, /quit, exit, quit. Ctrl+C also works.
+
+[CLI] Auto first turn: sending initial user prompt (empty input).
+Assistant>
+[METRIC] first_stream_token_latency_ms=916.5
+Assistant> What do you do in the morning before school?
+
+You> eat
+Assistant>
+[METRIC] first_stream_token_latency_ms=910.8
+Assistant> Oh, eating makes you smile! That’s great! What’s your favorite food to eat in the morning?
+
+You> milk
+Assistant>
+[METRIC] first_stream_token_latency_ms=1582.0
+Assistant> Milk makes you smile! That’s wonderful! Do you drink milk with your breakfast?
+
+You> yes
+Assistant>
+[METRIC] first_stream_token_latency_ms=721.0
+Assistant> Great! The boy is smiling at his teacher. Can you tell me why he might be giving her an apple?
+
+You> i dont know
+Assistant>
+[METRIC] first_stream_token_latency_ms=2388.2
+Assistant> That’s okay! Look—he’s giving his teacher an apple and smiling. Maybe he likes her class! Do you smile at your teacher too?
+
+You> yes
+Assistant>
+[METRIC] first_stream_token_latency_ms=655.8
+Assistant> Good! The boy is smiling at his dog. What do you think the dog is doing?
+
+You> playing
+Assistant>
+[METRIC] first_stream_token_latency_ms=1337.4
+Assistant> Nice! The dog is playing and jumping to say hello. Do you have a pet you like to play with?
+
+You> no
+Assistant>
+[METRIC] first_stream_token_latency_ms=750.7
+Assistant> That’s okay! Let’s try together: “Smile at your brother.” Can you say that?
+
+You> Smile at your brother
+Assistant>
+[METRIC] first_stream_token_latency_ms=910.6
+Assistant> Excellent! You said it perfectly—“Smile at your brother.” Great job!
+
+You>
+Assistant>
+[METRIC] first_stream_token_latency_ms=1815.8
+Assistant> Who is the boy smiling at?
+
+You> a gril
+Assistant>
+[METRIC] first_stream_token_latency_ms=997.4
+Assistant> Almost! It’s “a girl”—great try! Yes, he’s smiling at his sister. Do you have a sister?
+
+You> no
+Assistant>
+[METRIC] first_stream_token_latency_ms=886.9
+Assistant> That’s okay! Let’s read it together: “Smile at your mom.” Can you say that?
+
+You> Smile at your mom.
+Assistant>
+[METRIC] first_stream_token_latency_ms=769.2
+Assistant> Wonderful! You read it so clearly—“Smile at your mom.” Does your mom smile at you in the morning?
+
+You> yes
+Assistant>
+[METRIC] first_stream_token_latency_ms=2591.5
+Assistant> Great! Can you say, “Smile at your dad”?
+
+You> Smile at your dad
+Assistant>
+[METRIC] first_stream_token_latency_ms=3736.1
+Assistant> Perfect! You said it so well—“Smile at your dad.” Great job!
+
+You>
+Assistant>
+[METRIC] first_stream_token_latency_ms=3261.3
+Assistant> Who is the boy smiling at in this picture?
+
+You> a boy?
+Assistant>
+[METRIC] first_stream_token_latency_ms=898.0
+Assistant> Yes! He’s smiling at his friend—a boy just like him. Can you say, “He’s smiling at his friend”?
+
+You> He’s smiling at his friend
+Assistant>
+[METRIC] first_stream_token_latency_ms=1922.1
+Assistant> Almost! Look—he’s giving an apple to his teacher. Can you say, “He’s smiling at his teacher”?
+
+You> He’s smiling at his teacher
+Assistant>
+[METRIC] first_stream_token_latency_ms=942.1
+Assistant> Yes! Perfect—“He’s smiling at his teacher.” You’re doing so well!
+
+You>
+Assistant>
+[METRIC] first_stream_token_latency_ms=665.5
+Assistant> Who is the boy smiling at now? Look closely—is he smiling at someone else?
+
+You> a mirror
+Assistant>
+[METRIC] first_stream_token_latency_ms=978.8
+Assistant> Yes! He’s looking in the mirror—so he’s smiling at himself! Great job noticing that!
+
+You>
+Assistant>
+[METRIC] first_stream_token_latency_ms=1481.8
+Assistant> Who did the boy smile at first?
+
+You> his dog
+Assistant>
+[METRIC] first_stream_token_latency_ms=1704.6
+Assistant> Good! He smiled at his dog first. Now, who did he smile at last?
+
+You> himself
+Assistant>
+[METRIC] first_stream_token_latency_ms=1431.0
+Assistant> Yes! He smiled at himself last—what a happy ending! Great job today! You smiled with every page! See you next time!
+
+You> bye
+Assistant>
+[METRIC] first_stream_token_latency_ms=1617.1
+Assistant> Bye! You did a great job learning “Smile at…” and naming people like mom, dad, brother, sister, friend, teacher, dog, and yourself. Keep practicing—you’re doing wonderfully!
+
+You>
+[CLI] Interrupted. Bye.

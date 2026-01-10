@@ -2,8 +2,8 @@ course:
   id: "70_Smile"  # 课程唯一ID（常量）
 
 paths:
-#  base_dir: "D:\\data\\project\\education_agent\\prompt\\src"                       # 资源根目录
-  base_dir: "prompt/src"                       # 资源根目录
+  base_dir: "D:\\data\\project\\education_agent\\prompt\\src"                       # 资源根目录
+#  base_dir: "prompt/src"                       # 资源根目录
   template_dir: "{paths.base_dir}/template"       # 模板目录（必须写 {paths.base_dir}，不允许 {base_dir}）
   plan_dir: "{paths.base_dir}/lesson_plans"       # 教案目录
   textbook_dir: "{paths.base_dir}/textbook"       # 教材目录
@@ -32,7 +32,7 @@ registry:
   student_answer:
     type: text
     default: ""
-    from: { kind: runtime, key: student_answer }                                         # 外部 runtime_vars.student_answer
+    from: { kind: runtime, key: student_answer }                       # 外部 runtime_vars.student_answer
 
   memory_text:
     type: text
@@ -89,7 +89,7 @@ templates:
             list_path: "pages"
             match:
               field: "page"
-              input_param: "pdf_pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
+              input_param: "pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
             take:
               field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
             join:
