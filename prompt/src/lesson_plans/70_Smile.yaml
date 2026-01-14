@@ -7,6 +7,7 @@ steps:
     title: "寒暄环节"
     pages: []
     plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
       The teacher asks the student: "What do you do in the morning before school?"
       Wait for the student's answer and encourage the student to mention specific morning activities.
 
@@ -14,100 +15,91 @@ steps:
     title: "寒暄环节2"
     pages: []
     plan_nl: |
-      Then ask: "What makes you smile?"
-      Wait for the student's answer, and encourage the student to describe in English what makes them smile.
-      Possible answers include: favorite toy, pet, family, friends, and so on.
+      Ask: "What is the weather like today?"
+      No more words before student answers, just talk with student.
 
   - id: cover
     title: "标题页讲解"
     pages: [1]
     plan_nl: |
-      The teacher introduces: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life."
-      Guide the student to turn to the cover page and say: "Let’s see who the boy is smiling at."
-      Ask: "Who do you think the boy is smiling at on this page?"
-      Give feedback based on the student’s guesses and encourage them to express their ideas in English.
+      Clearly prompt student to turn to the cover page.
+      [CRITICAL] First, introduces the textbook: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life."
+      Then ask: "Let’s see who the boy is smiling at. OKey?"
 
   - id: page_1
     title: "Smile at your dog"
     pages: [3]
     plan_nl: |
-      Guide the student to turn to page 2: "Now, can you read this page?"
-      Wait for the student to read aloud: "Smile at your dog."
-      If needed, the teacher gives simple pronunciation correction.
-      Then ask: "What do you see in the picture? Who is the boy smiling at?"
-      Wait for the student’s answer: "He’s smiling at his dog!"
-      Encourage the student to keep sharing their ideas and give positive feedback.
+      Clearly guide the student to turn to page 3: "Let`s turn to page 3."
+      then read the text first: "I will read the text first."
+      The teacher reads aloud: "Smile at your dog."
+      followed by: "Can you read this page for me?"
+      After the students read the text aloud, the teacher describes the illustration.
+      Then Ask the students: "Do you like dogs?"
 
   - id: page_2
     title: "Smile at your brother"
     pages: [4]
     plan_nl: |
-      Guide the student to turn to page 3: "Look at the picture on this page. Who is the boy smiling at?"
-      Guide the student to observe the picture, which shows the boy and his younger brother.
-      Ask: "Can you point to the boy and say, ‘Smile at your brother’?"
-      Wait for the student’s response and encourage them to use the sentence pattern correctly.
-      If needed, the teacher provides a model or gentle correction.
+      Clearly guide the student to turn to page 4: "Turn to page 4. Look at the picture on this page."
+      Ask: "Can you read this sentence, ‘Smile at your brother’?"
+      After students read the text aloud, guide them to look at the pictures and describe the picture.
+      Then ask student: "Do you and your brother share a room?"
 
   - id: page_3
     title: "Smile at your sister"
     pages: [5]
     plan_nl: |
-      Guide the student to turn to page 4: "Let’s turn to page 4. I will read it first."
-      The teacher reads aloud: "Smile at your sister."
-      Describe the illustration: the boy is smiling with his sister.
-      Ask: "Who is the boy smiling at?"
-      Wait for the student’s answer: "He’s smiling at his sister."
-      Encourage the student’s answer and keep the interaction going.
+      Clearly guide the student to turn to page 5 and ask: "Now, let`s turn to page 5. Can you read this sentence, ‘Smile at your sister’?"
+      Describe what the girl in the picture is doing and what the boy is smiling at his sister,
+      Then ask the student to read the text aloud: "If you have an older sister, would you enjoy playing with her?"
 
   - id: page_4
     title: "Smile at your mom"
     pages: [6]
     plan_nl: |
-      Guide the student to turn to page 5: "Can you read this page for me?"
+      Clearly guide the student to turn to page 6: "Turn to page 6. Can you read this page for me?"
       Wait for the student to read aloud: "Smile at your mom."
-      Ask: "Who is the boy smiling at in the kitchen?"
-      Wait for the student’s answer: "He’s smiling at his mom."
+      Ask: "What is the mom doing in the picture?"
+      Wait for the student’s answer,then describe the picture: "She is making breakfast for the boy."
       Confirm the student’s answer and extend the interaction briefly in a simple way.
 
   - id: page_5
     title: "Smile at your dad"
     pages: [7]
     plan_nl: |
-      Guide the student to turn to page 6: "Look at the picture on this page. Who is the boy smiling at?"
+      Guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page. Who is the boy smiling at?"
       Guide the student to observe the picture, which shows the boy and his dad.
-      Ask: "Can you say ‘Smile at your dad’?"
+      Then Ask: "Is your dad's work very hard?"
       Wait for the student’s response and give positive encouragement.
 
   - id: page_6
     title: "Smile at your friend"
     pages: [8]
     plan_nl: |
-      Guide the student to turn to page 7: "Now let’s look at page 7. I’ll read it first."
+      Guide the student to turn to page 8: "Now let’s look at page 8. I’ll read it first."
       The teacher reads aloud: "Smile at your friend."
-      Describe the illustration: the boy and his friend are smiling again.
-      Ask: "Who is the boy smiling at in this picture?"
-      Wait for the student’s answer: "He’s smiling at his friend."
-      Encourage the student to use a complete sentence in English again.
+      Then say: "Can you read this page for me?"
+      After the students read aloud, describe the illustration: the boy and his friend are smiling again.
+      Ask: "Do you like to play with your friend?"
+      Wait for the student’s answer.
 
   - id: page_7
     title: "Smile at your teacher"
     pages: [9]
     plan_nl: |
-      Guide the student to turn to page 8: "Can you read this page now?"
+      Guide the student to turn to page 9: "Let`s go to next page. Can you read this page now?"
       Wait for the student to read aloud: "Smile at your teacher."
-      Ask: "Who is the boy smiling at?"
-      Wait for the student’s answer: "He’s smiling at his teacher."
-      Encourage the student to participate actively and give positive feedback.
+      Ask: "What is the boy doing as his smiling?"
+      Wait for the student’s answer, then answer: "He’s sharing his fruit with his teacher."
 
   - id: page_8
     title: "Smile at yourself"
     pages: [10]
     plan_nl: |
-      Guide the student to turn to the last page: "Look at the last page. Who is the boy smiling at now?"
-      Ask: "Is he smiling at someone else?"
-      Wait for the student’s answer and guide them to look at the mirror in the picture.
-      Summarize: "He’s smiling at himself!"
-      Give the student high praise for understanding: "Great job!"
+      Guide the student to turn to the last page: "Look at the last page. Can you read it first?"
+      After the student read aloud, wait for the student’s answer and guide them to look at the mirror in the picture.
+      Then ask: "He’s smiling at himself. Do you know how to say it when you laugh at yourself?"
 
   - id: review
     title: "课堂总结"
@@ -135,7 +127,7 @@ steps:
 
 policies:
   step_turns:
-    greet_1: 1
+    greet_1: 2
     greet_2: 2
     cover: 2
 

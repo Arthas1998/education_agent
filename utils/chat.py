@@ -174,6 +174,7 @@ class Chat:
             model=self.model,
             # OpenAI SDK 的类型定义比较严格，这里保持运行时兼容即可
             messages=cast(Any, self.messages),
+            modalities=["text"],
             stream=True,
             stream_options={"include_usage": True},
         )
