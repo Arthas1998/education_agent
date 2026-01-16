@@ -47,7 +47,7 @@ steps:
       After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at. OKey?"
 
   - id: "7"
-    title: "page_1"
+    title: "page_3"
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Let`s turn to page 3."
@@ -55,26 +55,63 @@ steps:
       followed by: "Can you read this page for me?"
 
   - id: "8"
-    title: "page_1"
+    title: "page_3"
     pages: [3]
     plan_nl: |      
       After the students read the text aloud, the teacher ask:"What is drawn in the picture?"
 
   - id: "9"
-    title: "page_1"
+    title: "page_3"
     pages: [3]
     plan_nl: |      
       After students describe the pictures, encourage or correct them based on their responses.   
       Then Ask the students: "Do you like dogs?"
 
-  - id: page_2
-    title: "Smile at your brother"
+  - id: "10"
+    title: "page_4"
     pages: [4]
-    plan_nl: |
-      Clearly guide the student to turn to page 4: "Turn to page 4. Look at the picture on this page."
+    plan_nl: |      
+      Clearly guide the student to turn to page 4: "Turn to page 4."
       Ask: "Can you read this sentence, ‘Smile at your brother’?"
+
+  - id: "11"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |      
       After students read the text aloud, guide them to look at the pictures and describe the picture.
+
+  - id: "12"
+    title: "page_4"
+    pages: [4]
+    plan_nl: | 
       Then ask student: "Do you and your brother share a room?"
+
+  - id: "13"
+    title: "page_5"
+    pages: [5]
+    plan_nl: | 
+      Clearly guide the student to turn to page 5 and ask: "Now, let`s turn to page 5. What the girl in the picture is doing?"
+
+  - id: "14"
+    title: "page_5"
+    pages: [5]
+    plan_nl: | 
+      Describe what the girl in the picture is doing and what the boy is smiling at his sister.
+      Then ask the student to read the text aloud: "If you have an older sister, would you enjoy playing with her?"
+
+  - id: "15"
+    title: "page_5"
+    pages: [5]
+    plan_nl: | 
+      First, respond to the students' answers to the previous question.
+      Then guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
+
+  - id: "16"
+    title: "page_6"
+    pages: [6]
+    plan_nl: | 
+      First, respond to the students' answers to the previous question.
+      Then guide the students to read the text: "Please read this sentence."
 
   - id: page_3
     title: "Smile at your sister"
