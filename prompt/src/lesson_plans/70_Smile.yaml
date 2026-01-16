@@ -3,11 +3,6 @@
 # =========================
 
 steps:
-  - id: "0"
-    title: "none"
-    pages: []
-    plan_nl: "None"
-
   - id: "1"
     title: "greet_1"
     pages: [1]
@@ -110,87 +105,106 @@ steps:
     title: "page_6"
     pages: [6]
     plan_nl: | 
-      First, respond to the students' answers to the previous question.
-      Then guide the students to read the text: "Please read this sentence."
-
-  - id: page_3
-    title: "Smile at your sister"
-    pages: [5]
-    plan_nl: |
-      Clearly guide the student to turn to page 5 and ask: "Now, let`s turn to page 5. Can you read this sentence, ‘Smile at your sister’?"
-      Describe what the girl in the picture is doing and what the boy is smiling at his sister,
-      Then ask the student to read the text aloud: "If you have an older sister, would you enjoy playing with her?"
-
-  - id: page_4
-    title: "Smile at your mom"
-    pages: [6]
-    plan_nl: |
       Clearly guide the student to turn to page 6: "Turn to page 6. Can you read this page for me?"
       Wait for the student to read aloud: "Smile at your mom."
-      Ask: "What is the mom doing in the picture?"
-      Wait for the student’s answer,then describe the picture: "She is making breakfast for the boy."
-      Confirm the student’s answer and extend the interaction briefly in a simple way.
 
-  - id: page_5
-    title: "Smile at your dad"
+  - id: "17"
+    title: "page_6"
+    pages: [6]
+    plan_nl: | 
+      Ask: "What is the mom doing in the picture?"
+
+  - id: "18"
+    title: "page_6"
+    pages: [6]
+    plan_nl: | 
+      Wait for the student’s answer,then describe the picture.
+      Then ask to read aloud again:"Please read it again.'Smile at your mom.'"
+
+  - id: "19"
+    title: "page_7"
     pages: [7]
-    plan_nl: |
-      Guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page. Who is the boy smiling at?"
-      Guide the student to observe the picture, which shows the boy and his dad.
-      Then Ask: "Is your dad's work very hard?"
+    plan_nl: | 
+      After the students finished reading the text from the previous lesson, guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page. Who is the boy smiling at?"
+
+  - id: "20"
+    title: "page_7"
+    pages: [7]
+    plan_nl: | 
+      After the students answered the previous question, have them read the text aloud: "Now, let's read it together.'Smile at your dad.'"
+
+  - id: "21"
+    title: "page_7"
+    pages: [7]
+    plan_nl: | 
+      After the students read aloud, ask: "Is your dad's work very hard?"
       Wait for the student’s response and give positive encouragement.
 
-  - id: page_6
-    title: "Smile at your friend"
+  - id: "22"
+    title: "page_8"
+    pages: [8]
+    plan_nl: | 
+      Guide the student to turn to page 8: "Now let’s look at page 8. Can you read this sentence?"
+
+  - id: "23"
+    title: "page_8"
+    pages: [8]
+    plan_nl: | 
+      Ask:"How many children are there in the picture?"
+      Wait for the student’s response, correct mistakes and offer encouragement
+
+  - id: "24"
+    title: "page_8"
     pages: [8]
     plan_nl: |
-      Guide the student to turn to page 8: "Now let’s look at page 8. I’ll read it first."
-      The teacher reads aloud: "Smile at your friend."
-      Then say: "Can you read this page for me?"
-      After the students read aloud, describe the illustration: the boy and his friend are smiling again.
       Ask: "Do you like to play with your friend?"
       Wait for the student’s answer.
 
-  - id: page_7
-    title: "Smile at your teacher"
+  - id: "25"
+    title: "page_9"
     pages: [9]
     plan_nl: |
-      Guide the student to turn to page 9: "Let`s go to next page. Can you read this page now?"
-      Wait for the student to read aloud: "Smile at your teacher."
-      Ask: "What is the boy doing as his smiling?"
-      Wait for the student’s answer, then answer: "He’s sharing his fruit with his teacher."
+      Guide the student to turn to page 9: "Let`s go to next page. Can you read this sentence now?"
 
-  - id: page_8
-    title: "Smile at yourself"
+  - id: "26"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      After the students read the text aloud, ask:"What is the boy doing as his smiling?"
+
+  - id: "27"
+    title: "page_10"
     pages: [10]
     plan_nl: |
-      Guide the student to turn to the last page: "Look at the last page. Can you read it first?"
-      After the student read aloud, wait for the student’s answer and guide them to look at the mirror in the picture.
-      Then ask: "He’s smiling at himself. Do you know how to say it when you laugh at yourself?"
+      First, respond to the student's answer to the previous question, and say: "Sharing makes us happy."
+      Then guide the student to turn to the last page: "Turn to the last page. Look at the mirror in the picture. What is it?"
 
-  - id: review
-    title: "课堂总结"
+  - id: "28"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Respond to the student's answer to the previous question, then ask: "He’s smiling at himself. Do you know how to say it when you laugh at yourself?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "29"
+    title: "review"
     pages: [11]
     plan_nl: |
-      Review what was learned today by asking questions to help the student remember:
-      "Who did the boy smile at first?"
-      "Who did he smile at last?"
-      Briefly review the content of each page to help the student reinforce the sentence pattern "Smile at..." and the related vocabulary for people.
+      Review what was learned today by asking questions to help the student remember: "Who did the boy smile at first?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
-  - id: goodbye
-    title: "宣布下课"
-    pages: []
+  - id: "30"
+    title: "review"
+    pages: [11]
     plan_nl: |
-      The teacher gives a summary and ends the class:
-      "Great job today! You smiled with every page! See you next time!"
-      Make sure the student feels encouraged and recognized.
+      Vocabulary review: "Today we learned to smile at these people. Can you read these words aloud?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
-  - id: after_class_summary
-    title: "课后总结（教师用）"
-    pages: []
+  - id: "31"
+    title: "goodbye"
+    pages: [12]
     plan_nl: |
-      The key sentence pattern in this lesson is “Smile at…,” and the student learned vocabulary related to family members and friends.
-      You need to summarize the student’s performance and note the areas the student has not mastered well. 
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 
 policies:
   defaults:
