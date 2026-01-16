@@ -3,38 +3,68 @@
 # =========================
 
 steps:
-  - id: greet_1
-    title: "寒暄环节"
+  - id: "0"
+    title: "none"
     pages: []
-    plan_nl: |
-      First, introduce yourself: "Hello, I am your English teacher today."
-      The teacher asks the student: "What do you do in the morning before school?"
-      Wait for the student's answer and encourage the student to mention specific morning activities.
+    plan_nl: "None"
 
-  - id: greet_2
-    title: "寒暄环节2"
-    pages: []
-    plan_nl: |
-      Ask: "What is the weather like today?"
-      No more words before student answers, just talk with student.
-
-  - id: cover
-    title: "标题页讲解"
+  - id: "1"
+    title: "greet_1"
     pages: [1]
     plan_nl: |
-      Clearly prompt student to turn to the cover page.
-      [CRITICAL] First, introduces the textbook: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life."
-      Then ask: "Let’s see who the boy is smiling at. OKey?"
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then asks the student: "What do you do in the morning before school?"
 
-  - id: page_1
-    title: "Smile at your dog"
+  - id: "2"
+    title: "greet_1"
+    pages: [1]
+    plan_nl: |
+      Wait for the student's answer and encourage the student to mention specific morning activities.
+
+  - id: "3"
+    title: "greet_2"
+    pages: [1]
+    plan_nl: |
+      Ask: "What is the weather like today?"
+
+  - id: "4"
+    title: "greet_2"
+    pages: [1]
+    plan_nl: |
+      Just talk with student.
+
+  - id: "5"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      Clearly prompt student to turn to the cover page: "Let`s turn to cover page."
+      Then introduces the textbook and ask: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life. Who do you think the boy is smiling at on this page?"
+
+  - id: "6"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at. OKey?"
+
+  - id: "7"
+    title: "page_1"
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Let`s turn to page 3."
-      then read the text first: "I will read the text first."
-      The teacher reads aloud: "Smile at your dog."
+      Then read the text first: "I will read the text first.Smile at your dog."
       followed by: "Can you read this page for me?"
-      After the students read the text aloud, the teacher describes the illustration.
+
+  - id: "8"
+    title: "page_1"
+    pages: [3]
+    plan_nl: |      
+      After the students read the text aloud, the teacher ask:"What is drawn in the picture?"
+
+  - id: "9"
+    title: "page_1"
+    pages: [3]
+    plan_nl: |      
+      After students describe the pictures, encourage or correct them based on their responses.   
       Then Ask the students: "Do you like dogs?"
 
   - id: page_2
@@ -126,23 +156,5 @@ steps:
       You need to summarize the student’s performance and note the areas the student has not mastered well. 
 
 policies:
-  step_turns:
-    greet_1: 2
-    greet_2: 2
-    cover: 2
-
-    page_1: 2
-    page_2: 2
-    page_3: 2
-    page_4: 2
-    page_5: 2
-    page_6: 2
-    page_7: 2
-    page_8: 2
-
-    review: 2
-    goodbye: 1
-    after_class_summary: 1
-
   defaults:
-    step_turns: 2
+    step_turns: 1

@@ -24,7 +24,7 @@ class Step:
 @dataclass
 class Policy:
     step_turns: Dict[str, int] = field(default_factory=dict)
-    default_step_turns: int = 2
+    default_step_turns: int = 1
     # 可选：流程结束后的行为
     end_behavior: str = "stay_last"  # stay_last | return_none
 
