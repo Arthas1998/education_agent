@@ -95,13 +95,13 @@ templates:
             join:
               sep: "\n"
 
-#        material_pdf:
-#          select:
-#            kind: pdf_pages
-#            from: textbook_pdf
-#            pages_param: "pdf_pages"    # 外部 params.pdf_pages: 3 / [3,4] / "3-4"
-#            output:
-#              as: openai_image_url_parts
-#              dpi: 200
-#              image_format: "png"
-#            placeholder_text: ""        # 模板 {material_pdf} 替换为空串，但会追加图片parts
+        material_pdf:
+          select:
+            kind: pdf_pages
+            from: textbook_pdf
+            pages_param: "pdf_pages"    # 外部 params.pdf_pages: 3 / [3,4] / "3-4"
+            output:
+              as: openai_image_url_parts
+              dpi: 200
+              image_format: "png"
+            placeholder_text: ""        # 模板 {material_pdf} 替换为空串，但会追加图片parts

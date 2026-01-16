@@ -153,7 +153,7 @@ def main() -> int:
     chat = Chat(
         client=client,
         prompt_loader=loader,
-        model="qwen3-max",
+        model="qwen3-vl-plus",
         debug_mode=bool(args.debug))
 
     exit_words = {w.lower() for w in _iter_exit_words(args.exit_words)}
