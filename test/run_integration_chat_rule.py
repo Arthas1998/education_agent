@@ -74,12 +74,14 @@ def main() -> int:
 
     ap.add_argument(
         "--prompt-config",
-        default=r"D:\data\project\education_agent\prompt\config\multiple\example.yaml",
+        # default=r"D:\data\project\education_agent\prompt\config\multiple\example.yaml",
+        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\example.yaml",
         help="PromptLoader YAML config path.",
     )
     ap.add_argument(
         "--lesson-plan",
-        default=r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
+        # default=r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
+        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
         help="Lesson plan YAML for SimpleRuleDialogueManager.",
     )
     ap.add_argument(

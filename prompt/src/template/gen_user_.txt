@@ -1,5 +1,8 @@
-The lesson plan for the current step：
+The lesson plans：
 [System]
+Previous step:
+{previous_plan}
+Current step:
 {plan}
 
 Current textbook description:

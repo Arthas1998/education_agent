@@ -26,7 +26,7 @@ steps:
     title: "greet_2"
     pages: [1]
     plan_nl: |
-      Just talk with student.
+      Just talk with student. It doesn't need to be related to the textbook content.
 
   - id: "5"
     title: "cover"
@@ -39,7 +39,7 @@ steps:
     title: "cover"
     pages: [1]
     plan_nl: |
-      After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at. OKey?"
+      After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at in the story. OKey?"
 
   - id: "7"
     title: "page_3"
@@ -92,14 +92,14 @@ steps:
     pages: [5]
     plan_nl: | 
       Describe what the girl in the picture is doing and what the boy is smiling at his sister.
-      Then ask the student to read the text aloud: "If you have an older sister, would you enjoy playing with her?"
+      Then guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "15"
     title: "page_5"
     pages: [5]
-    plan_nl: | 
-      First, respond to the students' answers to the previous question.
-      Then guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
+    plan_nl: |   
+      Ask: "If you have an older sister, would you enjoy playing with her?"
 
   - id: "16"
     title: "page_6"
@@ -151,7 +151,7 @@ steps:
     pages: [8]
     plan_nl: | 
       Ask:"How many children are there in the picture?"
-      Wait for the student’s response, correct mistakes and offer encouragement
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "24"
     title: "page_8"
@@ -171,36 +171,43 @@ steps:
     pages: [9]
     plan_nl: |
       After the students read the text aloud, ask:"What is the boy doing as his smiling?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "27"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      After respond to the student's answer to the previous question, and ask: "Do you like sharing food with others?"
+      Wait for the student’s response and give positive encouragement.
+
+  - id: "28"
     title: "page_10"
     pages: [10]
     plan_nl: |
-      First, respond to the student's answer to the previous question, and say: "Sharing makes us happy."
-      Then guide the student to turn to the last page: "Turn to the last page. Look at the mirror in the picture. What is it?"
+      Guide the student to turn to the last page: "Turn to the last page. Look at the mirror in the picture. What is it?"
 
-  - id: "28"
+  - id: "29"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Respond to the student's answer to the previous question, then ask: "He’s smiling at himself. Do you know how to say it when you laugh at yourself?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
-  - id: "29"
+  - id: "30"
     title: "review"
     pages: [11]
     plan_nl: |
       Review what was learned today by asking questions to help the student remember: "Who did the boy smile at first?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
-  - id: "30"
+  - id: "31"
     title: "review"
     pages: [11]
     plan_nl: |
       Vocabulary review: "Today we learned to smile at these people. Can you read these words aloud?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
-  - id: "31"
+  - id: "32"
     title: "goodbye"
     pages: [12]
     plan_nl: |
