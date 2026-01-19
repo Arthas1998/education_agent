@@ -47,20 +47,20 @@ steps:
     plan_nl: |
       Clearly guide the student to turn to page 3: "Let`s turn to page 3."
       Then read the text first: "I will read the text first.Smile at your dog."
-      followed by: "Can you read this page for me?"
+      followed by: "Can you read this sentence for me?"
 
   - id: "8"
     title: "page_3"
     pages: [3]
     plan_nl: |      
-      After the students read the text aloud, the teacher ask:"What is drawn in the picture?"
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "9"
     title: "page_3"
     pages: [3]
     plan_nl: |      
-      After students describe the pictures, encourage or correct them based on their responses.   
-      Then Ask the students: "Do you like dogs?"
+      Ask a divergent problem about pet.
 
   - id: "10"
     title: "page_4"
@@ -73,33 +73,33 @@ steps:
     title: "page_4"
     pages: [4]
     plan_nl: |      
-      After students read the text aloud, guide them to look at the pictures and describe the picture.
+      After students read the text aloud, ask a question about the details of the picture
 
   - id: "12"
     title: "page_4"
     pages: [4]
     plan_nl: | 
-      Then ask student: "Do you and your brother share a room?"
+      Ask a divergent problems about brother or about getting up in the morning.
 
   - id: "13"
     title: "page_5"
     pages: [5]
     plan_nl: | 
-      Clearly guide the student to turn to page 5 and ask: "Now, let`s turn to page 5. What the girl in the picture is doing?"
+      Clearly guide the student to turn to page 5 and ask: "Now, let`s turn to page 5."
+      Ask a question about the details of the picture.
 
   - id: "14"
     title: "page_5"
     pages: [5]
     plan_nl: | 
-      Describe what the girl in the picture is doing and what the boy is smiling at his sister.
-      Then guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
+      Guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "15"
     title: "page_5"
     pages: [5]
     plan_nl: |   
-      Ask: "If you have an older sister, would you enjoy playing with her?"
+      Ask a divergent problems about sister.
 
   - id: "16"
     title: "page_6"
@@ -112,20 +112,21 @@ steps:
     title: "page_6"
     pages: [6]
     plan_nl: | 
-      Ask: "What is the mom doing in the picture?"
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and describe the picture.
 
   - id: "18"
     title: "page_6"
     pages: [6]
     plan_nl: | 
-      Wait for the student’s answer,then describe the picture.
-      Then ask to read aloud again:"Please read it again.'Smile at your mom.'"
+      Ask a divergent problems about mom. 
 
   - id: "19"
     title: "page_7"
     pages: [7]
     plan_nl: | 
-      After the students finished reading the text from the previous lesson, guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page. Who is the boy smiling at?"
+      Guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page."
+      Then ask a question about the details of the picture.
 
   - id: "20"
     title: "page_7"
@@ -137,7 +138,7 @@ steps:
     title: "page_7"
     pages: [7]
     plan_nl: | 
-      After the students read aloud, ask: "Is your dad's work very hard?"
+      After the students read aloud, ask a divergent problems about dad. 
       Wait for the student’s response and give positive encouragement.
 
   - id: "22"
@@ -150,14 +151,14 @@ steps:
     title: "page_8"
     pages: [8]
     plan_nl: | 
-      Ask:"How many children are there in the picture?"
+      Ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "24"
     title: "page_8"
     pages: [8]
     plan_nl: |
-      Ask: "Do you like to play with your friend?"
+      Ask a divergent problems about friend.
       Wait for the student’s answer.
 
   - id: "25"
@@ -170,27 +171,28 @@ steps:
     title: "page_9"
     pages: [9]
     plan_nl: |
-      After the students read the text aloud, ask:"What is the boy doing as his smiling?"
+      After the students read the text aloud, ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "27"
     title: "page_9"
     pages: [9]
     plan_nl: |
-      After respond to the student's answer to the previous question, and ask: "Do you like sharing food with others?"
+      After respond to the student's answer to the previous question, talk with the student about the picture.
       Wait for the student’s response and give positive encouragement.
 
   - id: "28"
     title: "page_10"
     pages: [10]
     plan_nl: |
-      Guide the student to turn to the last page: "Turn to the last page. Look at the mirror in the picture. What is it?"
+      Guide the student to turn to the last page: "Turn to the last page."
+      Then ask a question about the details of the picture.
 
   - id: "29"
     title: "page_10"
     pages: [10]
     plan_nl: |
-      Respond to the student's answer to the previous question, then ask: "He’s smiling at himself. Do you know how to say it when you laugh at yourself?"
+      Respond to the student's answer to the previous question, then ask: "Can you read this sentence?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "30"
