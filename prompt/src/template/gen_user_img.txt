@@ -1,0 +1,10 @@
+The lesson plans：
+[System]
+Previous step:
+{previous_plan}
+Current step:
+{plan}
+
+Student answer:
+{student_answer}
+{material_pdf}

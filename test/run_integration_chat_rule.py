@@ -74,13 +74,13 @@ def main() -> int:
 
     ap.add_argument(
         "--prompt-config",
-        # default=r"D:\data\project\education_agent\prompt\config\multiple\example.yaml",
-        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\example.yaml",
+        # default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
+        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\70_Smile_img.yaml",
         help="PromptLoader YAML config path.",
     )
     ap.add_argument(
         "--lesson-plan",
-        # default=r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
+        # default=r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile_img.yaml",
         default=r"D:\data\PythonProject\HITProject\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
         help="Lesson plan YAML for SimpleRuleDialogueManager.",
     )
@@ -155,7 +155,7 @@ def main() -> int:
     chat = Chat(
         client=client,
         prompt_loader=loader,
-        model="qwen3-max",
+        model="qwen3-vl-plus",
         debug_mode=bool(args.debug))
 
     exit_words = {w.lower() for w in _iter_exit_words(args.exit_words)}

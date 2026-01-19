@@ -5,26 +5,26 @@
 steps:
   - id: "1"
     title: "greet_1"
-    pages: [1]
+    pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
       Then asks the student: "What do you do in the morning before school?"
 
   - id: "2"
     title: "greet_1"
-    pages: [1]
+    pages: []
     plan_nl: |
       Wait for the student's answer and encourage the student to mention specific morning activities.
 
   - id: "3"
     title: "greet_2"
-    pages: [1]
+    pages: []
     plan_nl: |
       Ask: "What is the weather like today?"
 
   - id: "4"
     title: "greet_2"
-    pages: [1]
+    pages: []
     plan_nl: |
       Just talk with student. It doesn't need to be related to the textbook content.
 
@@ -37,7 +37,7 @@ steps:
 
   - id: "6"
     title: "cover"
-    pages: [1]
+    pages: []
     plan_nl: |
       After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at in the story. OKey?"
 
@@ -51,14 +51,14 @@ steps:
 
   - id: "8"
     title: "page_3"
-    pages: [3]
+    pages: []
     plan_nl: |      
       Ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "9"
     title: "page_3"
-    pages: [3]
+    pages: []
     plan_nl: |      
       Ask a divergent problem about pet.
 
@@ -71,13 +71,13 @@ steps:
 
   - id: "11"
     title: "page_4"
-    pages: [4]
+    pages: []
     plan_nl: |      
       After students read the text aloud, ask a question about the details of the picture
 
   - id: "12"
     title: "page_4"
-    pages: [4]
+    pages: []
     plan_nl: | 
       Ask a divergent problems about brother or about getting up in the morning.
 
@@ -90,14 +90,14 @@ steps:
 
   - id: "14"
     title: "page_5"
-    pages: [5]
+    pages: []
     plan_nl: | 
       Guide the students to read the text: "Please read this sentence, 'Smile at your sister'"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "15"
     title: "page_5"
-    pages: [5]
+    pages: []
     plan_nl: |   
       Ask a divergent problems about sister.
 
@@ -110,14 +110,14 @@ steps:
 
   - id: "17"
     title: "page_6"
-    pages: [6]
+    pages: []
     plan_nl: | 
       Ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and describe the picture.
 
   - id: "18"
     title: "page_6"
-    pages: [6]
+    pages: []
     plan_nl: | 
       Ask a divergent problems about mom. 
 
@@ -130,13 +130,13 @@ steps:
 
   - id: "20"
     title: "page_7"
-    pages: [7]
+    pages: []
     plan_nl: | 
       After the students answered the previous question, have them read the text aloud: "Now, let's read it together.'Smile at your dad.'"
 
   - id: "21"
     title: "page_7"
-    pages: [7]
+    pages: []
     plan_nl: | 
       After the students read aloud, ask a divergent problems about dad. 
       Wait for the student’s response and give positive encouragement.
@@ -149,14 +149,14 @@ steps:
 
   - id: "23"
     title: "page_8"
-    pages: [8]
+    pages: []
     plan_nl: | 
       Ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "24"
     title: "page_8"
-    pages: [8]
+    pages: []
     plan_nl: |
       Ask a divergent problems about friend.
       Wait for the student’s answer.
@@ -169,14 +169,14 @@ steps:
 
   - id: "26"
     title: "page_9"
-    pages: [9]
+    pages: []
     plan_nl: |
       After the students read the text aloud, ask a question about the details of the picture.
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "27"
     title: "page_9"
-    pages: [9]
+    pages: []
     plan_nl: |
       After respond to the student's answer to the previous question, talk with the student about the picture.
       Wait for the student’s response and give positive encouragement.
@@ -190,7 +190,7 @@ steps:
 
   - id: "29"
     title: "page_10"
-    pages: [10]
+    pages: []
     plan_nl: |
       Respond to the student's answer to the previous question, then ask: "Can you read this sentence?"
       Wait for the student’s response, correct mistakes and offer encouragement.
@@ -204,14 +204,14 @@ steps:
 
   - id: "31"
     title: "review"
-    pages: [11]
+    pages: []
     plan_nl: |
       Vocabulary review: "Today we learned to smile at these people. Can you read these words aloud?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "32"
     title: "goodbye"
-    pages: [12]
+    pages: []
     plan_nl: |
       The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 

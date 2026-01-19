@@ -12,11 +12,11 @@ paths:
 registry:
   system_template:
     type: text
-    from: { kind: file, path: "{paths.template_dir}/gen_sys_.txt", encoding: "utf-8" }  # system模板文本
+    from: { kind: file, path: "{paths.template_dir}/gen_sys_description.txt", encoding: "utf-8" }  # system模板文本
 
   user_template:
     type: text
-    from: { kind: file, path: "{paths.template_dir}/gen_user_.txt", encoding: "utf-8" } # user模板文本
+    from: { kind: file, path: "{paths.template_dir}/gen_user_description.txt", encoding: "utf-8" } # user模板文本
 
   lesson_plan:
     type: yaml_object
