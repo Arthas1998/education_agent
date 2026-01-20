@@ -1,0 +1,48 @@
+[CLI] Multi-turn chat started.
+[CLI] Type your answer and press Enter.
+[CLI] Exit words: /exit, /quit, exit, quit. Ctrl+C also works.
+
+[CLI] Auto first turn: sending initial user prompt (empty input).
+Assistant>
+[METRIC] first_stream_token_latency_ms=2133.8
+Assistant> Hello, I am your English teacher today. What do you do in the morning before school?
+
+You> eat food
+Assistant>
+[METRIC] first_stream_token_latency_ms=841.4
+Assistant> Good! What food do you eat? Can you say “I eat ___” with a smile?
+
+You> i eat bread
+Assistant>
+[METRIC] first_stream_token_latency_ms=601.2
+Assistant> Nice! “I eat bread.” Great job. What is the weather like today?
+
+You> sunny
+Assistant>
+[METRIC] first_stream_token_latency_ms=800.1
+Assistant> Sunny? Perfect for a smile! What’s your favorite sunny-day activity?
+
+You> running
+Assistant>
+[METRIC] first_stream_token_latency_ms=1461.4
+Assistant> Running is fun! Now, let’s turn to the cover page. Who do you think the boy is smiling at?
+
+You> a woman
+Assistant>
+[METRIC] first_stream_token_latency_ms=1681.1
+Assistant> Good guess! The woman is his teacher. Let’s see who else he smiles at. Okay?
+
+You> ok
+Assistant>
+[METRIC] first_stream_token_latency_ms=1414.1
+Assistant> Great! Let’s turn to page 3. I’ll read: “Smile at your dog.” Can you read it now?
+
+You> Smile at your dog
+Assistant>
+[METRIC] first_stream_token_latency_ms=1670.9
+Assistant> Perfect reading! What color is the dog’s collar? Look closely and tell me.
+
+You> grey
+Assistant>
+[METRIC] first_stream_token_latency_ms=1434.8
+Assistant> Almost! The collar is red. Do you have a pet? What’s its name?

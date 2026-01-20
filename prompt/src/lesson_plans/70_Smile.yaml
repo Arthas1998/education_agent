@@ -20,7 +20,7 @@ steps:
     title: "greet_2"
     pages: []
     plan_nl: |
-      Ask: "What is the weather like today?"
+      After respond to the student's answer to the previous question, ask: "What is the weather like today?"
 
   - id: "4"
     title: "greet_2"

@@ -116,6 +116,6 @@ templates:
             pages_param: "pdf_pages"    # 外部 params.pdf_pages: 3 / [3,4] / "3-4"
             output:
               as: openai_image_url_parts
-              dpi: 50
+              dpi: 100
               image_format: "jpeg"
             placeholder_text: ""        # 模板 {material_pdf} 替换为空串，但会追加图片parts
