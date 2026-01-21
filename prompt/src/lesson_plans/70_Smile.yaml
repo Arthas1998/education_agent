@@ -20,7 +20,8 @@ steps:
     title: "greet_2"
     pages: []
     plan_nl: |
-      After respond to the student's answer to the previous question, ask: "What is the weather like today?"
+      The teacher should respond to the student's answer to the previous question at first.
+      Then ask: "What color do you like best?"
 
   - id: "4"
     title: "greet_2"
@@ -32,7 +33,7 @@ steps:
     title: "cover"
     pages: [1]
     plan_nl: |
-      Clearly prompt student to turn to the cover page: "Let`s turn to cover page."
+      Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
       Then introduces the textbook and ask: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life. Who do you think the boy is smiling at on this page?"
 
   - id: "6"
@@ -60,7 +61,7 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |      
-      Ask a divergent problem about pet.
+      Ask a divergent question about pet.
 
   - id: "10"
     title: "page_4"
@@ -79,7 +80,7 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: | 
-      Ask a divergent problems about brother or about getting up in the morning.
+      Ask a divergent question about brother or about getting up in the morning.
 
   - id: "13"
     title: "page_5"
@@ -99,7 +100,7 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |   
-      Ask a divergent problems about sister.
+      Ask a divergent question about sister.
 
   - id: "16"
     title: "page_6"
@@ -119,7 +120,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: | 
-      Ask a divergent problems about mom. 
+      Ask a divergent question about mom. 
 
   - id: "19"
     title: "page_7"
@@ -138,7 +139,7 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: | 
-      After the students read aloud, ask a divergent problems about dad. 
+      After the students read aloud, ask a divergent question about dad. 
       Wait for the student’s response and give positive encouragement.
 
   - id: "22"
@@ -158,7 +159,7 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a divergent problems about friend.
+      Ask a divergent question about friend.
       Wait for the student’s answer.
 
   - id: "25"
@@ -199,14 +200,14 @@ steps:
     title: "review"
     pages: [11]
     plan_nl: |
-      Review what was learned today by asking questions to help the student remember: "Who did the boy smile at first?"
+      After the students read the text aloud, review what was learned today by asking questions: "Who did the boy smile at first?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "31"
     title: "review"
     pages: []
     plan_nl: |
-      Vocabulary review: "Today we learned to smile at these people. Can you read these words aloud?"
+      After respond to the student's answer to the previous question, then ask: "Today we learned to smile at these people. Can you read these words aloud?"
       Wait for the student’s response, correct mistakes and offer encouragement.
 
   - id: "32"

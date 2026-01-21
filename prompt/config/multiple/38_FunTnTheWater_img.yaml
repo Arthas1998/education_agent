@@ -1,5 +1,5 @@
 course:
-  id: "70_Smile"  # 课程唯一ID（常量）
+  id: "38_FunInTheWater"  # 课程唯一ID（常量）
 
 paths:
 #  base_dir: "D:\\data\\PythonProject\\HITProject\\education_agent\\prompt\\src"
@@ -26,20 +26,20 @@ registry:
     type: pdf
     from: { kind: file, path: "{paths.textbook_dir}/{course.id}.pdf" }                  # 整本教材PDF
 
-  textbook_yaml:
-    type: yaml_object
-    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整本教材YAML
+#  textbook_yaml:
+#    type: yaml_object
+#    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整本教材YAML
 
   student_answer:
     type: text
     default: ""
     from: { kind: runtime, key: student_answer }                       # 外部 runtime_vars.student_answer
 
-  memory_text:
-    type: text
-    default: ""
-    from: { kind: memory, key: memory_text }
-
+#  memory_text:
+#    type: text
+#    default: ""
+#    from: { kind: memory, key: memory_text }
+#
   prev_summary:
     type: text
     default: ""
@@ -96,18 +96,18 @@ templates:
               sep: "\n"
 #            render_with_refs: [prev_summary]
 
-        textbook_description:
-          select:
-            kind: yaml_by_id_text
-            from: textbook_yaml
-            list_path: "pages"
-            match:
-              field: "page"
-              input_param: "pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
-            take:
-              field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
-            join:
-              sep: "\n"
+#        textbook_description:
+#          select:
+#            kind: yaml_by_id_text
+#            from: textbook_yaml
+#            list_path: "pages"
+#            match:
+#              field: "page"
+#              input_param: "pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
+#            take:
+#              field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
+#            join:
+#              sep: "\n"
 
         material_pdf:
           select:

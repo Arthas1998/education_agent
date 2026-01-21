@@ -74,16 +74,16 @@ def main() -> int:
 
     ap.add_argument(
         "--prompt-config",
-        # default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
-        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\70_Smile_description.yaml",
+        default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
+        # default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\57_HeRuns_img.yaml",
         help="PromptLoader YAML config path.",
     )
-    ap.add_argument(
-        "--lesson-plan",
-        # default=r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile_img.yaml",
-        default=r"D:\data\PythonProject\HITProject\education_agent\prompt\src\lesson_plans\70_Smile.yaml",
-        help="Lesson plan YAML for SimpleRuleDialogueManager.",
-    )
+    # ap.add_argument(
+    #     "--lesson-plan",
+    #     default=r"D:\data\project\education_agent\prompt\src\lesson_plans\57_HeRuns.yaml",
+    #     # default=r"D:\data\PythonProject\HITProject\education_agent\prompt\src\lesson_plans\57_HeRuns.yaml",
+    #     help="Lesson plan YAML for SimpleRuleDialogueManager.",
+    # )
     ap.add_argument(
         "--start-step-id",
         default=None,
@@ -134,16 +134,17 @@ def main() -> int:
     args = ap.parse_args()
 
     prompt_path = Path(args.prompt_config)
-    lesson_path = Path(args.lesson_plan)
+    # lesson_path = Path(args.lesson_plan)
 
     if not prompt_path.exists():
         print(f"ERROR: prompt config not found: {prompt_path}", file=sys.stderr)
         return 2
-    if not lesson_path.exists():
-        print(f"ERROR: lesson plan not found: {lesson_path}", file=sys.stderr)
-        return 2
+    # if not lesson_path.exists():
+    #     print(f"ERROR: lesson plan not found: {lesson_path}", file=sys.stderr)
+    #     return 2
 
     loader = PromptLoader.from_yaml(prompt_path)
+    lesson_path = loader.config["registry"]["lesson_plan"]["from"]["path"]
     mgr = SimpleRuleDialogueManager.from_yaml(lesson_path)
     mgr.reset(start_step_id=args.start_step_id)
 

@@ -8,38 +8,41 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then asks the student: "What color do you like best?"
+      Then asks the student: "What is the weather like today?"
 
   - id: "2"
     title: "greet_1"
     pages: []
     plan_nl: |
-      Wait for the student's answer and encourage the student to mention specific reasons for their choice.
+      Talk with student.
+      Wait for the student's answer and respond appropriately.
 
   - id: "3"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Ask: "What’s your favorite fruit?"
+      The teacher should respond to the student's answer to the previous question at first.
+      Then ask: "What’s your favorite season?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Just talk with student. It doesn't need to be related to the textbook content.
+      Wait for the student's answer and encourage the student to mention specific reasons for their choice.
 
   - id: "5"
     title: "cover"
     pages: [1]
     plan_nl: |
-      Clearly prompt student to turn to the cover page: "Let`s turn to cover page."
-      Then introduces the textbook and ask: "Today we are going to read a story called ‘He Runs.’ What is the boy doing in the picture?"
+      After responding to the student's answer, clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
+      Then ask: "What is the boy doing in the picture?"
 
   - id: "6"
     title: "cover"
     pages: []
     plan_nl: |
-      After encouraging or correcting the student's answer, ask: "Let’s see where he runs to. OKey?"
+      After encouraging or correcting the student's answer, introduces the textbook:"Today we are going to read a story called ‘He Runs.’"
+      Then ask: "Let’s see where he runs to. OKey?"
 
   - id: "7"
     title: "page_3"
@@ -60,7 +63,7 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |      
-      Ask a divergent problem about bus.
+      Ask a divergent problem about taking the bus.
 
   - id: "10"
     title: "page_4"
@@ -79,7 +82,7 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: | 
-      Ask a divergent problems about train.
+      Ask a divergent question about taking the train.
 
   - id: "13"
     title: "page_5"
@@ -99,7 +102,7 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |   
-      Ask a divergent problems about boat.
+      Ask a divergent question about sea or river.
 
   - id: "16"
     title: "page_6"
@@ -119,7 +122,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: | 
-      Ask a divergent problems about plane. 
+      Ask a divergent question about traveling by plane. 
 
   - id: "19"
     title: "page_7"
@@ -138,7 +141,7 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: | 
-      After the students read aloud, ask a divergent problems about dad. 
+      After the students read aloud, ask a divergent question about their school life with **ONE** interrogative sentence. 
       Wait for the student’s response and give positive encouragement.
 
   - id: "22"
@@ -158,7 +161,7 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a divergent problems about store.
+      Ask a divergent question about shopping with their parents or their friend.
       Wait for the student’s answer.
 
   - id: "25"
