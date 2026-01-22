@@ -76,6 +76,10 @@ class Chat:
         self.prompt_loader = prompt_loader
         self.include_first_n = include_first_n
 
+        # 压缩策略：多轮对话时只保留最新图片（历史图片会被剔除）。
+        # 说明：图片为 OpenAI parts 结构中的 {"type": "image_url", ...}
+        self.drop_old_images: bool = True
+
         # 当前对话轮次数（每次渲染并追加 user 提示词后 +1）
         # 说明：这是“每个 Chat 会话实例”的计数，而非全局共享。
         self.turn_count: int = 1
@@ -147,6 +151,48 @@ class Chat:
             for w in warnings_out:
                 print(f"[PromptWarning][{w.code}] {w.message} ctx={w.context}")
 
+    @staticmethod
+    def _is_image_part(part: Any) -> bool:
+        return isinstance(part, dict) and part.get("type") == "image_url"
+
+    def _compress_drop_old_images(self) -> None:
+        """在 messages 中剔除历史图片，只保留最新一次出现的图片 parts。
+
+        规则：
+        - 仅处理 content 为 parts(list) 的消息。
+        - 找到最后一个包含 image_url part 的消息，将其图片保留。
+        - 其余更早消息中的 image_url parts 全部删除；若删除后 content 为空，则保留空 parts（不删除整条消息）。
+
+        目标：当后面添加了新图片后，去掉前面的图片，减少上下文体积。
+        """
+        if not self.drop_old_images:
+            return
+        if not self.messages:
+            return
+
+        last_with_image_idx: Optional[int] = None
+        for i in range(len(self.messages) - 1, -1, -1):
+            msg = self.messages[i]
+            content = msg.get("content")
+            if isinstance(content, list) and any(self._is_image_part(p) for p in content):
+                last_with_image_idx = i
+                break
+
+        # 没有任何图片，无需处理
+        if last_with_image_idx is None:
+            return
+
+        for i, msg in enumerate(self.messages):
+            if i == last_with_image_idx:
+                continue
+            content = msg.get("content")
+            if not isinstance(content, list):
+                continue
+            # 移除所有 image_url parts
+            new_parts = [p for p in content if not self._is_image_part(p)]
+            if new_parts is not content:
+                msg["content"] = new_parts
+
     def add_user_text(self, text: str):
         """添加用户文本消息（每一轮都通过 PromptLoader 渲染 user 模板）。"""
         self._ensure_system_message()
@@ -161,6 +207,9 @@ class Chat:
             warnings_out=warnings_out,
         )
         self.messages.append(self._normalize_openai_message(user_msg))
+
+        # 用户消息可能携带图片：如果出现了新图片，则剔除历史图片。
+        self._compress_drop_old_images()
 
         # 轮次计数：每次 user 提示词渲染完成后递增
         self.turn_count += 1
