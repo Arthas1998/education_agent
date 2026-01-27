@@ -74,7 +74,7 @@ def main() -> int:
 
     ap.add_argument(
         "--prompt-config",
-        default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
+        default=r"D:\data\project\education_agent\prompt\config\RAZ\A\70_Smile.yaml",
         # default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\57_HeRuns_img.yaml",
         help="PromptLoader YAML config path.",
     )
@@ -149,7 +149,7 @@ def main() -> int:
     mgr.reset(start_step_id=args.start_step_id)
 
     client = OpenAI(
-        api_key="sk-4ab9e4105ed44934860ef17cf366a7f6", # 190新账号
+        api_key="sk-0932fa1904874a43a9a7593e8441e30b", # 190新账号
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     # By default we run render-only. If you want real LLM calls, pass a real client into Chat.

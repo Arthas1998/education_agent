@@ -1,0 +1,223 @@
+# =========================
+# Lesson Plan: RAZ/F/02_TheFoodChain
+# =========================
+
+steps:
+  - id: "1"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      "Hello, I am your English teacher today."
+      "What did you eat today?"
+
+  - id: "2"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Respond briefly to the student.
+      "Do animals eat plants? Do animals eat other animals?"
+
+  - id: "3"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
+      Then introduces the textbook and ask: "Today we are going to read a book called ‘The Food Chain.’"
+
+  - id: "4"
+    title: "cover"
+    pages: []
+    plan_nl: |
+      Ask ONE prediction question based on the cover.
+      Encourage briefly and transition to reading.
+
+  - id: "5"
+    title: "page_3"
+    pages: [3]
+    plan_nl: |
+      "Let’s turn to page 3."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "6"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      "Now please read from line 3 to line 4."
+      Correct pronunciation briefly and encourage.
+
+  - id: "7"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask ONE cause-and-effect question about the text.
+
+  - id: "8"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |
+      "Turn to page 4."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "9"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      "Now please read line 3."
+      Correct pronunciation briefly and encourage.
+
+  - id: "10"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask ONE vocabulary-in-context question about a key word/phrase in the text.
+
+  - id: "11"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      "Now, let’s turn to page 5."
+      "Please read line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "12"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask ONE text-to-picture connection question.
+
+  - id: "13"
+    title: "page_6"
+    pages: [6]
+    plan_nl: |
+      "Turn to page 6."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "14"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      "Now please read from line 3 to line 4."
+      Correct pronunciation briefly and encourage.
+
+  - id: "15"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask ONE main-idea question about the text.
+
+  - id: "16"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask ONE light divergent question related to real-life foods/animals.
+
+  - id: "17"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      "Now let’s turn to page 7."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "18"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      "Now please read from line 3 to line 4."
+      Correct pronunciation briefly and encourage.
+
+  - id: "19"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask ONE sequence question about the text (what happens first/next).
+
+  - id: "20"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      "Turn to page 8."
+      "I will read first, then you read."
+      Teacher reads line 1 to line 2.
+      Student reads line 1 to line 2.
+
+  - id: "21"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask ONE important-detail question about the text.
+
+  - id: "22"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      "Now, turn to page 9."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "23"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      "Now please read line 3."
+      Correct pronunciation briefly and encourage.
+
+  - id: "24"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask ONE cause-and-effect question about the text.
+
+  - id: "25"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask ONE light divergent question related to animals/food chains in real life.
+
+  - id: "26"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      "Turn to page 10."
+      "Please read from line 1 to line 2."
+      Correct pronunciation briefly and encourage.
+
+  - id: "27"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      "Now please read from line 3 to line 4."
+      Correct pronunciation briefly and encourage.
+
+  - id: "28"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Have students answer the questions posed at the end of the text.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "29"
+    title: "review"
+    pages: []
+    plan_nl: |
+      Ask ONE vocabulary question (food chain / plant eater / meat eater),
+
+  - id: "30"
+    title: "review_retell"
+    pages: []
+    plan_nl: |
+      Ask for an oral retell.
+      Prompt the student to retell the example food chain in order using "First/Next/Then/Finally".
+
+  - id: "31"
+    title: "goodbye"
+    pages: []
+    plan_nl: |
+      "Great job today! You read every page and learned about the food chain! See you next time!"
+
+policies:
+  defaults:
+    step_turns: 1
