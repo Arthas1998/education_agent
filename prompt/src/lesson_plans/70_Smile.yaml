@@ -34,13 +34,14 @@ steps:
     pages: [1]
     plan_nl: |
       Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
-      Then introduces the textbook and ask: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life. Who do you think the boy is smiling at on this page?"
+      Then introduces the textbook and ask: "Who do you think the boy is smiling at on this page?"
 
   - id: "6"
     title: "cover"
     pages: []
     plan_nl: |
-      After encouraging or correcting the student's answer, ask: "Let’s see who the boy is smiling at in the story. OKey?"
+      After encouraging or correcting the student's answer, introduce the story: "Today we are going to read a story called ‘Smile.’ It’s about a boy who smiles at different people in his life."
+      Then, ask: "Let’s see who the boy is smiling at in the story. OKey?"
 
   - id: "7"
     title: "page_3"
@@ -55,7 +56,7 @@ steps:
     pages: []
     plan_nl: |      
       Ask a question about the details of the picture.
-      Wait for the student’s response, correct mistakes and offer encouragement.
+      Wait for the student’s response and correct mistakes.
 
   - id: "9"
     title: "page_3"
