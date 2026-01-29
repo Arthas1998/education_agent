@@ -25,7 +25,7 @@ class PromptLoader:
         * load_initial_user_prompt(include_first_n=None) -> dict (user message with images + text)
     """
 
-    def __init__(self, config_path: str = "prompt/config/zh_temp_1.yaml"):
+    def __init__(self, config_path: str):
         # project root (one level above utils/)
         self.project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
         self.config_path = os.path.join(self.project_root, config_path)
