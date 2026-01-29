@@ -75,7 +75,9 @@ def main() -> int:
     ap.add_argument(
         "--prompt-config",
         #default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
-        default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\01_PondAnimals.yaml",
+        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\01_PondAnimals.yaml",
+        default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\02_MyDog.yaml",
+
         # default=r"D:\data\PythonProject\HITProject\education_agent\prompt\config\multiple\57_HeRuns_img.yaml",
         help="PromptLoader YAML config path.",
     )
