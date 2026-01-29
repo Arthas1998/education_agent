@@ -1,5 +1,5 @@
 course:
-  id: "70_Smile"  # 课程唯一ID（常量）
+  id: "01_PondAnimals"  # 课程唯一ID（常量）
 
 paths:
 #  base_dir: "D:\\data\\PythonProject\\HITProject\\education_agent\\prompt\\src"
