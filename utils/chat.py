@@ -42,7 +42,7 @@ def apply_dialogue_decision_to_chat_params(chat: "Chat", decision: Any) -> None:
     if step_ids is not None:
         # 仅当本次需要更新 step_ids 时，才更新 previous_step_ids。
         # 若当前没有 step_ids，则 previous_step_ids 约定为 "0"。
-        prev = chat.params.get("step_ids")
+        prev = chat.params.get("step_ids", None)
         chat.params["previous_step_ids"] = "0" if prev is None else prev
         chat.params["step_ids"] = step_ids
     if pdf_pages is not None:

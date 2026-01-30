@@ -1,10 +1,10 @@
 course:
-  group: "RAZ/A"
-  id: "70_Smile"  # 课程唯一ID（常量）
+  group: "RAZ/F"
+  id: "02_TheFoodChain"  # 课程唯一ID（常量）
 
 paths:
 #  base_dir: "D:\\data\\PythonProject\\HITProject\\education_agent\\prompt\\src"
-  base_dir: "D:\\ComputerSoft\\Py\\code\\education_agent\\prompt\\src"                       # 资源根目录
+  base_dir: "D:\\data\\project\\education_agent\\prompt\\src"                       # 资源根目录
 #  base_dir: "prompt/src"                       # 资源根目录
   template_dir: "{paths.base_dir}/template"       # 模板目录（必须写 {paths.base_dir}，不允许 {base_dir}）
   plan_dir: "{paths.base_dir}/lesson_plans"       # 教案目录
@@ -21,15 +21,15 @@ registry:
 
   lesson_plan:
     type: yaml_object
-    from: { kind: file, path: "{paths.plan_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整份教案YAML
+    from: { kind: file, path: "{paths.plan_dir}/{course.group}/{course.id}.yaml", encoding: "utf-8" }  # 整份教案YAML
 
   textbook_pdf:
     type: pdf
-    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.pdf" }                  # 整本教材PDF
+    from: { kind: file, path: "{paths.textbook_dir}/{course.group}/{course.id}.pdf" }                  # 整本教材PDF
 
-  textbook_yaml:
-    type: yaml_object
-    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整本教材YAML
+#  textbook_yaml:
+#    type: yaml_object
+#    from: { kind: file, path: "{paths.textbook_dir}/{course.id}.yaml", encoding: "utf-8" }  # 整本教材YAML
 
   student_answer:
     type: text
@@ -97,18 +97,18 @@ templates:
               sep: "\n"
 #            render_with_refs: [prev_summary]
 
-        textbook_description:
-          select:
-            kind: yaml_by_id_text
-            from: textbook_yaml
-            list_path: "pages"
-            match:
-              field: "page"
-              input_param: "pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
-            take:
-              field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
-            join:
-              sep: "\n"
+#        textbook_description:
+#          select:
+#            kind: yaml_by_id_text
+#            from: textbook_yaml
+#            list_path: "pages"
+#            match:
+#              field: "page"
+#              input_param: "pages"   # 外部 params.step_ids: "greet" 或 ["greet","review"]
+#            take:
+#              field: "description"            # 你可改字段名，这里只要对齐教案YAML即可
+#            join:
+#              sep: "\n"
 
         material_pdf:
           select:
