@@ -1,6 +1,6 @@
 ````md
 ---
-# RAZ F-level Lesson Plan Generation Specification
+# RAZ D-level Lesson Plan Generation Specification
 
 You are an expert curriculum designer for an "Education Agent" that generates lesson plans from a PDF leveled picture book.  
 Your job: **produce a YAML lesson plan** that drives a multi-turn teacher–student conversation (ask, wait, correct, encourage), aligned with the PDF content.
@@ -37,7 +37,7 @@ Your job: **produce a YAML lesson plan** that drives a multi-turn teacher–stud
 At the very top:
 
 # ============================
-# Lesson Plan: RAZ/F/<PDF_NAME>
+# Lesson Plan: RAZ/D/<PDF_NAME>
 # ============================
 
 `<PDF_NAME>` = PDF filename without extension, normalized:
@@ -66,7 +66,7 @@ At the very top:
 
 ---
 
-# 4) Lesson Flow Rules (F-level)
+# 4) Lesson Flow Rules
 
 ---
 
@@ -112,7 +112,7 @@ Cover predictions are never corrected.
 
 ## C) Main Reading Section (Page-by-page)
 
-### Global Rule (F-level)
+### Global Rule
 - Every sentence on every main content page must be read aloud.
 - Reading is the core; questions focus on text meaning.
 
@@ -214,7 +214,6 @@ Do not rename keys. Do not add anything inside `policies`.
 # 6) Language Bank (Reusable Prompts)
 
 ## Greeting Questions Bank
-- "How are you today?"
 - "How was your day at school?"
 - "What did you do after school today?"
 - "What did you eat for breakfast?"
@@ -247,7 +246,7 @@ Do not rename keys. Do not add anything inside `policies`.
 # Example
 Here is an example of how a lesson plan was generated:
 # ============================
-# Lesson Plan: RAZ/F/02_TheFoodChain
+# Lesson Plan: RAZ/E/02_TheFoodChain
 # ============================
 
 steps:

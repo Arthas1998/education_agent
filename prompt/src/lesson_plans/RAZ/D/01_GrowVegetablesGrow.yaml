@@ -1,0 +1,214 @@
+# ============================
+# Lesson Plan: RAZ/D/01_GrowVegetablesGrow
+# ============================
+
+steps:
+  - id: "1"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then ask: "How are you today?"
+
+  - id: "2"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      Briefly respond and chat with the student.
+      Keep it short and encouraging.
+
+  - id: "3"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Respond to the student.
+      Then ask: "What did you eat for lunch?"
+
+  - id: "4"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Briefly chat and transition to cover.
+
+  - id: "5"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
+      Ask ONE prediction question about the cover picture.
+
+  - id: "6"
+    title: "cover"
+    pages: []
+    plan_nl: |
+      Introduce the text: "Today we are going to read a book called ‘Grow, Vegetables, Grow!’ We will learn how vegetables grow and how we care for them."
+      Then ask: "Let's start today’s lesson, OK?"
+
+  - id: "7"
+    title: "page_3"
+    pages: [3]
+    plan_nl: |
+      Clearly guide the student to turn to page 3: "Turn to page 3."
+      The teacher reads the text first: "I water the carrot plants. Grow, carrots, grow!"
+
+  - id: "8"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, carrots, grow!"
+
+  - id: "9"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "10"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |
+      Clearly guide the student to turn to page 4: "Now, let's turn to page 4."
+      The teacher reads the text first: "I water the pepper plants. Grow, peppers, grow!"
+
+  - id: "11"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, peppers, grow!"
+
+  - id: "12"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+
+  - id: "13"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Now, let's turn to page 5."
+      The teacher reads the text first: "I water the tomato plants. Grow, tomatoes, grow!"
+
+  - id: "14"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, tomatoes, grow!"
+
+  - id: "15"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question about the main point of the text.
+
+  - id: "16"
+    title: "page_6"
+    pages: [6]
+    plan_nl: |
+      Clearly guide the student to turn to page 6: "Now, let's turn to page 6."
+      The teacher reads the text first: "I water the green bean plants. Grow, green beans, grow!"
+
+  - id: "17"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, green beans, grow!"
+
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question about sequence (what happens first/next).
+
+  - id: "19"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Now, let's turn to page 7."
+      The teacher reads the text first: "I water the onion plants. Grow, onions, grow!"
+
+  - id: "20"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, onions, grow!"
+
+  - id: "21"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a question about cause and effect in the text.
+
+  - id: "22"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      Clearly guide the student to turn to page 8: "Now, let's turn to page 8."
+      The teacher reads the text first: "I water the cucumber plants. Grow, cucumbers, grow!"
+
+  - id: "23"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, cucumbers, grow!"
+
+  - id: "24"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+
+  - id: "25"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      Clearly guide the student to turn to page 9: "Now, let's turn to page 9."
+      The teacher reads the text first: "I water the pea plants. Grow, peas, grow!"
+
+  - id: "26"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Grow, peas, grow!"
+
+  - id: "27"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question about the main point of the text.
+
+  - id: "28"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Clearly guide the student to turn to page 10: "Now, let's turn to page 10."
+      The teacher reads the text first: "I want to make a salad!"
+
+  - id: "29"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture.
+
+  - id: "30"
+    title: "review"
+    pages: []
+    plan_nl: |
+      Ask a question to review key vocabulary from the text.
+
+  - id: "31"
+    title: "review_retell"
+    pages: [10]
+    plan_nl: |
+      Ask a general comprehension question about the whole text.
+      Wait for the student’s response and give positive encouragement.
+
+  - id: "32"
+    title: "goodbye"
+    pages: []
+    plan_nl: |
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
+
+policies:
+  defaults:
+    step_turns: 1
