@@ -1,6 +1,6 @@
 course:
   group: "RAZ/A"
-  id: "38_FunTnTheWater"  # 课程唯一ID（常量）
+  id: "38_FunInTheWater"  # 课程唯一ID（常量）
 
 paths:
   base_dir: "prompt/src"                       # 资源根目录
