@@ -75,11 +75,14 @@ def main() -> int:
     ap.add_argument(
         "--prompt-config",
         #default=r"D:\data\project\education_agent\prompt\config\multiple\70_Smile_img.yaml",
-        #01
-        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\01_PondAnimals.yaml",
-        #02
-        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\02_MyDog.yaml",
-        default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\multiple\03_TheBigCat.yaml",
+
+
+        #A01
+        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\RAZ\A\01_PondAnimals.yaml",
+        #A02
+        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\RAZ\A\02_MyDog.yaml",
+        #A03
+        #default=r"D:\ComputerSoft\Py\code\education_agent\prompt\config\RAZ\A\03_TheBigCat.yaml",
 
 
 
