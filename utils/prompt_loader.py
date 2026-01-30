@@ -102,6 +102,9 @@ def interpolate_paths_and_registry(config: Dict[str, Any]) -> Dict[str, Any]:
     Two-phase interpolation:
       1) paths.* strings can reference {paths.base_dir} and {course.*}
       2) registry.*.from.path strings can reference {paths.*} and {course.*}
+
+    Note: this function performs interpolation only; absolute-path normalization is
+    applied later (see normalize_config_paths_absolute).
     """
     cfg = dict(config)  # shallow copy; we will mutate nested dicts carefully
 
@@ -135,6 +138,50 @@ def interpolate_paths_and_registry(config: Dict[str, Any]) -> Dict[str, Any]:
                 registry[reg_key] = reg_item
 
     # Also interpolate any file path-like strings under templates if you add later (not needed now)
+
+    return cfg
+
+
+def normalize_config_paths_absolute(config: Dict[str, Any], *, project_root: Path) -> Dict[str, Any]:
+    """Return a copy of config with path-like strings made absolute.
+
+    - paths.*: if value is a relative path string, resolve against project_root.
+    - registry.*.from.path where from.kind == 'file': same rule.
+
+    This makes YAML configs portable across Windows/Linux and independent of CWD.
+    """
+    cfg = dict(config)
+
+    def _abs_str(p: str) -> str:
+        pp = Path(p)
+        if pp.is_absolute():
+            return str(pp)
+        return str((project_root / pp))
+
+    paths = cfg.get("paths")
+    if isinstance(paths, dict):
+        paths2 = dict(paths)
+        for k, v in list(paths2.items()):
+            if isinstance(v, str) and v.strip():
+                paths2[k] = _abs_str(v.strip())
+        cfg["paths"] = paths2
+
+    registry = cfg.get("registry")
+    if isinstance(registry, dict):
+        registry2: Dict[str, Any] = dict(registry)
+        for reg_key, reg_item in list(registry2.items()):
+            if not isinstance(reg_item, dict):
+                continue
+            from_def = reg_item.get("from")
+            if isinstance(from_def, dict) and from_def.get("kind") == "file":
+                path_val = from_def.get("path")
+                if isinstance(path_val, str) and path_val.strip():
+                    from_def2 = dict(from_def)
+                    from_def2["path"] = _abs_str(path_val.strip())
+                    reg_item2 = dict(reg_item)
+                    reg_item2["from"] = from_def2
+                    registry2[reg_key] = reg_item2
+        cfg["registry"] = registry2
 
     return cfg
 
@@ -587,9 +634,10 @@ class PromptLoader:
         self.config = config
         self.cache = ResourceCache()
 
-        # Base dir is informational here; paths.base_dir already interpolated
+        # Base dir is informational here; paths.base_dir already interpolated and
+        # normalized to an absolute path by from_yaml().
         base_dir = config.get("paths", {}).get("base_dir")
-        self.base_dir = Path(base_dir) if isinstance(base_dir, str) else config_path.parent
+        self.base_dir = Path(base_dir) if isinstance(base_dir, str) and base_dir.strip() else config_path.parent
 
         self.resolver = RegistryResolver(config=self.config, base_dir=self.base_dir, cache=self.cache)
         self.selector = SelectorEngine(self.resolver)
@@ -605,7 +653,11 @@ class PromptLoader:
         # Interpolate paths + registry file paths
         cfg2 = interpolate_paths_and_registry(cfg)
 
-        return cls(cfg2, config_path=config_path)
+        # Normalize all path-like strings to absolute paths rooted at the project.
+        project_root = Path(__file__).resolve().parent.parent
+        cfg3 = normalize_config_paths_absolute(cfg2, project_root=project_root)
+
+        return cls(cfg3, config_path=config_path)
 
     def validate(self) -> List[PromptConfigError]:
         """
