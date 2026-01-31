@@ -1,14 +1,13 @@
 # ============================
-# Lesson Plan: RAZ/D/02_BeesFeedMe
+# Lesson Plan: RAZ/C/03_AllAboutSpiders
 # ============================
-# Source: :contentReference[oaicite:0]{index=0}
 steps:
   - id: "1"
     title: "greet_1"
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "How was your day at school?"
+      Then ask: "Do you like science? Why or why not?"
 
   - id: "2"
     title: "greet_1"
@@ -22,13 +21,14 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "What animal do you like best?"
+      Then ask: "What is something fun you learned this week?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat, then transition to the book.
+      Briefly chat only.
+      Transition to the cover page.
 
   - id: "5"
     title: "cover"
@@ -41,7 +41,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Bees Feed Me.' We will learn how bees help us get many foods."
+      Introduce the text: "Today we are going to read a book called 'All About Spiders.' We will learn simple facts about spiders."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -49,7 +49,7 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "Bees are little, but they do a big job. Bees feed you and me."
+      The teacher reads the text first: "There are many kinds of spiders."
 
   - id: "8"
     title: "page_3"
@@ -62,71 +62,71 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Encourage a full-sentence answer.
+      Ask a question about the details of the picture.
+      Encourage one clear detail from the picture.
 
   - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      The teacher reads the text first: "Without bees, we would not have apples."
+      The teacher reads the text first: "A spider has eight legs. It eats bugs."
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Encourage careful looking.
+      Ask a question linking the text to the picture/diagram.
+      Encourage a full-sentence answer.
 
   - id: "13"
     title: "page_5"
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "Without bees, we would not have carrots."
+      The teacher reads the text first: "A spider has eight legs. It can climb."
 
   - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Encourage pointing and naming.
+      Ask a question about the details of the picture that match the text.
+      Encourage careful looking.
 
   - id: "16"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "A spider has eight legs. It can make silk."
 
   - id: "17"
     title: "page_6"
     pages: []
     plan_nl: |
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
-      Ask a question about cause and effect in the text.
 
   - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Encourage the student to describe what they see.
+      Ask a question linking the text to the picture/diagram.
+      Encourage pointing and naming.
 
   - id: "19"
     title: "page_7"
@@ -139,15 +139,15 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: |
-      Wait for the student’s response and correct mistakes.
       Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "21"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Encourage one clear detail from the picture.
+      Ask a question about the details of the picture.
+      Encourage the student to describe what they see.
 
   - id: "22"
     title: "page_8"
@@ -160,14 +160,14 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
-      Ask a question to check the meaning of a key word/phrase from the text.
 
   - id: "24"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question about the details of the picture that match the text.
       Encourage the student to use picture evidence.
 
   - id: "25"
@@ -181,15 +181,15 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
-      Ask a question about cause and effect in the text.
 
   - id: "27"
     title: "page_9"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Encourage describing one picture detail.
+      Encourage naming what is shown.
 
   - id: "28"
     title: "page_10"
@@ -202,22 +202,22 @@ steps:
     title: "page_10"
     pages: []
     plan_nl: |
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
-      Ask a question about sequence (what happens first/next).
 
   - id: "30"
     title: "page_10"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Encourage the student to connect picture and meaning.
+      Encourage describing one picture detail.
 
   - id: "31"
     title: "review"
     pages: []
     plan_nl: |
       Ask ONE quick recall questions about vocabulary/concept.
-      Ask ONE quick recall question about sequence/order.
+      Keep answers short and praise effort.
 
   - id: "32"
     title: "review_retell"

@@ -1,5 +1,5 @@
 # ============================
-# Lesson Plan: RAZ/F/04_NightAnimals
+# Lesson Plan: RAZ/F/06_AnimalDads
 # ============================
 
 steps:
@@ -8,7 +8,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "Do you like being outside in nature?"
+      Then ask: "What is your favorite game to play?"
 
   - id: "2"
     title: "greet_1"
@@ -22,7 +22,7 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "Do you have a pet? What is it?"
+      Then ask: "What makes you happy today?"
 
   - id: "4"
     title: "greet_2"
@@ -41,7 +41,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called "Night Animals." We will learn about animals that are active at night."
+      Introduce the text: "Today we are going to read a book called "Animal Dads." We will learn how some animal fathers take care of their babies."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -49,32 +49,32 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "I will read first, Some animal dads don't help much. These dads don't help at all!"
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the details of the picture.
 
   - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
-
-  - id: "10"
-    title: "page_3"
-    pages: []
-    plan_nl: |
       Ask a question to check the meaning of a key word/phrase.
 
-  - id: "11"
+  - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      The teacher reads the text first: "I will read first, Some animals are active at night, when it is dark. These animals sleep during the day while the Sun shines."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "11"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Wait for the student’s response and correct mistakes.
 
   - id: "12"
     title: "page_4"
@@ -86,64 +86,64 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "14"
     title: "page_5"
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "I will read first. These animals have special eyes to help them see in the dark. Most of them also hear and smell well."
+      The teacher reads the text first: "I will read first. This dad guards and cares for his chicks. He helps them all by himself for almost two years."
 
   - id: "15"
     title: "page_5"
     pages: []
     plan_nl: |
-      The teacher reads the text: "Go on reading. Their senses help them find food at night."
+      Ask a question about an important detail in the text.
 
   - id: "16"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question linking the text to the picture/diagram.
 
   - id: "17"
-    title: "page_5"
-    pages: []
-    plan_nl: |
-      Ask a question about cause and effect in the text.
-
-  - id: "18"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "I will read first. This dad cleans bugs from his babies' fur. He helps feed them."
+
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      The teacher reads the text: "Go on reading. He carries them, too."
 
   - id: "19"
     title: "page_6"
     pages: []
     plan_nl: |
-      Wait for the student’s response and correct mistakes.
+      Ask a question about an important detail in the text.
 
   - id: "20"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "21"
-    title: "page_6"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-
-  - id: "22"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      The teacher reads the text first: "I will read first, This bat is active at night. It eats fruit and nectar in the dark."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "22"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Wait for the student’s response and correct mistakes.
 
   - id: "23"
     title: "page_7"
@@ -162,50 +162,51 @@ steps:
     pages: [8]
     plan_nl: |
       Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
-      Ask the student to read the text: "Can you read this text?"
+      Ask the student to read: "Can you read first two sentences?"
 
   - id: "26"
     title: "page_8"
     pages: []
     plan_nl: |
+      Now, can you read the remaining sentences?
       Wait for the student’s response and correct mistakes.
 
   - id: "27"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question about sequence (what happens first/next).
 
   - id: "28"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "29"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask ONE light divergent question related to real life.
+
+  - id: "30"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
-      The teacher reads the text first: "I will read first, This hermit crab is active at night. It looks for little fish and worms in the dark."
-
-  - id: "30"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a question about an important detail in the text.
+      The teacher reads the text first: "I will read first. This dad carries tadpoles on his back. He helps them reach water."
 
   - id: "31"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about an important detail in the text.
 
   - id: "32"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a question about cause and effect in the text.
 
   - id: "33"
     title: "page_10"
@@ -230,14 +231,14 @@ steps:
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question linking the text to the picture/diagram.
 
   - id: "37"
     title: "page_11"
     pages: [11]
     plan_nl: |
       Clearly guide the student to turn to page 11: "Turn to page 11."
-      The teacher reads the text first: "I will read first, Are you active at night or during the day?"
+      The teacher reads the text first: "I will read first. This dad holds thousands of eggs in his pouch. He helps them grow and hatch."
 
   - id: "38"
     title: "page_11"
@@ -249,47 +250,41 @@ steps:
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "40"
     title: "page_12"
     pages: [12]
     plan_nl: |
       Clearly guide the student to turn to page 12: "Now, let`s turn to page 12."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "I will read first. These dads help out with their young, too!"
 
   - id: "41"
     title: "page_12"
     pages: []
     plan_nl: |
-      Wait for the student’s response and correct mistakes.
+      Ask a question linking the text to the picture/diagram.
 
   - id: "42"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
-
-  - id: "43"
-    title: "page_12"
-    pages: []
-    plan_nl: |
       Ask a question to check the meaning of a key word/phrase.
 
-  - id: "44"
+  - id: "43"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question to review key vocabulary from the text.
+      Ask a question about sequence/order from the text.
 
-  - id: "45"
+  - id: "44"
     title: "review_retell"
     pages: [12]
     plan_nl: |
       Ask a general comprehension question about the whole text.
       Wait for the student’s response and give positive encouragement.
 
-  - id: "46"
+  - id: "45"
     title: "goodbye"
     pages: []
     plan_nl: |

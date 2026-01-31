@@ -1,14 +1,13 @@
 # ============================
 # Lesson Plan: RAZ/D/03_WhaleWatching
 # ============================
-
 steps:
   - id: "1"
     title: "greet_1"
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What is your favorite animal?"
+      Then ask: "Do you like being outside in nature?"
 
   - id: "2"
     title: "greet_1"
@@ -22,13 +21,13 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "Have you ever seen a whale?"
+      Then ask: "Have you ever been to a zoo?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat and transition to cover.
+      Briefly chat, then transition to the book.
 
   - id: "5"
     title: "cover"
@@ -41,7 +40,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called ‘Whale Watching.’ We will learn where to spot whales."
+      Introduce the text: "Today we are going to read a book called 'Whale Watching.' We will learn where the girl looks for whales and how she finds them."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -49,165 +48,184 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "I will read first. Watching for whales is tricky. I look carefully to spot them."
+      The teacher reads the text first: "Watching for whales is tricky. I look carefully to spot them. I look for a long time."
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      After reading the first two sentences, then the teacher reads the text: "Go on reading. I look for a long time."
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question about the details of the picture that match the text.
+      Encourage careful looking.
 
   - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
-      Clearly guide the student to turn to page 4: "Now, let’s turn to page 4."
-      Ask the student to read the text: "Can you read this text?"
+      Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
+      The teacher reads the text first: "I watch for whales near the boat. No luck."
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question linking the text to the picture/diagram.
+      Encourage a full-sentence answer.
 
   - id: "13"
     title: "page_5"
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "I watch for whales out at sea. No luck."
 
   - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture.
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "15"
-    title: "page_6"
-    pages: [6]
+    title: "page_5"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 6: "Now, let’s turn to page 6."
-      Ask the student to read the text: "Can you read first two sentences?"
+      Ask a question about the details of the picture.
+      Encourage the student to describe what they see.
 
   - id: "16"
     title: "page_6"
-    pages: []
+    pages: [6]
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "17"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the main point of the text.
+      Wait for the student’s response and correct mistakes.
+      Ask a question about cause and effect in the text.
 
   - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a question about the details of the picture.
+      Encourage careful looking.
 
   - id: "19"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      The teacher reads the text first: "I will read first. I watch for whales near the surface. No luck."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "20"
     title: "page_7"
     pages: []
     plan_nl: |
-      After reading the first two sentences, then the teacher reads the text: "Go on reading. I watch for whales in the waves."
+      Wait for the student’s response and correct mistakes.
+      Ask a question to check the meaning of a key word/phrase from the text.
 
   - id: "21"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Ask a question linking the text to the picture/diagram.
+      Encourage one clear detail from the picture.
 
   - id: "22"
     title: "page_8"
     pages: [8]
     plan_nl: |
-      Clearly guide the student to turn to page 8: "Now, let’s turn to page 8."
+      Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
       Ask the student to read the text: "Can you read this text?"
 
   - id: "23"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+      Ask a question about sequence (what happens first/next).
 
   - id: "24"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Encourage the student to use picture evidence.
+
+  - id: "25"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
-      Ask the student to read the text: "Can you read first two sentences?"
-
-  - id: "25"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      The teacher reads the text first: "I watch for whales near the fish. I spot three big shapes."
 
   - id: "26"
     title: "page_9"
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "27"
-    title: "page_10"
-    pages: [10]
+    title: "page_9"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 10: "Now, let’s turn to page 10."
-      Ask the student to read the text: "Can you read first two sentences?"
+      Ask a question linking the text to the picture/diagram.
+      Encourage describing one picture detail.
 
   - id: "28"
     title: "page_10"
-    pages: []
+    pages: [10]
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
+      The teacher reads the text first: "I watch three whales follow the fish. To spot whales, first spot their dinner!"
 
   - id: "29"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "30"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Encourage the student to connect picture and meaning.
+
+  - id: "31"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question to review key vocabulary from the text.
+      Ask ONE quick recall questions about vocabulary/concept.
+      Ask ONE quick recall question about sequence/order.
 
-  - id: "31"
+  - id: "32"
     title: "review_retell"
     pages: [10]
     plan_nl: |
-      Ask a general comprehension question about the whole text.
-      Wait for the student’s response and give positive encouragement.
+      Prompt the student to retell the story in order using: "First / Next / Then / Finally."
+      Let the student look back at pages if needed.
 
-  - id: "32"
+  - id: "33"
     title: "goodbye"
     pages: []
     plan_nl: |

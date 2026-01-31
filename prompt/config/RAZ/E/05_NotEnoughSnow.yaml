@@ -1,6 +1,6 @@
 course:
-  group: RAZ/F
-  id: 02_TheFoodChain
+  group: RAZ/E
+  id: 05_NotEnoughSnow
 paths:
   base_dir: prompt/src
   template_dir: '{paths.base_dir}/template'

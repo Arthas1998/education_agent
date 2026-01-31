@@ -1,4 +1,4 @@
-````md
+
 ---
 # RAZ D-level Lesson Plan Generation Specification
 
@@ -68,8 +68,6 @@ At the very top:
 
 # 4) Lesson Flow Rules
 
----
-
 ## A) Greeting Section (Fixed 4 steps, MUST)
 
 ### Step 1 — greet_1 (fixed sentence)
@@ -87,9 +85,8 @@ At the very top:
 - Brief chat only, then transition to cover.
 
 Greeting must stay low-turn, no multi-follow-up.
-Greeting questions must come from Greeting Questions Bank
-
----
+Greeting questions must come from Greeting Questions Bank.
+[CRITICAL] The greeting question **cannot** be the same for different lesson plans.
 
 ## B) Cover Section (Fixed 2 steps, MUST)
 
@@ -108,79 +105,52 @@ End with the fixed question:
 
 Cover predictions are never corrected.
 
----
-
 ## C) Main Reading Section (Page-by-page)
 
 ### Global Rule
 - Every sentence on every main content page must be read aloud.
 - Reading is the core; questions focus on text meaning.
+- [CRITICAL] Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank. For example: Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+- No using brackets such as ( ) or [ ].
 
----
-
-## D) Steps per Page (2–4 steps)
-
-Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank.
 Each page must include:
-
----
 
 ### 1. Reading Steps (Required)
 There are two types of reading aloud: teacher-led reading and independent student reading. 
 Each page only requires choosing one method for reading aloud.
 The first few pages can be the teacher lead-reads and subsequent pages can be selected between the two method.
 
-#### Short page (1–2 sentences)
-Use 1 reading step, 
+[CRITICAL] The teacher’s read-aloud content must be **completely** identical to the passage on the current page. Any reading of text from subsequent pages is **strictly prohibited**. You must repeatedly check that the read-aloud text is correct.
+
+Use 1 reading step: 
 - Teacher lead-reads prompt:
  - The teacher reads the text first: "I will read first, __"
  The blank space contains the text to be read aloud.
 - Students read aloud independently prompt:
  - Ask the student to read the text: "Can you read this text?"
-   
-#### Long page (3–4+ sentences)
-Use 2 reading steps: first 2 sentences, then the rest.
-- Teacher lead-reads prompt:
- - The teacher reads the text first: "I will read first. __"
- - After reading the first two sentences, then the teacher reads the text: "Go on reading. __"
-The blank space contains the text to be read aloud.
-- Students read aloud independently prompt:
- - Ask the student to read the text: "Can you read first two sentences?"
- - After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
 
-Line range must always be stated clearly.
----
-
-### 2. Text and Picture Question Step (Required)
+### 2. Text Question Step (Required)
 
 After reading, add 1 step asking ONE text-based question direction.
 
 Do NOT write specific questions, only direction prompts:
 
-- Ask a question about the main point of the text.
-- Ask a question about an important detail in the text.
 - Ask a question to check the meaning of a key word/phrase.
 - Ask a question about sequence (what happens first/next).
 - Ask a question about cause and effect in the text.
+
+### 3. Picture Question Step (Required)
+
+After reading, add 1 step asking ONE text-based question direction.
+Do NOT write specific questions, only direction prompts:
+
 - Ask a question linking the text to the picture/diagram.
 - Ask a question about the details of the picture.
 
-Short pages should NOT force main idea; use detail/vocab/picture instead.
-
----
-
-### 3. Divergent Question Step (Optional, Limited)
-
-- Only once every ~3 pages or at natural breakpoints.
-- Use one short prompt:
-  - Ask ONE light divergent question related to real life.
-
----
-
-## E) Review Section (After Last Page)
+## D) Review Section (After Last Page)
 
 ### Review Step 1 — review
-- Ask 2 quick recall questions:
+- Choose ONE quick recall questions:
   - one vocabulary/concept
   - one sequence/order
 
@@ -190,9 +160,7 @@ Short pages should NOT force main idea; use detail/vocab/picture instead.
   - Encourage: "First / Next / Then / Finally."
   - Student may look back at the summary/diagram page.
 
----
-
-## F) Goodbye Section (Fixed 1 step)
+## E) Goodbye Section (Fixed 1 step)
 
 Use this prompt at the end:
 - The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
@@ -214,6 +182,7 @@ Do not rename keys. Do not add anything inside `policies`.
 # 6) Language Bank (Reusable Prompts)
 
 ## Greeting Questions Bank
+- "How are you today?"
 - "How was your day at school?"
 - "What did you do after school today?"
 - "What did you eat for breakfast?"
@@ -243,10 +212,11 @@ Do not rename keys. Do not add anything inside `policies`.
 - Wait for the student’s response and correct mistakes
 
 ---
-# Example
+
+# 7) Example
 Here is an example of how a lesson plan was generated:
 # ============================
-# Lesson Plan: RAZ/E/02_TheFoodChain
+# Lesson Plan: RAZ/D/01_GrowVegetablesGrow
 # ============================
 
 steps:
@@ -255,7 +225,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "How are you today?"
+      Then ask: "What makes you happy today?"
 
   - id: "2"
     title: "greet_1"
@@ -269,13 +239,13 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "What is your favorite food?"
+      Then ask: "What is your favorite subject at school?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat and transition to the lesson.
+      Briefly chat.
 
   - id: "5"
     title: "cover"
@@ -288,7 +258,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called ‘The Food Chain.’ We will learn what a food chain is and who eats whom."
+      Introduce the text: "Today we are going to read a book called 'Grow, Vegetables, Grow!' We will learn about watering vegetable plants so they grow."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -296,39 +266,42 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "I will read first. All plants need food in order to live. Green plants make food."
+      The teacher reads the text first: "I water the carrot plants. Grow, carrots, grow!"
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      After reading the first two sentences, then the teacher reads the text: "Go on reading. They need air, water, and sunlight to make food. Most plants need soil, too."
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question linking the text to the picture details.
+      Encourage a full-sentence answer.
 
   - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      Ask the student to read the text: "Can you read first two sentence?"
+      The teacher reads the text first: "I water the pepper plants. Grow, peppers, grow!"
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about the details of the picture that match the text.
+      Encourage careful looking.
 
   - id: "13"
     title: "page_5"
@@ -341,52 +314,57 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture.
+      Wait for the student’s response and correct mistakes.
+      Ask a question about cause and effect in the text.
 
   - id: "15"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture.
+      Encourage pointing and naming.
+
+  - id: "16"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      Ask the student to read the text: "Can you read first two sentences?"
-
-  - id: "16"
-    title: "page_6"
-    pages: []
-    plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "17"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the main point of the text.
+      Wait for the student’s response and correct mistakes.
+      Ask a question to check the meaning of a key word/phrase from the text.
 
   - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a question about the details of the picture.
+      Encourage the student to describe what they see.
 
   - id: "19"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      The teacher reads the text first: "I will read first. A grasshopper eats the leaves of a plant. The grasshopper grows bigger."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "20"
     title: "page_7"
     pages: []
     plan_nl: |
-      After reading the first two sentences, then the teacher reads the text: "Go on reading. A frog eats the grasshopper. The frog grows bigger."
+      Wait for the student’s response and correct mistakes.
+      Ask a question about sequence.
 
   - id: "21"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Ask a question linking the text to the picture.
+      Encourage one clear detail from the picture.
 
   - id: "22"
     title: "page_8"
@@ -399,72 +377,83 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+      Ask a question to check the meaning of a key word/phrase from the text.
 
   - id: "24"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Encourage the student to use picture evidence.
+
+  - id: "25"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
-      Ask the student to read the text: "Can you read first two sentences?"
-
-  - id: "25"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "26"
     title: "page_9"
     pages: []
     plan_nl: |
+      Wait for the student’s response and correct mistakes.
       Ask a question about cause and effect in the text.
 
   - id: "27"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture.
+      Encourage describing one picture detail.
+
+  - id: "28"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      Ask the student to read the text: "Can you read first two sentences?"
-
-  - id: "28"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      The teacher reads the text first: "Grow, vegetables, grow! I want to make a salad!"
 
   - id: "29"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Ask a question about sequence/order using the whole book.
+      Wait for the student’s response and correct mistakes.
 
   - id: "30"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture.
+      Encourage naming vegetables seen.
+
+  - id: "31"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question to review key vocabulary from the text.
+      Ask ONE quick recall questions about vocabulary/concept.
+      Keep answers short and praise effort.
 
-  - id: "31"
+  - id: "32"
     title: "review_retell"
     pages: [10]
     plan_nl: |
-      Ask a general comprehension question about the whole text.
-      Wait for the student’s response and give positive encouragement.
+      Prompt the student to retell the story in order using: "First / Next / Then / Finally."
+      Let the student look back at pages if needed.
 
-  - id: "32"
+  - id: "33"
     title: "goodbye"
     pages: []
     plan_nl: |
-      The teacher gives a summary and ends the class: "Great job today! You read every page and learned a lot! See you next time!"
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 
 policies:
   defaults:
     step_turns: 1
+
 ---
 
 # Now Generate
 Read the provided PDF content and page structure, then output the YAML lesson plan following ALL rules above **as a single ```yaml code block and nothing else**.
-````

@@ -1,0 +1,296 @@
+# ============================
+# Lesson Plan: RAZ/G/05_SignsAreEverywhere
+# ============================
+
+steps:
+  - id: "1"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then ask: "What did you eat for lunch?"
+
+  - id: "2"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      Briefly respond and chat with the student.
+      Keep it short and encouraging.
+
+  - id: "3"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Respond to the student.
+      Then ask: "What makes you happy today?"
+
+  - id: "4"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Briefly chat only, then transition to the cover.
+
+  - id: "5"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
+      Ask ONE prediction question about the cover picture.
+
+  - id: "6"
+    title: "cover"
+    pages: []
+    plan_nl: |
+      Introduce the text: "Today we are going to read a book called "Signs Are Everywhere." We will learn why signs are important and what they tell us."
+      Then ask: "Let's start today’s lesson, OK?"
+
+  - id: "7"
+    title: "page_2"
+    pages: [2]
+    plan_nl: |
+      Clearly guide the student to turn to page 2: "Turn to page 2."
+      The teacher reads the text first: "I will read first, Signs Are Everywhere Written by Vic Moors Illustrated by Fred Volke www.readinga-z.com"
+
+  - id: "8"
+    title: "page_2"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+
+  - id: "9"
+    title: "page_2"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "10"
+    title: "page_3"
+    pages: [3]
+    plan_nl: |
+      Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
+      The teacher reads the text first: "I will read first. Signs are everywhere. Signs are on posts."
+
+  - id: "11"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      The teacher reads the text: "Go on reading. Signs are on buildings."
+
+  - id: "12"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+
+  - id: "13"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "14"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |
+      Clearly guide the student to turn to page 4: "Turn to page 4."
+      The teacher reads the text first: "I will read first. Signs are in windows and on doors. They hang above streets."
+
+  - id: "15"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      The teacher reads the text: "Go on reading. Where else do you see signs?"
+
+  - id: "16"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+
+  - id: "17"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "18"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+      The teacher reads the text first: "I will read first. Signs tell us lots of things. Signs tell us what to do."
+
+  - id: "19"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      The teacher reads the text: "Go on reading. They tell us when to walk and when not to walk. They tell us when to stop and when to go."
+
+  - id: "20"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question about cause and effect in the text.
+
+  - id: "21"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "22"
+    title: "page_6"
+    pages: [6]
+    plan_nl: |
+      Clearly guide the student to turn to page 6: "Turn to page 6."
+      Ask the student to read the text: "Can you read first two sentences?"
+
+  - id: "23"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Wait for the student’s response and correct mistakes.
+
+  - id: "24"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "25"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+
+  - id: "26"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
+      Ask the student to read the text: "Can you read first two sentences?"
+
+  - id: "27"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Wait for the student’s response and correct mistakes.
+
+  - id: "28"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a question about cause and effect in the text.
+
+  - id: "29"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "30"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask ONE light divergent question related to real life.
+
+  - id: "31"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      Clearly guide the student to turn to page 8: "Turn to page 8."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "32"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Wait for the student’s response and correct mistakes.
+
+  - id: "33"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "34"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+
+  - id: "35"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
+      Ask the student to read the text: "Can you read first two sentences?"
+
+  - id: "36"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Wait for the student’s response and correct mistakes.
+
+  - id: "37"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "38"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "39"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Clearly guide the student to turn to page 10: "Turn to page 10."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "40"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Wait for the student’s response and correct mistakes.
+
+  - id: "41"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about the main point of the text.
+
+  - id: "42"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+
+  - id: "43"
+    title: "review"
+    pages: []
+    plan_nl: |
+      Ask a question to review the sequence/order of ideas in the text.
+
+  - id: "44"
+    title: "review_retell"
+    pages: [10]
+    plan_nl: |
+      Ask a general comprehension question about the whole text.
+      Wait for the student’s response and give positive encouragement.
+
+  - id: "45"
+    title: "goodbye"
+    pages: []
+    plan_nl: |
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
+
+policies:
+  defaults:
+    step_turns: 1

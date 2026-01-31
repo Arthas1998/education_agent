@@ -1,0 +1,202 @@
+# ============================
+# Lesson Plan: RAZ/A/MyDog
+# ============================
+steps:
+  - id: "1"
+    title: greet_1
+    pages: []
+    plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then asks the student: "What do you do in the morning before school?"
+  - id: "2"
+    title: greet_1
+    pages: []
+    plan_nl: |
+      Wait for the student's answer and encourage the student to mention specific morning activities.
+  - id: "3"
+    title: greet_2
+    pages: []
+    plan_nl: |
+      The teacher should respond to the student's answer to the previous question at first.
+      Then ask: "What color do you like best?"
+  - id: "4"
+    title: greet_2
+    pages: []
+    plan_nl: |
+      Just talk with student. It doesn't need to be related to the textbook content.
+  - id: "5"
+    title: cover
+    pages: [1]
+    plan_nl: |
+      Clearly guide the student to turn to page 1: "Turn to page 1."
+      Ask one prediction question: "What can this dog do in the story?"
+      Wait and encourage; do not correct the guess.
+  - id: "6"
+    title: cover
+    pages: []
+    plan_nl: |
+      Encourage briefly and transition: "Let's find out in the story. OK?"
+  - id: "7"
+    title: page_3
+    pages: [3]
+    plan_nl: |
+      Clearly guide the student to turn to page 3: "Turn to page 3."
+      Ask: "Can you read this sentence: 'My dog can jump.'"
+      Wait, correct only if misread, and encourage.
+  - id: "8"
+    title: page_3
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "9"
+    title: page_3
+    pages: []
+    plan_nl: |
+      Ask a divergent question about jumping.
+  - id: "10"
+    title: page_4
+    pages: [4]
+    plan_nl: |
+      Clearly guide the student to turn to page 4: "Turn to page 4."
+      Ask: "Can you read this sentence: 'My dog can run.'"
+      Wait, correct only if misread, and encourage.
+  - id: "11"
+    title: page_4
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "12"
+    title: page_4
+    pages: []
+    plan_nl: |
+      Ask a divergent question about running.
+  - id: "13"
+    title: page_5
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Turn to page 5."
+      Ask: "Can you read this sentence: 'My dog can swim.'"
+      Wait, correct only if misread, and encourage.
+  - id: "14"
+    title: page_5
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "15"
+    title: page_5
+    pages: []
+    plan_nl: |
+      Ask a divergent question about swimming.
+  - id: "16"
+    title: page_6
+    pages: [6]
+    plan_nl: |
+      Clearly guide the student to turn to page 6: "Turn to page 6."
+      Ask: "Can you read this sentence: 'My dog can dig.'"
+      Wait, correct only if misread, and encourage.
+  - id: "17"
+    title: page_6
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "18"
+    title: page_6
+    pages: []
+    plan_nl: |
+      Ask a divergent question about digging.
+  - id: "19"
+    title: page_7
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Turn to page 7."
+      Ask: "Can you read this sentence: 'My dog can climb.'"
+      Wait, correct only if misread, and encourage.
+  - id: "20"
+    title: page_7
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "21"
+    title: page_7
+    pages: []
+    plan_nl: |
+      Ask a divergent question about climbing.
+  - id: "22"
+    title: page_8
+    pages: [8]
+    plan_nl: |
+      Clearly guide the student to turn to page 8: "Turn to page 8."
+      Ask: "Can you read this sentence: 'My dog can sit.'"
+      Wait, correct only if misread, and encourage.
+  - id: "23"
+    title: page_8
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "24"
+    title: page_8
+    pages: []
+    plan_nl: |
+      Ask a divergent question about sitting.
+  - id: "25"
+    title: page_9
+    pages: [9]
+    plan_nl: |
+      Clearly guide the student to turn to page 9: "Turn to page 9."
+      Ask: "Can you read this sentence: 'My dog can roll over.'"
+      Wait, correct only if misread, and encourage.
+  - id: "26"
+    title: page_9
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "27"
+    title: page_9
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a dog trick.
+  - id: "28"
+    title: page_10
+    pages: [10]
+    plan_nl: |
+      Clearly guide the student to turn to page 10: "Turn to page 10."
+      Ask: "Can you read this sentence: 'My dog can hug.'"
+      Wait, correct only if misread, and encourage.
+  - id: "29"
+    title: page_10
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+  - id: "30"
+    title: page_10
+    pages: []
+    plan_nl: |
+      Ask a divergent question about hugging.
+  - id: "31"
+    title: review
+    pages: []
+    plan_nl: |
+      Ask: "What is one thing the dog can do?"
+      Wait, accept meaning-first answers, and encourage.
+  - id: "32"
+    title: review
+    pages: []
+    plan_nl: |
+      Ask: "Can you name two action words from the story?"
+      Wait, accept meaning-first answers, and encourage.
+  - id: "33"
+    title: goodbye
+    pages: []
+    plan_nl: |
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
+policies:
+  defaults:
+    step_turns: 1

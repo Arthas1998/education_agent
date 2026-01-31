@@ -1,6 +1,7 @@
 # ============================
 # Lesson Plan: RAZ/F/03_InAChineseGarden
 # ============================
+# Source: :contentReference[oaicite:0]{index=0}
 
 steps:
   - id: "1"
@@ -8,7 +9,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "How are you today?"
+      Then ask: "What did you eat for lunch?"
 
   - id: "2"
     title: "greet_1"
@@ -22,13 +23,13 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "What is your favorite food?"
+      Then ask: "What book did you read recently?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat and transition to the lesson.
+      Briefly chat only, then transition to the cover.
 
   - id: "5"
     title: "cover"
@@ -41,7 +42,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called ‘In a Chinese Garden.’ We will explore the beauty of a Chinese garden."
+      Introduce the text: "Today we are going to read a book called "In a Chinese Garden." We will visit a Chinese garden and notice things like a gate, water, rocks, and trees."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -49,151 +50,140 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "I will read first. I’m visiting a Chinese garden. I enter a gate without doors."
+      I will read first. I'm visiting a Chinese garden. I enter a gate without doors.
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about the main point of the text.
+      Ask a question linking the text to the picture/diagram.
 
   - id: "9"
-    title: "page_4"
-    pages: [4]
+    title: "page_3"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 4: "Turn to page 4."
-      Ask the student to read the text: "Can you read this text?"
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "10"
     title: "page_4"
-    pages: []
+    pages: [4]
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
+      Can you read first two sentences?
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Now, can you read the remaining sentences?
+      Wait for the student’s response and correct mistakes.
 
   - id: "12"
-    title: "page_5"
-    pages: [5]
-    plan_nl: |
-      Clearly guide the student to turn to page 5: "Turn to page 5."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "13"
-    title: "page_5"
+    title: "page_4"
     pages: []
     plan_nl: |
       Ask a question about an important detail in the text.
+
+  - id: "13"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase.
 
   - id: "14"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Turn to page 6."
-      Ask the student to read the text: "Can you read first two sentences?"
+      I will read first. I see a huge rock. The rock looks so strong.
 
   - id: "15"
     title: "page_6"
     pages: []
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Go on reading. It will not move or fall down. I'm glad I'm strong now, too.
 
   - id: "16"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question about an important detail in the text.
 
   - id: "17"
-    title: "page_7"
-    pages: [7]
-    plan_nl: |
-      Clearly guide the student to turn to page 7: "Turn to page 7."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "18"
-    title: "page_7"
+    title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question to check the meaning of a key word/phrase.
+
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask ONE light divergent question related to real life.
 
   - id: "19"
     title: "page_8"
     pages: [8]
     plan_nl: |
-      Clearly guide the student to turn to page 8: "Turn to page 8."
-      Ask the student to read the text: "Can you read first two sentences?"
+      Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
+      Can you read first two sentences?
 
   - id: "20"
     title: "page_8"
     pages: []
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Now, can you read the remaining sentences?
       Wait for the student’s response and correct mistakes.
 
   - id: "21"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Ask a question linking the text to the picture/diagram.
 
   - id: "22"
-    title: "page_9"
-    pages: [9]
-    plan_nl: |
-      Clearly guide the student to turn to page 9: "Turn to page 9."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "23"
-    title: "page_9"
+    title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about the main point of the text.
+      Ask a question about an important detail in the text.
 
-  - id: "24"
+  - id: "23"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Turn to page 10."
-      Ask the student to read the text: "Can you read first two sentences?"
+      I will read first. The Chinese garden is beautiful and peaceful. I'll remember it whenever I see water, rocks, and trees.
+
+  - id: "24"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about the main point of the text.
 
   - id: "25"
     title: "page_10"
     pages: []
     plan_nl: |
-      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-      Wait for the student’s response and correct mistakes.
+      Ask a question about an important detail in the text.
 
   - id: "26"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about sequence (what happens first/next).
-
-  - id: "27"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question to review key vocabulary from the text.
 
-  - id: "28"
+  - id: "27"
     title: "review_retell"
     pages: [10]
     plan_nl: |
       Ask a general comprehension question about the whole text.
       Wait for the student’s response and give positive encouragement.
 
-  - id: "29"
+  - id: "28"
     title: "goodbye"
     pages: []
     plan_nl: |
-      The teacher gives a summary and ends the class: "Great job today! You read and learned so much! See you next time!"
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 
 policies:
   defaults:

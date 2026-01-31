@@ -311,7 +311,7 @@ class SimpleRuleDialogueManager:
 # Minimal demo
 # -------------------------
 if __name__ == "__main__":
-    mgr = SimpleRuleDialogueManager.from_yaml(r"D:\data\project\education_agent\prompt\src\lesson_plans\70_Smile.yaml")
+    mgr = SimpleRuleDialogueManager.from_yaml(r"/prompt/src/lesson_plans/RAZ/A/70_Smile.yaml")
 
     # 2) first decision (before any turn happens)
     d0 = mgr.decide(total_turn=1)

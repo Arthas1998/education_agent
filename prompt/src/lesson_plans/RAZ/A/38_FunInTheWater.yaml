@@ -1,0 +1,235 @@
+# =========================
+# Lesson Plan: 38_FunInTheWater
+# =========================
+
+steps:
+  - id: "1"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then ask the student: "How are you today?"
+
+#  - id: "2"
+#    title: "greet_1"
+#    pages: []
+#    plan_nl: |
+#      Talk with student.
+#      Wait for the student's answer and respond appropriately.
+
+  - id: "3"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      The teacher should respond to the student's answer first.
+      Then ask: "Do you like water?"
+
+  - id: "4"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Wait for the student's answer.
+      Encourage the student to say more if possible.
+
+  - id: "5"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      After responding to the student's answer, clearly prompt the student to turn to the cover page: 
+      "OK, let's begin the lesson and turn to the cover page."
+      Then ask: "What can you see in the picture?"
+
+  - id: "6"
+    title: "cover"
+    pages: []
+    plan_nl: |
+      After encouraging or correcting the student's answer, introduce the textbook:
+      "Today we are going to read a story called 'Fun in the Water.'"
+      Then ask: "Do you think the children are happy?"
+
+  - id: "7"
+    title: "page_3"
+    pages: [3]
+    plan_nl: |
+      Clearly guide the student to turn to page 3: "Let's turn to page 3."
+      Then read the text first: "I will read first. You float on the water."
+      Followed by: "Can you read this sentence for me?"
+
+  - id: "8"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "9"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about their experience of floating.
+
+  - id: "10"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |
+      Clearly guide the student to turn to page 4: "Turn to page 4."
+      Ask: "Can you read this sentence, 'You sail on the water'?"
+
+  - id: "11"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      After the student reads the text aloud, ask a question about the details of the picture.
+
+  - id: "12"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about sailing.
+
+  - id: "13"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Now, let's turn to page 5."
+      Ask a question about the details of the picture.
+
+  - id: "14"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Guide the student to read the text:
+      "Please read this sentence, 'You paddle on the water.'"
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "15"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask another question about the details of the picture.
+
+  - id: "16"
+    title: "page_6"
+    pages: [6]
+    plan_nl: |
+      Clearly guide the student to turn to page 6: 
+      "Turn to page 6. Can you read this page for me?"
+      Wait for the student to read aloud: "You fish in the water."
+
+  - id: "17"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+#      Wait for the student’s response, correct mistakes and describe the picture.
+
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about fishing with their parents or friends.
+
+  - id: "19"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Guide the student to turn to page 7: "Then, turn to page 7. Look at the picture on this page."
+      Then ask a question about the details of the picture.
+
+  - id: "20"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      After the student answers the previous question, have them read the text aloud:
+      "Now, let's read it together. 'You dive in the water.'"
+
+  - id: "21"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      After the student reads aloud, ask a divergent question about diving match with ONE interrogative sentence.
+      Wait for the student’s response and give positive encouragement.
+
+  - id: "22"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      Guide the student to turn to page 8:
+      "Now let’s look at page 8. Can you read this sentence?"
+
+  - id: "23"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "24"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about their experience of swimming.
+      Wait for the student’s answer.
+
+  - id: "25"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      Guide the student to turn to page 9:
+      "Let’s go to the next page. Can you read this sentence now?"
+
+  - id: "26"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      After the student reads the text aloud, ask a question about the details of the picture.
+#      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "27"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      After responding to the student's answer, talk with the student about the picture.
+#      Wait for the student’s response and give positive encouragement.
+
+  - id: "28"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Guide the student to turn to the last page: "Turn to the last page."
+      Then ask a question about the details of the picture.
+
+  - id: "29"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Respond to the student's answer to the previous question, then ask:
+      "Can you read this sentence?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "30"
+    title: "review"
+    pages: []
+    plan_nl: |
+      Review what was learned today by asking:
+      "What can you do in the water?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "31"
+    title: "review"
+    pages: []
+    plan_nl: |
+      After responding to the student's answer, ask:
+      "Can you tell me two things you can do in the water?"
+      Wait for the student’s response, correct mistakes and offer encouragement.
+
+  - id: "32"
+    title: "goodbye"
+    pages: []
+    plan_nl: |
+      The teacher gives a summary and ends the class:
+      "Great job today! See you next time!"
+
+policies:
+  defaults:
+    step_turns: 1
