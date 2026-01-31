@@ -34,8 +34,8 @@ except Exception as e:  # pragma: no cover
 # =====================
 # Input parameters
 # =====================
-INPUT_DIR = Path(r"D:\data\project\education_agent\prompt\src\lesson_plans\RAZ\G")
-OUTPUT_DIR = Path(r"D:\data\project\education_agent\prompt\config\RAZ\G")
+INPUT_DIR = Path(r"D:\data\project\education_agent\prompt\src\lesson_plans\RAZ\B")
+OUTPUT_DIR = Path(r"D:\data\project\education_agent\prompt\config\RAZ\B")
 TEMPLATE_PATH = Path(r"D:\data\project\education_agent\prompt\config\RAZ\A\70_Smile.yaml")
 
 

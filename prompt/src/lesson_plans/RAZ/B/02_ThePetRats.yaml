@@ -1,0 +1,227 @@
+# ============================
+# Lesson Plan: RAZ/B/02_ThePetRats
+# ============================
+
+steps:
+  - id: "1"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      First, introduce yourself: "Hello, I am your English teacher today."
+      Then ask: "What animal do you like best?"
+
+  - id: "2"
+    title: "greet_1"
+    pages: []
+    plan_nl: |
+      Wait for the student's answer and encourage the student to talk about animals more.
+
+  - id: "3"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      The teacher responds to the student's answer.
+      Then ask: "Do you have any pets at home?"
+
+  - id: "4"
+    title: "greet_2"
+    pages: []
+    plan_nl: |
+      Just chat with the student. It doesn't need to be related to the textbook content.
+
+  - id: "5"
+    title: "cover"
+    pages: [1]
+    plan_nl: |
+      Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
+      Then ask: "What do you think the rats in the picture are doing?"
+
+  - id: "6"
+    title: "cover"
+    pages: []
+    plan_nl: |
+      Introduce the text: "Today we are going to read a story called 'The Pet Rats.' It's about some fun pet rats."
+      Then ask: "Let's start today’s lesson, OK?"
+
+  - id: "7"
+    title: "page_3"
+    pages: [3]
+    plan_nl: |
+      Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
+      The teacher reads the text first: "The pet rats sleep."
+
+  - id: "8"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "9"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about how pets sleep at home.
+
+  - id: "10"
+    title: "page_4"
+    pages: [4]
+    plan_nl: |
+      Clearly guide the student to turn to page 4: "Turn to page 4."
+      The teacher reads the text first: "The pet rats eat."
+
+  - id: "11"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "12"
+    title: "page_4"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about what kinds of food pets can eat.
+
+  - id: "13"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+      The teacher reads the text first: "The pet rats hide."
+
+  - id: "14"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "15"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about where rats might hide in real life.
+
+  - id: "16"
+    title: "page_6"
+    pages: [6]
+    plan_nl: |
+      Clearly guide the student to turn to page 6: "Turn to page 6."
+      The teacher reads the text first: "The pet rats climb."
+
+  - id: "17"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about animals that can climb.
+
+  - id: "19"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
+      The teacher reads the text first: "The pet rats run."
+
+  - id: "20"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "21"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about how rats might run in a race.
+
+  - id: "22"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      Clearly guide the student to turn to page 8: "Turn to page 8."
+      The teacher reads the text first: "The pet rats chew."
+
+  - id: "23"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "24"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about things we chew every day.
+
+  - id: "25"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
+      The teacher reads the text first: "The pet rats drink."
+
+  - id: "26"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "27"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about the different drinks animals need.
+
+  - id: "28"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Clearly guide the student to turn to page 10: "Turn to page 10."
+      The teacher reads the text first: "Rats are fun class pets."
+
+  - id: "29"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "30"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about why pets are fun.
+
+  - id: "31"
+    title: "review"
+    pages: [11]
+    plan_nl: |
+      Review the story by asking one quick recall question about what the rats do in the story.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "32"
+    title: "review_retell"
+    pages: []
+    plan_nl: |
+      Ask the student to retell what the rats do in the story using simple action words.
+
+  - id: "33"
+    title: "goodbye"
+    pages: []
+    plan_nl: |
+      The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
+
+policies:
+  defaults:
+    step_turns: 1

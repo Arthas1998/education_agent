@@ -1,0 +1,111 @@
+course:
+  group: RAZ/B
+  id: 05_MyPetDinosaur
+paths:
+  base_dir: prompt/src
+  template_dir: '{paths.base_dir}/template'
+  plan_dir: '{paths.base_dir}/lesson_plans'
+  textbook_dir: '{paths.base_dir}/textbook'
+registry:
+  system_template:
+    type: text
+    from:
+      kind: file
+      path: '{paths.template_dir}/gen_sys_img.txt'
+      encoding: utf-8
+  user_template:
+    type: text
+    from:
+      kind: file
+      path: '{paths.template_dir}/gen_user_img.txt'
+      encoding: utf-8
+  lesson_plan:
+    type: yaml_object
+    from:
+      kind: file
+      path: '{paths.plan_dir}/{course.group}/{course.id}.yaml'
+      encoding: utf-8
+  textbook_pdf:
+    type: pdf
+    from:
+      kind: file
+      path: '{paths.textbook_dir}/{course.group}/{course.id}.pdf'
+  student_answer:
+    type: text
+    default: ''
+    from:
+      kind: runtime
+      key: student_answer
+  memory_text:
+    type: text
+    default: ''
+    from:
+      kind: memory
+      key: memory_text
+  prev_summary:
+    type: text
+    default: ''
+    from:
+      kind: file
+      path: '{paths.base_dir}/no_summary_E.txt'
+      encoding: utf-8
+templates:
+  generator:
+    system:
+      role: system
+      content:
+        kind: txt_template
+        ref: system_template
+      slots:
+        prev_summary:
+          ref: prev_summary
+    user:
+      role: user
+      content:
+        kind: parts
+        parts:
+        - type: text
+          text:
+            kind: txt_template
+            ref: user_template
+      slots:
+        student_answer:
+          ref: student_answer
+        previous_plan:
+          select:
+            kind: yaml_by_id_text
+            from: lesson_plan
+            list_path: steps
+            match:
+              field: id
+              input_param: previous_step_ids
+            take:
+              field: plan_nl
+            join:
+              sep: '
+
+                '
+        plan:
+          select:
+            kind: yaml_by_id_text
+            from: lesson_plan
+            list_path: steps
+            match:
+              field: id
+              input_param: step_ids
+            take:
+              field: plan_nl
+            join:
+              sep: '
+
+                '
+        material_pdf:
+          select:
+            kind: pdf_pages
+            from: textbook_pdf
+            pages_param: pdf_pages
+            output:
+              as: openai_image_url_parts
+              dpi: 100
+              image_format: jpeg
+            placeholder_text: ''
