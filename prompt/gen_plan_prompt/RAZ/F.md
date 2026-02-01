@@ -55,7 +55,6 @@ At the very top:
 - `cover`
 - `page_y` (y = page number)
 - `review`
-- `review_retell`
 - `goodbye`
 
 ## Pages field
@@ -87,9 +86,29 @@ At the very top:
 Greeting must stay low-turn, no multi-follow-up.
 Greeting questions must come from Greeting Questions Bank.
 [CRITICAL] The greeting question **cannot** be the same for different lesson plans.
+### Greeting Questions Bank:
+- "How are you today?"
+- "How was your day at school?"
+- "What did you do after school today?"
+- "What did you eat for breakfast?"
+- "What did you eat for lunch?"
+- "What is your favorite food?"
+- "Do you like vegetables or fruit?"
+- "What animal do you like best?"
+- "Have you ever seen a frog or a fish?"
+- "What animals can you find near your home?"
+- "Do you have a pet? What is it?"
+- "What do you usually do on weekends?"
+- "What is your favorite game to play?"
+- "What book did you read recently?"
+- "What is your favorite subject at school?"
+- "Do you like science? Why or why not?"
+- "Have you ever been to a zoo?"
+- "What is something fun you learned this week?"
+- "Do you like being outside in nature?"
+- "What makes you happy today?"
 
 ## B) Cover Section (Fixed 2 steps, MUST)
-
 ### Step 5 — cover (pages: [1])
 Use this prompt at first:
 - Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
@@ -102,78 +121,96 @@ Use this prompt at first:
 Then followed by giving a fixed full-book overview sentence.
 End with the fixed question:
 - Then ask: "Let's start today’s lesson, OK?"
-
 Cover predictions are never corrected.
 
 ## C) Main Reading Section (Page-by-page)
-
 ### Global Rule
 - Every sentence on every main content page must be read aloud.
 - Reading is the core; questions focus on text meaning.
-- [CRITICAL] Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank. For example: Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
 - No using brackets such as ( ) or [ ].
+- Each prompt that requires a question should be followed by a general prompt:
+  - Wait for the student’s response and correct mistakes.
+- [CRITICAL] Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank. For example: Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+    #### Page Turning Prompt Bank:
+    - Clearly guide the student to turn to page __: "Now, let`s turn to page __."
+    - Clearly guide the student to turn to page __: "Turn to page __."
+    The blank spaces should be filled with the correct page number.
 
 Each page must include:
-
 ### 1. Reading Steps (Required)
 There are two types of reading aloud: teacher-led reading and independent student reading. 
 Each page only requires choosing one method for reading aloud.
 The first few pages can be the teacher lead-reads and subsequent pages can be selected between the two method.
-
+Reading steps must use prompts from the respective prompt banks below.
 [CRITICAL] The teacher’s read-aloud content must be **completely** identical to the passage on the current page. Any reading of text from subsequent pages is **strictly prohibited**. You must repeatedly check that the read-aloud text is correct.
-
-#### Short page (1–2 sentences)
-Use 1 reading step, 
+#### Prompt banks:
+(a) Short page (1–2 sentences): Use 1 reading step.
 - Teacher lead-reads prompt:
- - The teacher reads the text first: "I will read first, __"
- The blank space contains the text to be read aloud.
+  - The teacher reads the text first: "I will read first, __"   
+  Tips: The blank space contains the text to be read aloud.
 - Students read aloud independently prompt:
- - Ask the student to read the text: "Can you read this text?"
-   
-#### Long page (3–4+ sentences)
-Use 2 reading steps: first 2 sentences, then the rest.
+  - Ask the student to read the text: "Can you read this text?"     
+
+(b) Long page (3–4+ sentences): Use 2 reading steps, first 2 sentences, then the rest.
 - Teacher lead-reads prompt:
- - The teacher reads the text first: "I will read first. __"
- - After reading the first two sentences, then the teacher reads the text: "Go on reading. __"
-The blank space contains the text to be read aloud.
+  - The teacher reads the text first: "I will read first. __"
+  - After reading the first two sentences, then the teacher reads the text: "Go on reading. __"   
+  Tips: The blank space contains the text to be read aloud.
 - Students read aloud independently prompt:
- - Ask the student to read the text: "Can you read first two sentences?"
- - After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+  - Ask the student to read the text: "Can you read first two sentences?"
+  - After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
 
-### 2. Text and Picture Question Step (Required)
-
+### 2. Text and Question Step (Required)
 After reading, add 2 steps asking ONE text-based question direction.
-
 Do NOT write specific questions, only direction prompts:
-
 - Ask a question about the main point of the text.
 - Ask a question about an important detail in the text.
-- Ask a question to check the meaning of a key word/phrase.
 - Ask a question about sequence (what happens first/next).
 - Ask a question about cause and effect in the text.
-- Ask a question linking the text to the picture/diagram.
-- Ask a question about the details of the picture.
+- Ask a question to check the meaning of a key word/phrase from the text.
+- Ask a question about what might happen next in the story.
+- Ask a question about the actions in the text.
+- Ask a question to focus on specific elements or actions mentioned in the page.
 
 Short pages should NOT force main idea; use detail/vocab/picture instead.
 
-### 3. Divergent Question Step (Optional, Limited)
+### 3. Picture Question Step (Required)
+Add 1 step asking ONE picture-based question direction.
+Do NOT write specific questions, only direction prompts:
+- Ask a question about the character's actions or their feeling.
+- Ask a question about how two things in current and last pages are alike or different.
+- Ask a question linking the text to the picture/diagram.
+- Ask a question about the details of the picture.
 
-- Only once every ~3 pages or at natural breakpoints.
-- Use one short prompt:
-  - Ask ONE light divergent question related to real life.
+### 4. Divergent Question Step (Optional, Limited)
+Only once every ~3 pages or at natural breakpoints.
+Use one short prompt:
+- Ask a divergent question about __.
+Attention: You should fill the blank with a topic that links between the story and the student’s life or experience.
 
 ## D) Review Section (After Last Page)
+Add 2 step to review.
 
 ### Review Step 1 — review
-- Choose ONE quick recall questions, do not combine multiple:
-  - vocabulary/concept
-  - sequence/order
+Ask ONE question, choose one of these prompts:
+- Ask a question to review key vocabulary or concepts from the text.
+- Ask a question about specific details from the story.
+- Ask a question about the sentence structure or pattern used in the text.
+- Ask a question about making a sentence using the same structure as in the text.
+- Ask a question about a simple action in the text.
+If there is a vocabulary list, sometime you can choose to jump to the page containing the vocabulary list and use the prompts:
+  - Ask the student to read aloud these words from the vocabulary list.
+  Read aloud the vocabulary words is just a optional choice as review step 1.
 
-### Review Step 2 — review_retell
-- Ask a general comprehension question about the whole text.
+### Review Step 2 — review 
+Ask ONE question, choose one of these prompts:
+- Ask a question about the relationship between the character and another person/animal.
+- Ask a question about what would happen if the story continued.
+- Ask a question about what happens in the beginning of the story.
+- Ask a question about the character felt during different actions
+- Ask a question about the character's trying to achieve.
 
 ## E) Goodbye Section (Fixed 1 step)
-
 Use this prompt at the end:
 - The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 
