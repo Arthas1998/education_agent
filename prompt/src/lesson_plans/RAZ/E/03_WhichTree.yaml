@@ -8,7 +8,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What did you do after school today?"
+      Then ask: "What is your favorite game to play?"
 
   - id: "2"
     title: "greet_1"
@@ -29,7 +29,7 @@ steps:
     pages: []
     plan_nl: |
       Briefly chat.
-      Keep it positive and simple.
+      Stay friendly and positive.
 
   - id: "5"
     title: "cover"
@@ -42,321 +42,252 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Which Tree?' We will learn how to use leaves to tell different trees."
-      Then ask: "Let's start today’s lesson, OK?"
+      Introduce the text: "Today we are going to read a book called 'Which Tree?' We will learn how to tell different trees by their leaves."
+      Then ask: "Let's start today's lesson, OK?"
 
   - id: "7"
-    title: "page_2"
-    pages: [2]
-    plan_nl: |
-      Clearly guide the student to turn to page 2: "Turn to page 2."
-      The teacher reads the text first: "Read aloud with me. Focus Question How are the trees and the leaves in this book different?"
-
-  - id: "8"
-    title: "page_2"
-    pages: []
-    plan_nl: |
-      Ask a question about what might happen next in the story.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "9"
-    title: "page_2"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "10"
     title: "page_3"
     pages: [3]
     plan_nl: |
-      Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
-      The teacher reads the text first: "Read aloud with me. Words to Know hollow roots sharp syrup trunk umbrella"
+      Clearly guide the student to turn to page 3: "Turn to page 3."
+      The teacher reads the text first: "Read aloud with me. You can tell trees by their leaves."
 
-  - id: "11"
+  - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "12"
+  - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
 
-  - id: "13"
+  - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
-      Clearly guide the student to turn to page 4: "Turn to page 4."
-      The teacher reads the text first: "Read aloud with me. You can tell trees by their leaves."
+      Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
+      Guide the students to read the text: "Please read this text. See these leaves? Their tree can be hollow inside."
 
-  - id: "14"
+  - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about cause and effect in the text.
+      Wait for the student's response and correct mistakes.
 
-  - id: "15"
+  - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
 
-  - id: "16"
+  - id: "13"
     title: "page_5"
     pages: [5]
     plan_nl: |
-      Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
-      Guide the students to read the text: "Please read this text. See these leaves? Their tree can be hollow inside."
+      Clearly guide the student to turn to page 5: "Turn to page 5."
+      Ask the student to read the text: "Can you read this text?"
 
-  - id: "17"
+  - id: "14"
     title: "page_5"
-    pages: []
-    plan_nl: |
-      Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "18"
-    title: "page_5"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "19"
-    title: "page_5"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about places you have seen trees.
-
-  - id: "20"
-    title: "page_6"
-    pages: [6]
-    plan_nl: |
-      Clearly guide the student to turn to page 6: "Turn to page 6."
-      The teacher reads the text first: "Read aloud with me. See these leaves? Their tree has a sharp trunk."
-
-  - id: "21"
-    title: "page_6"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "22"
-    title: "page_6"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "23"
-    title: "page_7"
-    pages: [7]
-    plan_nl: |
-      Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "24"
-    title: "page_7"
-    pages: []
-    plan_nl: |
-      Ask a question about the actions in the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "25"
-    title: "page_7"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "26"
-    title: "page_8"
-    pages: [8]
-    plan_nl: |
-      Clearly guide the student to turn to page 8: "Turn to page 8."
-      The teacher reads the text first: "Read aloud with me. See these leaves? Their tree has many colors."
-
-  - id: "27"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Ask a question about sequence.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "28"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "29"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about colors you see in different seasons.
-
-  - id: "30"
-    title: "page_9"
-    pages: [9]
-    plan_nl: |
-      Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
-      Guide the students to read the text: "Please read this text. See these leaves? Their tree looks like an umbrella."
-
-  - id: "31"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "32"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "33"
-    title: "page_10"
-    pages: [10]
-    plan_nl: |
-      Clearly guide the student to turn to page 10: "Turn to page 10."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "34"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about the actions in the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "35"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "36"
-    title: "page_11"
-    pages: [11]
-    plan_nl: |
-      Clearly guide the student to turn to page 11: "Now, let`s turn to page 11."
-      The teacher reads the text first: "Read aloud with me. See these leaves? Their tree is covered in fruit."
-
-  - id: "37"
-    title: "page_11"
-    pages: []
-    plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "38"
-    title: "page_11"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "39"
-    title: "page_11"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about fruit you like to eat.
-
-  - id: "40"
-    title: "page_12"
-    pages: [12]
-    plan_nl: |
-      Clearly guide the student to turn to page 12: "Turn to page 12."
-      Guide the students to read the text: "Please read this text. See these leaves? Their tree grows roots from branches."
-
-  - id: "41"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "42"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "43"
-    title: "page_13"
-    pages: [13]
-    plan_nl: |
-      Clearly guide the student to turn to page 13: "Now, let`s turn to page 13."
-      The teacher reads the text first: "Read aloud with me. All trees have their own special leaves. All leaves have their own special trees!"
-
-  - id: "44"
-    title: "page_13"
-    pages: []
-    plan_nl: |
-      Ask a question about the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "45"
-    title: "page_13"
+  - id: "15"
+    title: "page_5"
     pages: []
     plan_nl: |
       Ask a question about the character's actions or their feeling.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "46"
-    title: "page_14"
-    pages: [14]
+  - id: "16"
+    title: "page_6"
+    pages: [6]
     plan_nl: |
-      Clearly guide the student to turn to page 14: "Turn to page 14."
-      The teacher reads the text first: "Read aloud with me. Connections Writing and Art Draw a leaf from another tree. Write about the tree and its leaves. Science What do all trees need to grow? Share your ideas with a partner."
+      Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
+      Ask the student to read the text: "Can you read this text?"
 
-  - id: "47"
-    title: "page_14"
+  - id: "17"
+    title: "page_6"
     pages: []
     plan_nl: |
       Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "48"
-    title: "page_14"
+  - id: "18"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
+
+  - id: "19"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a food you like that is sweet like syrup.
+
+  - id: "20"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Turn to page 7."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "21"
+    title: "page_7"
+    pages: []
+    plan_nl: |
+      Ask a question about the actions in the text.
+      Wait for the student's response and correct mistakes.
+
+  - id: "22"
+    title: "page_7"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "49"
-    title: "page_14"
+  - id: "23"
+    title: "page_8"
+    pages: [8]
+    plan_nl: |
+      Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "24"
+    title: "page_8"
     pages: []
     plan_nl: |
-      Ask a divergent question about drawing or writing about nature.
+      Ask a question about what might happen next in the book.
+      Wait for the student's response and correct mistakes.
 
-  - id: "50"
+  - id: "25"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
+
+  - id: "26"
+    title: "page_9"
+    pages: [9]
+    plan_nl: |
+      Clearly guide the student to turn to page 9: "Turn to page 9."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "27"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student's response and correct mistakes.
+
+  - id: "28"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
+
+  - id: "29"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about something you use that opens like an umbrella.
+
+  - id: "30"
+    title: "page_10"
+    pages: [10]
+    plan_nl: |
+      Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "31"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about sequence (what happens first/next).
+      Wait for the student's response and correct mistakes.
+
+  - id: "32"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about how two things in current and last pages are alike or different.
+      Wait for the student's response and correct mistakes.
+
+  - id: "33"
+    title: "page_11"
+    pages: [11]
+    plan_nl: |
+      Clearly guide the student to turn to page 11: "Turn to page 11."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "34"
+    title: "page_11"
+    pages: []
+    plan_nl: |
+      Ask a question to focus on specific elements or actions mentioned in the page.
+      Wait for the student's response and correct mistakes.
+
+  - id: "35"
+    title: "page_11"
+    pages: []
+    plan_nl: |
+      Ask a question about the character's actions or their feeling.
+      Wait for the student's response and correct mistakes.
+
+  - id: "36"
+    title: "page_12"
+    pages: [12]
+    plan_nl: |
+      Clearly guide the student to turn to page 12: "Now, let`s turn to page 12."
+      The teacher reads the text first: "Read aloud with me. All trees have their own special leaves. All leaves have their own special trees!"
+
+  - id: "37"
+    title: "page_12"
+    pages: []
+    plan_nl: |
+      Ask a question about what happens in the beginning of the book.
+      Wait for the student's response and correct mistakes.
+
+  - id: "38"
+    title: "page_12"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
+
+  - id: "39"
+    title: "page_12"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a special tree or plant you have seen before.
+
+  - id: "40"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question to review key vocabulary or concepts from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "51"
+  - id: "41"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question about what happens in the beginning of the story.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about what would happen if the story continued.
+      Wait for the student's response and correct mistakes.
 
-  - id: "52"
+  - id: "42"
     title: "goodbye"
     pages: []
     plan_nl: |

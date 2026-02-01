@@ -7,7 +7,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "How are you today?"
+      Then ask: "Do you like being outside in nature?"
 
   - id: "2"
     title: "greet_1"
@@ -21,14 +21,14 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "Do you like being outside in nature?"
+      Then ask: "Have you ever seen a frog or a fish?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
       Briefly chat.
-      Keep it friendly and short.
+      Keep the greeting simple.
 
   - id: "5"
     title: "cover"
@@ -41,7 +41,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'All About Spiders.' We will learn simple facts about spiders."
+      Introduce the text: "Today we are going to read a book called 'All About Spiders.' We will learn facts about spiders using short sentences."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -55,7 +55,7 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "9"
@@ -76,7 +76,7 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question to focus on specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
@@ -91,7 +91,7 @@ steps:
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "Read aloud with me. A spider has eight legs. It can climb."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "14"
     title: "page_5"
@@ -112,7 +112,7 @@ steps:
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "Read aloud with me. A spider has eight legs. It can make silk."
 
   - id: "17"
     title: "page_6"
@@ -125,7 +125,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "19"
@@ -139,13 +139,13 @@ steps:
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      Ask the student to read the text: "Can you read this text?"
+      Guide the students to read the text: "Please read this text. A spider has eight legs. It has many eyes."
 
   - id: "21"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "22"
@@ -160,7 +160,7 @@ steps:
     pages: [8]
     plan_nl: |
       Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
-      Guide the students to read the text: "Please read this text. A spider has eight legs. It lays eggs."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "24"
     title: "page_8"
@@ -187,58 +187,52 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about sequence.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "28"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "29"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about where the student thinks spiders might live.
-
-  - id: "30"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
       Guide the students to read the text: "Please read this text. It can live inside, too!"
 
+  - id: "30"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question to focus on specific elements or actions mentioned in the page.
+      Wait for the student’s response and correct mistakes.
+
   - id: "31"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "32"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "33"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question to review key vocabulary or concepts from the text.
       Wait for the student’s response and correct mistakes.
 
-  - id: "34"
-    title: "review_retell"
+  - id: "33"
+    title: "review"
     pages: []
     plan_nl: |
-      Ask a question about what happens in the beginning of the story.
+      Ask a question about what would happen if the story continued.
       Wait for the student’s response and correct mistakes.
 
-  - id: "35"
+  - id: "34"
     title: "goodbye"
     pages: []
     plan_nl: |

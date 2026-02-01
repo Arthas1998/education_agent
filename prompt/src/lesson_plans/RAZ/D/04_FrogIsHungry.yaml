@@ -1,7 +1,7 @@
 # ============================
 # Lesson Plan: RAZ/D/04_FrogIsHungry
 # ============================
-
+# Source: :contentReference[oaicite:0]{index=0}
 steps:
   - id: "1"
     title: "greet_1"
@@ -41,7 +41,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Frog Is Hungry.' We will see what Frog tries to eat and what he finally eats."
+      Introduce the text: "Today we are going to read a book called 'Frog Is Hungry.' We will see what Frog eats and what is really frog food."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -49,13 +49,13 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "Read aloud with me. Frog lives in a tank. A boy feeds him frog food."
+      The teacher reads the text first: "Read aloud with me. Frog lives in a tank. A boy feeds him frog food. \"I love frog food!\" says Frog."
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "9"
@@ -70,13 +70,13 @@ steps:
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      Guide the students to read the text: "Please read this text. "I love frog food!" says Frog."
+      Guide the students to read the text: "Please read this text. \"I love frog food!\" says Frog."
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question about the actions in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
@@ -97,7 +97,7 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about the actions in the text.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
@@ -112,13 +112,13 @@ steps:
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "Read aloud with me. Frog hops away. Hop. Hop. Hop."
 
   - id: "17"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about sequence.
+      Ask a question about the actions in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "18"
@@ -132,14 +132,14 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a divergent question about a time you ran or hopped outside.
+      Ask a divergent question about a time the student chased or followed something outside.
 
   - id: "20"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      Guide the students to read the text: "Please read this text. "I am hungry," says Frog."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "21"
     title: "page_7"
@@ -160,7 +160,7 @@ steps:
     pages: [8]
     plan_nl: |
       Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
-      The teacher reads the text first: "Read aloud with me. Frog eats a flower. Munch. Munch. Munch."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "24"
     title: "page_8"
@@ -187,7 +187,7 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about the actions in the text.
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "28"
@@ -198,31 +198,31 @@ steps:
       Wait for the student’s response and correct mistakes.
 
   - id: "29"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about something that is not safe to eat and why.
+
+  - id: "30"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      The teacher reads the text first: "Read aloud with me. "Flowers are not frog food," says Frog. "Sticks are not frog food," says Frog."
-
-  - id: "30"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
+      Guide the students to read the text: "Please read this text. \"Flowers are not frog food,\" says Frog. \"Sticks are not frog food,\" says Frog."
 
   - id: "31"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "32"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a divergent question about a food that is crunchy.
+      Ask a question about how two things in current and last pages are alike or different.
+      Wait for the student’s response and correct mistakes.
 
   - id: "33"
     title: "page_11"
@@ -235,14 +235,14 @@ steps:
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question about what might happen next in the story.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "35"
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "36"
@@ -250,20 +250,20 @@ steps:
     pages: [12]
     plan_nl: |
       Clearly guide the student to turn to page 12: "Now, let`s turn to page 12."
-      Guide the students to read the text: "Please read this text. "Now that is a very good lunch!" says Frog."
+      The teacher reads the text first: "Read aloud with me. \"Now that is a very good lunch!\" says Frog."
 
   - id: "37"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question about sequence/order using the whole book.
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "38"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the character's actions or their feeling.
       Wait for the student’s response and correct mistakes.
 
   - id: "39"

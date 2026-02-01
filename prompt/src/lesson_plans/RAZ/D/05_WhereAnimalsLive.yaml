@@ -1,15 +1,13 @@
 # ============================
 # Lesson Plan: RAZ/D/05_WhereAnimalsLive
 # ============================
-# :contentReference[oaicite:0]{index=0}
-
 steps:
   - id: "1"
     title: "greet_1"
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What did you eat for lunch?"
+      Then ask: "Do you have a pet? What is it?"
 
   - id: "2"
     title: "greet_1"
@@ -42,7 +40,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Where Animals Live.' We will learn different places where animals live."
+      Introduce the text: "Today we are going to read a book called 'Where Animals Live.' We will learn that different animals live in different places like trees, ponds, caves, woods, and the ocean."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -98,49 +96,49 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about the character's actions or their feeling.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "16"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about where the student would like to see an animal live.
+
+  - id: "17"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
       Ask the student to read the text: "Can you read this text?"
 
-  - id: "17"
+  - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
-  - id: "18"
+  - id: "19"
     title: "page_6"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
-  - id: "19"
-    title: "page_6"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about where you like to live or stay.
-
   - id: "20"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Turn to page 7."
-      Ask the student to read the text: "Can you read this text?"
+      Guide the students to read the text: "Please read this text. These bats live in a cave. This bear lives in a cave, too."
 
   - id: "21"
     title: "page_7"
@@ -153,7 +151,7 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the character's actions or their feeling.
       Wait for the student’s response and correct mistakes.
 
   - id: "23"
@@ -167,7 +165,7 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
+      Ask a question to focus on specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "25"
@@ -182,64 +180,58 @@ steps:
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "Read aloud with me. This octopus lives in the ocean. The whale lives in the ocean, too."
 
   - id: "27"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "28"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "29"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about a sea animal you like.
-
-  - id: "30"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      Ask the student to read the text: "Can you read this text?"
+      Guide the students to read the text: "Please read this text. Mandy and Michael live in a house. People are animals, too."
+
+  - id: "30"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "31"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about sequence/order using the whole book.
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "32"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "33"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question to review key vocabulary or concepts from the text.
       Wait for the student’s response and correct mistakes.
 
-  - id: "34"
+  - id: "33"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question about what happens in the beginning of the story.
       Wait for the student’s response and correct mistakes.
 
-  - id: "35"
+  - id: "34"
     title: "goodbye"
     pages: []
     plan_nl: |

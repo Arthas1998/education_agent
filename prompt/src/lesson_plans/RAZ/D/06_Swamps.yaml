@@ -1,14 +1,14 @@
 # ============================
 # Lesson Plan: RAZ/D/06_Swamps
 # ============================
-
+# Source: :contentReference[oaicite:0]{index=0}
 steps:
   - id: "1"
     title: "greet_1"
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "Do you have a pet? What is it?"
+      Then ask: "What is your favorite game to play?"
 
   - id: "2"
     title: "greet_1"
@@ -41,7 +41,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Swamps.' We will learn why swamps are important and how they help Earth."
+      Introduce the text: "Today we are going to read a book called 'Swamps.' We will learn what swamps are and how they help Earth stay healthy."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -70,13 +70,13 @@ steps:
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      Guide the students to read the text: "Please read this text. Swamps can have fresh water."
+      The teacher reads the text first: "Read aloud with me. Swamps can have fresh water."
 
   - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "12"
@@ -91,13 +91,13 @@ steps:
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "Read aloud with me. Swamps can have salt water."
+      Guide the students to read the text: "Please read this text. Swamps can have salt water."
 
   - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question to focus on specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
@@ -112,27 +112,27 @@ steps:
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      The teacher reads the text first: "Read aloud with me. Swamps can have many plants."
+      Guide the students to read the text: "Please read this text. Swamps can have many plants."
 
   - id: "17"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "19"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a divergent question about plants you see near your home.
+      Ask a divergent question about a plant the student has seen near water.
 
   - id: "20"
     title: "page_7"
@@ -145,14 +145,14 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about sequence.
+      Ask a question about the actions in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "22"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about the character's actions or their feeling.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "23"
@@ -201,7 +201,7 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a divergent question about keeping water clean.
+      Ask a divergent question about a place the student goes to get fresh air.
 
   - id: "30"
     title: "page_10"
@@ -214,7 +214,7 @@ steps:
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "32"
@@ -235,14 +235,14 @@ steps:
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question about what might happen next in the story.
       Wait for the student’s response and correct mistakes.
 
   - id: "35"
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "36"
@@ -256,28 +256,28 @@ steps:
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question about sequence/order using the whole book.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "38"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the character's actions or their feeling.
       Wait for the student’s response and correct mistakes.
 
   - id: "39"
     title: "review"
-    pages: [13]
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 13: "Turn to page 13."
-      Ask the student to read aloud these words from the vocabulary list.
+      Ask a question about making a sentence using the same structure as in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "40"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question about what happens in the beginning of the story.
+      Ask a question to review key vocabulary or concepts from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "41"

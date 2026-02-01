@@ -8,7 +8,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What animal do you like best?"
+      Then ask: "Have you ever been to a zoo?"
 
   - id: "2"
     title: "greet_1"
@@ -22,14 +22,14 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "Have you ever been to a zoo?"
+      Then ask: "What animal do you like best?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
       Briefly chat.
-      Keep it friendly and short.
+      Keep the greeting simple.
 
   - id: "5"
     title: "cover"
@@ -42,7 +42,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'What Is at the Zoo?' We will practice yes-or-no questions about animals at the zoo."
+      Introduce the text: "Today we are going to read a book called 'What Is at the Zoo?' and practice yes-or-no questions about zoo animals."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -63,7 +63,7 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "10"
@@ -84,7 +84,7 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "13"
@@ -92,13 +92,13 @@ steps:
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "Read aloud with me. Are there elephants at the zoo? Yes, there are."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
@@ -119,7 +119,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about sequence.
+      Ask a question to focus on specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "18"
@@ -133,7 +133,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a divergent question about visiting a zoo.
+      Ask a divergent question about visiting a zoo and seeing animals up close.
 
   - id: "20"
     title: "page_7"
@@ -174,7 +174,7 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "26"
@@ -195,45 +195,51 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about the character's actions or their feeling.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "29"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about swimming and water animals the student has seen.
+
+  - id: "30"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      Guide the students to read the text: "Please read this text. Are there dinosaurs at the zoo? No, there are not."
+      Ask the student to read the text: "Can you read this text?"
 
-  - id: "30"
+  - id: "31"
     title: "page_10"
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
       Wait for the student’s response and correct mistakes.
 
-  - id: "31"
+  - id: "32"
     title: "page_10"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
-  - id: "32"
+  - id: "33"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question to review key vocabulary or concepts from the text.
+      Ask a question about making a sentence using the same structure as in the text.
       Wait for the student’s response and correct mistakes.
 
-  - id: "33"
-    title: "review_retell"
+  - id: "34"
+    title: "review"
     pages: []
     plan_nl: |
       Ask a question about what happens in the beginning of the story.
       Wait for the student’s response and correct mistakes.
 
-  - id: "34"
+  - id: "35"
     title: "goodbye"
     pages: []
     plan_nl: |

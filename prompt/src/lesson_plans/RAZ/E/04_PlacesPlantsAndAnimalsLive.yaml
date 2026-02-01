@@ -1,6 +1,7 @@
 # ============================
 # Lesson Plan: RAZ/E/04_PlacesPlantsAndAnimalsLive
 # ============================
+# Source: :contentReference[oaicite:0]{index=0}
 
 steps:
   - id: "1"
@@ -8,7 +9,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What did you eat for lunch?"
+      Then ask: "What animal do you like best?"
 
   - id: "2"
     title: "greet_1"
@@ -22,14 +23,14 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "What animals can you find near your home?"
+      Then ask: "What is your favorite food?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
       Briefly chat.
-      Keep it positive and simple.
+      Stay friendly and positive.
 
   - id: "5"
     title: "cover"
@@ -42,231 +43,210 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'Places Plants and Animals Live' and learn about different places and what living things are like there."
-      Then ask: "Let's start today’s lesson, OK?"
+      Introduce the text: "Today we are going to read a book called 'Places Plants and Animals Live.' We will learn about different places and what lives there."
+      Then ask: "Let's start today's lesson, OK?"
 
   - id: "7"
-    title: "page_2"
-    pages: [2]
-    plan_nl: |
-      Clearly guide the student to turn to page 2: "Turn to page 2."
-      The teacher reads the text first: "Read aloud with me. Places Plants and Animals Live Written by Katie Knight Illustrated by Cende Hill www.readinga-z.com"
-
-  - id: "8"
-    title: "page_2"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "9"
-    title: "page_2"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "10"
     title: "page_3"
     pages: [3]
     plan_nl: |
-      Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
+      Clearly guide the student to turn to page 3: "Turn to page 3."
       The teacher reads the text first: "Read aloud with me. Plants and animals live in the deserts. Deserts are very dry. Deserts can be very hot."
 
-  - id: "11"
+  - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student's response and correct mistakes.
 
-  - id: "12"
+  - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "13"
+  - id: "10"
     title: "page_4"
     pages: [4]
     plan_nl: |
-      Clearly guide the student to turn to page 4: "Turn to page 4."
-      Guide the students to read the text: "Please read this text. Plants and animals live in the oceans. Ocean water is very salty."
+      Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
+      Ask the student to read the text: "Can you read this text?"
 
-  - id: "14"
+  - id: "11"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about cause and effect in the text.
+      Wait for the student's response and correct mistakes.
 
-  - id: "15"
+  - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "16"
-    title: "page_4"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about places you have been where there is water.
-
-  - id: "17"
+  - id: "13"
     title: "page_5"
     pages: [5]
     plan_nl: |
-      Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
-      Ask the student to read the text: "Can you read this text?"
+      Clearly guide the student to turn to page 5: "Turn to page 5."
+      Guide the students to read the text: "Please read this text. Plants and animals live in the mountains. Mountains are very tall and steep."
 
-  - id: "18"
+  - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
       Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "19"
+  - id: "15"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the character's actions or their feeling.
+      Wait for the student's response and correct mistakes.
 
-  - id: "20"
+  - id: "16"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a place you have visited with big mountains.
+
+  - id: "17"
     title: "page_6"
     pages: [6]
     plan_nl: |
-      Clearly guide the student to turn to page 6: "Turn to page 6."
-      Ask the student to read the text: "Can you read this text?"
+      Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
+      The teacher reads the text first: "Read aloud with me. Plants and animals live in the plains. Plains are very grassy and flat."
 
-  - id: "21"
+  - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the actions in the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about sequence (what happens first/next).
+      Wait for the student's response and correct mistakes.
 
-  - id: "22"
+  - id: "19"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about how two things in current and last pages are alike or different.
+      Wait for the student's response and correct mistakes.
 
-  - id: "23"
+  - id: "20"
     title: "page_7"
     pages: [7]
     plan_nl: |
-      Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
+      Clearly guide the student to turn to page 7: "Turn to page 7."
       Ask the student to read the text: "Can you read this text?"
 
-  - id: "24"
+  - id: "21"
     title: "page_7"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "25"
+  - id: "22"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
 
-  - id: "26"
-    title: "page_7"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about a river or lake near where you live.
-
-  - id: "27"
+  - id: "23"
     title: "page_8"
     pages: [8]
     plan_nl: |
-      Clearly guide the student to turn to page 8: "Turn to page 8."
-      Ask the student to read the text: "Can you read this text?"
+      Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
+      Guide the students to read the text: "Please read this text. Plants and animals live in rainforests. Rainforests are very wet."
 
-  - id: "28"
+  - id: "24"
     title: "page_8"
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "29"
+  - id: "25"
     title: "page_8"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "30"
+  - id: "26"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a time you got very wet in the rain.
+
+  - id: "27"
     title: "page_9"
     pages: [9]
     plan_nl: |
-      Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
+      Clearly guide the student to turn to page 9: "Turn to page 9."
       The teacher reads the text first: "Read aloud with me. Plants and animals live in the tundra. The tundra is very cold. The tundra has no trees."
 
-  - id: "31"
+  - id: "28"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about what might happen next in the book.
+      Wait for the student's response and correct mistakes.
 
-  - id: "32"
+  - id: "29"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the character's actions or their feeling.
+      Wait for the student's response and correct mistakes.
 
-  - id: "33"
+  - id: "30"
     title: "page_10"
     pages: [10]
     plan_nl: |
-      Clearly guide the student to turn to page 10: "Turn to page 10."
+      Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
       Guide the students to read the text: "Please read this text. Plants and animals live all around the world."
 
+  - id: "31"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question about sequence (what happens first/next).
+      Wait for the student's response and correct mistakes.
+
+  - id: "32"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
+
+  - id: "33"
+    title: "page_10"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a place you want to visit someday.
+
   - id: "34"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about sequence.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "35"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
-
-  - id: "36"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Ask a divergent question about a place you want to visit and what might live there.
-
-  - id: "37"
     title: "review"
     pages: []
     plan_nl: |
       Ask a question to review key vocabulary or concepts from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
-  - id: "38"
+  - id: "35"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question about what happens in the beginning of the story.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about what happens in the beginning of the book.
+      Wait for the student's response and correct mistakes.
 
-  - id: "39"
+  - id: "36"
     title: "goodbye"
     pages: []
     plan_nl: |

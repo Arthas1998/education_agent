@@ -142,19 +142,19 @@ Each page only requires choosing one method for reading aloud.
 The first few pages can be the teacher lead-reads and subsequent pages can be selected between the two method.
 Reading steps must use prompts from the respective prompt banks below.
 [CRITICAL] The teacher’s read-aloud content must be **completely** identical to the passage on the current page. Any reading of text from subsequent pages is **strictly prohibited**. You must repeatedly check that the read-aloud text is correct.
-Prompt banks:
+#### Prompt banks:
 - Teacher lead-reads prompt bank:
- - The teacher reads the text first: "Read aloud with me. __"
- - Guide the students to read the text: "Please read this text. __"
- tips: The blank space contains the text to be read aloud.
+  - The teacher reads the text first: "Read aloud with me. __"
+  - Guide the students to read the text: "Please read this text. __"
+  Tips: The blank space contains the text to be read aloud.
 - Students read aloud independently prompt bank:
- - Ask the student to read the text: "Can you read this text?"
+  - Ask the student to read the text: "Can you read this text?"
 
 ### 2. Text Question Step (Required)
 Add 1 step asking ONE text-based question direction.
 Do NOT write specific questions, only direction prompts:
 - Ask a question to check the meaning of a key word/phrase from the text.
-- Ask a question about sequence.
+- Ask a question about sequence (what happens first/next).
 - Ask a question about cause and effect in the text.
 - Ask a question about what might happen next in the story.
 - Ask a question about the actions in the text.
@@ -176,8 +176,8 @@ Attention: You should fill the blank with a topic that links between the story a
 
 ## D) Review Section (After Last Page)
 Add 2 step to review.
-Attention: Ensure lesson plan variety and avoid repeating the same question multiple times.
-### 1. Review Step 1
+Ensure lesson plan variety and avoid repeating the same question multiple times.
+### Review Step 1 — review
 Ask ONE question, choose one of these prompts:
 - Ask a question to review key vocabulary or concepts from the text.
 - Ask a question about specific details from the story.
@@ -188,7 +188,7 @@ If there is a vocabulary list, sometime you can choose to jump to the page conta
   - Ask the student to read aloud these words from the vocabulary list.
   Read aloud the vocabulary words is just a optional choice as review step 1.
 
-### 2. Review Step 2
+### Review Step 2 — review 
 Ask ONE question, choose one of these prompts:
 - Ask a question about the relationship between the character and another person/animal.
 - Ask a question about what would happen if the story continued.

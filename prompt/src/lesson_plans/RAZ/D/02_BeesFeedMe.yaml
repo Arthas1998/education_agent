@@ -1,7 +1,7 @@
 # ============================
 # Lesson Plan: RAZ/D/02_BeesFeedMe
 # ============================
-
+# Source: :contentReference[oaicite:0]{index=0}
 steps:
   - id: "1"
     title: "greet_1"
@@ -62,7 +62,7 @@ steps:
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "10"
@@ -70,7 +70,7 @@ steps:
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      Guide the students to read the text: "Please read this text. Without bees, we would not have apples."
+      The teacher reads the text first: "Read aloud with me. Without bees, we would not have apples."
 
   - id: "11"
     title: "page_4"
@@ -83,7 +83,7 @@ steps:
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "13"
@@ -91,13 +91,13 @@ steps:
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "Read aloud with me. Without bees, we would not have carrots."
+      Guide the students to read the text: "Please read this text. Without bees, we would not have carrots."
 
   - id: "14"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "15"
@@ -111,7 +111,7 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a divergent question about favorite vegetables you like to eat.
+      Ask a divergent question about foods the student likes that come from plants.
 
   - id: "17"
     title: "page_6"
@@ -124,7 +124,7 @@ steps:
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
+      Ask a question to focus on specific elements or actions mentioned in the page.
       Wait for the student’s response and correct mistakes.
 
   - id: "19"
@@ -145,14 +145,14 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about sequence.
+      Ask a question to check the meaning of a key word/phrase from the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "22"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
 
   - id: "23"
@@ -166,28 +166,28 @@ steps:
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
+      Ask a question about what might happen next in the story.
       Wait for the student’s response and correct mistakes.
 
   - id: "25"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question about how two things in current and last pages are alike or different.
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "26"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a divergent question about a fruit you like to pick or eat.
+      Ask a divergent question about a time the student ate fruit and where it came from.
 
   - id: "27"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
-      Guide the students to read the text: "Please read this text. Without bees, we would not have pumpkins."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "28"
     title: "page_9"
@@ -200,7 +200,7 @@ steps:
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "30"
@@ -208,20 +208,20 @@ steps:
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      The teacher reads the text first: "Read aloud with me. Bees help bring us some of our favorite foods. Thank you, bees!"
+      Guide the students to read the text: "Please read this text. Bees help bring us some of our favorite foods. Thank you, bees!"
 
   - id: "31"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question about what might happen next in the story.
+      Ask a question about sequence (what happens first/next).
       Wait for the student’s response and correct mistakes.
 
   - id: "32"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about the character's actions or their feeling.
       Wait for the student’s response and correct mistakes.
 
   - id: "33"

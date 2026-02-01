@@ -1,14 +1,13 @@
 # ============================
 # Lesson Plan: RAZ/F/06_AnimalDads
 # ============================
-
 steps:
   - id: "1"
     title: "greet_1"
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "What is your favorite game to play?"
+      Then ask: "What did you eat for lunch?"
 
   - id: "2"
     title: "greet_1"
@@ -22,13 +21,14 @@ steps:
     pages: []
     plan_nl: |
       Respond to the student.
-      Then ask: "What makes you happy today?"
+      Then ask: "Do you like vegetables or fruit?"
 
   - id: "4"
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat only, then transition to the cover.
+      Briefly chat.
+      Transition to the cover.
 
   - id: "5"
     title: "cover"
@@ -41,250 +41,287 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called "Animal Dads." We will learn how some animal fathers take care of their babies."
+      Introduce the text: "Today we are going to read a book called "Animal Dads." We will learn how some animal dads help their young."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
+    title: "page_2"
+    pages: [2]
+    plan_nl: |
+      Clearly guide the student to turn to page 2: "Turn to page 2."
+      The teacher reads the text first: "Read aloud with me. Animal Dads. Written by Barbara Schwartz. www.readinga-z.com"
+
+  - id: "8"
+    title: "page_2"
+    pages: []
+    plan_nl: |
+      Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "9"
+    title: "page_2"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "10"
     title: "page_3"
     pages: [3]
     plan_nl: |
-      Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "I will read first, Some animal dads don't help much. These dads don't help at all!"
+      Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
+      The teacher reads the text first: "Read aloud with me. Some animal dads don't help much. These dads don't help at all!"
 
-  - id: "8"
+  - id: "11"
+    title: "page_3"
+    pages: []
+    plan_nl: |
+      Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "12"
     title: "page_3"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-
-  - id: "9"
-    title: "page_3"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
-
-  - id: "10"
-    title: "page_4"
-    pages: [4]
-    plan_nl: |
-      Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "11"
-    title: "page_4"
-    pages: []
-    plan_nl: |
       Wait for the student’s response and correct mistakes.
-
-  - id: "12"
-    title: "page_4"
-    pages: []
-    plan_nl: |
-      Ask a question about an important detail in the text.
 
   - id: "13"
     title: "page_4"
-    pages: []
+    pages: [4]
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Clearly guide the student to turn to page 4: "Turn to page 4."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "14"
-    title: "page_5"
-    pages: [5]
-    plan_nl: |
-      Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "I will read first. This dad guards and cares for his chicks. He helps them all by himself for almost two years."
-
-  - id: "15"
-    title: "page_5"
+    title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question about what might happen next in the story.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "16"
-    title: "page_5"
+  - id: "15"
+    title: "page_4"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "16"
+    title: "page_5"
+    pages: [5]
+    plan_nl: |
+      Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+      The teacher reads the text first: "Read aloud with me. This dad guards and cares for his chicks. He helps them all by himself for almost two years."
 
   - id: "17"
-    title: "page_6"
-    pages: [6]
-    plan_nl: |
-      Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      The teacher reads the text first: "I will read first. This dad cleans bugs from his babies' fur. He helps feed them."
-
-  - id: "18"
-    title: "page_6"
+    title: "page_5"
     pages: []
     plan_nl: |
-      The teacher reads the text: "Go on reading. He carries them, too."
+      Ask a question about sequence (what happens first/next).
+      Wait for the student’s response and correct mistakes.
+
+  - id: "18"
+    title: "page_5"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
   - id: "19"
     title: "page_6"
-    pages: []
+    pages: [6]
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Clearly guide the student to turn to page 6: "Turn to page 6."
+      The teacher reads the text first: "Read aloud with me. This dad cleans bugs from his babies' fur. He helps feed them."
 
   - id: "20"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. He carries them, too."
+      Wait for the student’s response and correct mistakes.
 
   - id: "21"
-    title: "page_7"
-    pages: [7]
-    plan_nl: |
-      Clearly guide the student to turn to page 7: "Turn to page 7."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "22"
-    title: "page_7"
+    title: "page_6"
     pages: []
     plan_nl: |
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "22"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a question about the character's actions or their feeling.
       Wait for the student’s response and correct mistakes.
 
   - id: "23"
+    title: "page_6"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about how your dad or family helps you.
+
+  - id: "24"
+    title: "page_7"
+    pages: [7]
+    plan_nl: |
+      Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
+      Ask the student to read the text: "Can you read this text?"
+
+  - id: "25"
     title: "page_7"
     pages: []
     plan_nl: |
       Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "24"
+  - id: "26"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
-
-  - id: "25"
-    title: "page_8"
-    pages: [8]
-    plan_nl: |
-      Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
-      Ask the student to read: "Can you read first two sentences?"
-
-  - id: "26"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Now, can you read the remaining sentences?
+      Ask a question linking the text to the picture/diagram.
       Wait for the student’s response and correct mistakes.
 
   - id: "27"
     title: "page_8"
-    pages: []
+    pages: [8]
     plan_nl: |
-      Ask a question about sequence (what happens first/next).
+      Clearly guide the student to turn to page 8: "Turn to page 8."
+      Ask the student to read: "Can you read first two sentences?"
 
   - id: "28"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+      Wait for the student’s response and correct mistakes.
 
   - id: "29"
     title: "page_8"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a question about the actions in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "30"
-    title: "page_9"
-    pages: [9]
+    title: "page_8"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 9: "Turn to page 9."
-      The teacher reads the text first: "I will read first. This dad carries tadpoles on his back. He helps them reach water."
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
   - id: "31"
     title: "page_9"
-    pages: []
+    pages: [9]
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
+      The teacher reads the text first: "Read aloud with me. This dad carries tadpoles on his back. He helps them reach water."
 
   - id: "32"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about cause and effect in the text.
+      Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "33"
-    title: "page_10"
-    pages: [10]
-    plan_nl: |
-      Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "34"
-    title: "page_10"
+    title: "page_9"
     pages: []
     plan_nl: |
+      Ask a question about the details of the picture.
       Wait for the student’s response and correct mistakes.
+
+  - id: "34"
+    title: "page_9"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a time you helped someone smaller or younger.
 
   - id: "35"
     title: "page_10"
-    pages: []
+    pages: [10]
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Clearly guide the student to turn to page 10: "Turn to page 10."
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "36"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "37"
-    title: "page_11"
-    pages: [11]
+    title: "page_10"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 11: "Turn to page 11."
-      The teacher reads the text first: "I will read first. This dad holds thousands of eggs in his pouch. He helps them grow and hatch."
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
 
   - id: "38"
     title: "page_11"
-    pages: []
+    pages: [11]
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Clearly guide the student to turn to page 11: "Now, let`s turn to page 11."
+      The teacher reads the text first: "Read aloud with me. This dad holds thousands of eggs in his pouch. He helps them grow and hatch."
 
   - id: "39"
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "40"
-    title: "page_12"
-    pages: [12]
+    title: "page_11"
+    pages: []
     plan_nl: |
-      Clearly guide the student to turn to page 12: "Now, let`s turn to page 12."
-      The teacher reads the text first: "I will read first. These dads help out with their young, too!"
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
   - id: "41"
     title: "page_12"
-    pages: []
+    pages: [12]
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Clearly guide the student to turn to page 12: "Turn to page 12."
+      The teacher reads the text first: "Read aloud with me. These dads help out with their young, too!"
 
   - id: "42"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "43"
+    title: "page_12"
+    pages: []
+    plan_nl: |
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "44"
+    title: "page_12"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about how you help at home.
+
+  - id: "45"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question about sequence/order from the text.
+      Ask a question to review key vocabulary or concepts from the text.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "44"
-    title: "review_retell"
-    pages: [12]
+  - id: "46"
+    title: "review"
+    pages: []
     plan_nl: |
-      Ask a general comprehension question about the whole text.
-      Wait for the student’s response and give positive encouragement.
+      Ask a question about the character's trying to achieve.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "45"
+  - id: "47"
     title: "goodbye"
     pages: []
     plan_nl: |

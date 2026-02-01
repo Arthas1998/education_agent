@@ -176,7 +176,7 @@ Attention: You should fill the blank with a topic that links between the story a
 
 ## D) Review Section (After Last Page)
 Add 2 step to review.
-
+Ensure lesson plan variety and avoid repeating the same question multiple times.
 ### Review Step 1 — review
 Ask ONE question, choose one of these prompts:
 - Ask a question to review key vocabulary or concepts from the text.

@@ -1,6 +1,7 @@
 # ============================
 # Lesson Plan: RAZ/E/02_AllAboutOrcas
 # ============================
+# Source: :contentReference[oaicite:0]{index=0}
 
 steps:
   - id: "1"
@@ -8,7 +9,7 @@ steps:
     pages: []
     plan_nl: |
       First, introduce yourself: "Hello, I am your English teacher today."
-      Then ask: "How are you today?"
+      Then ask: "What did you eat for breakfast?"
 
   - id: "2"
     title: "greet_1"
@@ -29,7 +30,7 @@ steps:
     pages: []
     plan_nl: |
       Briefly chat.
-      Keep it positive and simple.
+      Stay friendly and positive.
 
   - id: "5"
     title: "cover"
@@ -42,7 +43,7 @@ steps:
     title: "cover"
     pages: []
     plan_nl: |
-      Introduce the text: "Today we are going to read a book called 'All About Orcas.' We will learn facts about orcas and what they do."
+      Introduce the text: "Today we are going to read a book called 'All About Orcas.' We will learn facts about orcas and what makes them interesting."
       Then ask: "Let's start today’s lesson, OK?"
 
   - id: "7"
@@ -56,36 +57,36 @@ steps:
     title: "page_2"
     pages: []
     plan_nl: |
-      Ask a question about what might happen next in the story.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about what might happen next in the book.
+      Wait for the student's response and correct mistakes.
 
   - id: "9"
     title: "page_2"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
 
   - id: "10"
     title: "page_3"
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Now, let`s turn to page 3."
-      The teacher reads the text first: "Read aloud with me. Words to Know breathe dolphins hunters mammals orcas packs"
+      Ask the student to read the text: "Can you read this text?"
 
   - id: "11"
     title: "page_3"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "12"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
 
   - id: "13"
     title: "page_4"
@@ -99,14 +100,14 @@ steps:
     pages: []
     plan_nl: |
       Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "15"
     title: "page_4"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "16"
     title: "page_5"
@@ -119,21 +120,21 @@ steps:
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about the actions in the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about where something happens in the text.
+      Wait for the student's response and correct mistakes.
 
   - id: "18"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the character's actions or their feeling.
+      Wait for the student's response and correct mistakes.
 
   - id: "19"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a divergent question about an ocean animal you have seen or learned about.
+      Ask a divergent question about places you like to visit near water.
 
   - id: "20"
     title: "page_6"
@@ -147,173 +148,173 @@ steps:
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "22"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
 
   - id: "23"
     title: "page_7"
     pages: [7]
     plan_nl: |
       Clearly guide the student to turn to page 7: "Now, let`s turn to page 7."
-      The teacher reads the text first: "Read aloud with me. Orcas are black and white. Orcas are big dolphins."
+      Guide the students to read the text: "Please read this text. Orcas are black and white. Orcas are big dolphins."
 
   - id: "24"
     title: "page_7"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "25"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student's response and correct mistakes.
 
   - id: "26"
     title: "page_8"
     pages: [8]
     plan_nl: |
       Clearly guide the student to turn to page 8: "Turn to page 8."
-      Guide the students to read the text: "Please read this text. Orcas are called "killer whales." Orcas are strong hunters."
+      The teacher reads the text first: "Read aloud with me. Orcas are called \"killer whales.\" Orcas are strong hunters."
 
   - id: "27"
     title: "page_8"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "28"
     title: "page_8"
     pages: []
     plan_nl: |
       Ask a question about the character's actions or their feeling.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "29"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a time you worked hard to do something.
+
+  - id: "30"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Now, let`s turn to page 9."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "30"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
+      Guide the students to read the text: "Please read this text. Orcas hunt in packs. Orcas are strong hunters."
 
   - id: "31"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about the actions in the text.
+      Wait for the student's response and correct mistakes.
 
   - id: "32"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a divergent question about working together with friends or family.
+      Ask a question about how two things in current and last pages are alike or different.
+      Wait for the student's response and correct mistakes.
 
   - id: "33"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Turn to page 10."
-      Ask the student to read the text: "Can you read this text?"
+      The teacher reads the text first: "Read aloud with me. Orcas have sharp teeth. Orcas are strong hunters."
 
   - id: "34"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a question to focus on specific elements or actions mentioned in the page.
+      Wait for the student's response and correct mistakes.
 
   - id: "35"
     title: "page_10"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "36"
     title: "page_11"
     pages: [11]
     plan_nl: |
       Clearly guide the student to turn to page 11: "Now, let`s turn to page 11."
-      Ask the student to read the text: "Can you read this text?"
+      Guide the students to read the text: "Please read this text. Orcas eat other animals. Orcas are strong hunters."
 
   - id: "37"
     title: "page_11"
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "38"
     title: "page_11"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "39"
+    title: "page_11"
+    pages: []
+    plan_nl: |
+      Ask a divergent question about a food you like that comes from the sea.
+
+  - id: "40"
     title: "page_12"
     pages: [12]
     plan_nl: |
       Clearly guide the student to turn to page 12: "Turn to page 12."
-      Ask the student to read the text: "Can you read this text?"
-
-  - id: "40"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      Ask a question to focus on specific elements or actions mentioned in the page.
-      Wait for the student’s response and correct mistakes.
+      The teacher reads the text first: "Read aloud with me. Orcas have big fins. Orcas are strong hunters."
 
   - id: "41"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student's response and correct mistakes.
 
   - id: "42"
     title: "page_12"
     pages: []
     plan_nl: |
-      Ask a divergent question about an animal body part that helps it move.
+      Ask a question about the details of the picture.
+      Wait for the student's response and correct mistakes.
 
   - id: "43"
     title: "page_13"
     pages: [13]
     plan_nl: |
       Clearly guide the student to turn to page 13: "Now, let`s turn to page 13."
-      Ask the student to read the text: "Can you read this text?"
+      Guide the students to read the text: "Please read this text. Orcas are called \"wolves of the sea.\" Orcas are strong hunters."
 
   - id: "44"
     title: "page_13"
     pages: []
     plan_nl: |
       Ask a question to check the meaning of a key word/phrase from the text.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "45"
     title: "page_13"
     pages: []
     plan_nl: |
       Ask a question linking the text to the picture/diagram.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "46"
     title: "page_14"
@@ -326,37 +327,42 @@ steps:
     title: "page_14"
     pages: []
     plan_nl: |
-      Ask a question about what might happen next in the text or activity.
-      Wait for the student’s response and correct mistakes.
+      Ask a question about what the student could do next using the ideas on the page.
+      Wait for the student's response and correct mistakes.
 
   - id: "48"
     title: "page_14"
     pages: []
     plan_nl: |
       Ask a question about the details of the picture.
-      Wait for the student’s response and correct mistakes.
+      Wait for the student's response and correct mistakes.
 
   - id: "49"
-    title: "review"
+    title: "page_14"
     pages: []
     plan_nl: |
-      Ask a question to review key vocabulary or concepts from the text.
-      Wait for the student’s response and correct mistakes.
+      Ask a divergent question about a poster or drawing you have made before.
 
   - id: "50"
     title: "review"
     pages: []
     plan_nl: |
-      Ask a question about what happens in the beginning of the story.
-      Wait for the student’s response and correct mistakes.
+      Ask a question to review key vocabulary or concepts from the text.
+      Wait for the student's response and correct mistakes.
 
   - id: "51"
+    title: "review"
+    pages: []
+    plan_nl: |
+      Ask a question about what would happen if the book continued.
+      Wait for the student's response and correct mistakes.
+
+  - id: "52"
     title: "goodbye"
     pages: []
     plan_nl: |
       The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
 
-# Source: :contentReference[oaicite:0]{index=0}
 policies:
   defaults:
     step_turns: 1

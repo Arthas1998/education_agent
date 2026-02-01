@@ -55,7 +55,6 @@ At the very top:
 - `cover`
 - `page_y` (y = page number)
 - `review`
-- `review_retell`
 - `goodbye`
 
 ## Pages field
@@ -87,113 +86,7 @@ At the very top:
 Greeting must stay low-turn, no multi-follow-up.
 Greeting questions must come from Greeting Questions Bank.
 [CRITICAL] The greeting question **cannot** be the same for different lesson plans.
-
-## B) Cover Section (Fixed 2 steps, MUST)
-
-### Step 5 — cover (pages: [1])
-Use this prompt at first:
-- Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
-Then:
-- Ask ONE prediction question about the cover picture.
-
-### Step 6 — cover (pages: [])
-Use this prompt at first:
-- Introduce the text:
-Then followed by giving a fixed full-book overview sentence.
-End with the fixed question:
-- Then ask: "Let's start today’s lesson, OK?"
-
-Cover predictions are never corrected.
-
-## C) Main Reading Section (Page-by-page)
-
-### Global Rule
-- Every sentence on every main content page must be read aloud.
-- Reading is the core; questions focus on text meaning.
-- [CRITICAL] Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank. For example: Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
-- No using brackets such as ( ) or [ ].
-
-Each page must include:
-
-### 1. Reading Steps (Required)
-There are two types of reading aloud: teacher-led reading and independent student reading. 
-Each page only requires choosing one method for reading aloud.
-The first few pages can be the teacher lead-reads and subsequent pages can be selected between the two method.
-
-[CRITICAL] The teacher’s read-aloud content must be **completely** identical to the passage on the current page. Any reading of text from subsequent pages is **strictly prohibited**. You must repeatedly check that the read-aloud text is correct.
-
-#### Short page (1–2 sentences)
-Use 1 reading step, 
-- Teacher lead-reads prompt:
- - The teacher reads the text first: "I will read first, __"
- The blank space contains the text to be read aloud.
-- Students read aloud independently prompt:
- - Ask the student to read the text: "Can you read this text?"
-   
-#### Long page (3–4+ sentences)
-Use 2 reading steps: first 2 sentences, then the rest.
-- Teacher lead-reads prompt:
- - The teacher reads the text first: "I will read first. __"
- - After reading the first two sentences, then the teacher reads the text: "Go on reading. __"
-The blank space contains the text to be read aloud.
-- Students read aloud independently prompt:
- - Ask the student to read the text: "Can you read first two sentences?"
- - After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
-
-### 2. Text and Picture Question Step (Required)
-
-After reading, add 2 steps asking ONE text-based question direction.
-
-Do NOT write specific questions, only direction prompts:
-
-- Ask a question about the main point of the text.
-- Ask a question about an important detail in the text.
-- Ask a question to check the meaning of a key word/phrase.
-- Ask a question about sequence (what happens first/next).
-- Ask a question about cause and effect in the text.
-- Ask a question linking the text to the picture/diagram.
-- Ask a question about the details of the picture.
-
-Short pages should NOT force main idea; use detail/vocab/picture instead.
-
-### 3. Divergent Question Step (Optional, Limited)
-
-- Only once every ~3 pages or at natural breakpoints.
-- Use one short prompt:
-  - Ask ONE light divergent question related to real life.
-
-## D) Review Section (After Last Page)
-
-### Review Step 1 — review
-- Choose ONE quick recall questions, do not combine multiple:
-  - vocabulary/concept
-  - sequence/order
-
-### Review Step 2 — review_retell
-- Ask a general comprehension question about the whole text.
-
-## E) Goodbye Section (Fixed 1 step)
-
-Use this prompt at the end:
-- The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
-
----
-
-# 5) Fixed Policies Block (MUST)
-
-Append exactly at the end:
-
-policies:
-  defaults:
-    step_turns: 1
-
-Do not rename keys. Do not add anything inside `policies`.
-
----
-
-# 6) Language Bank (Reusable Prompts)
-
-## Greeting Questions Bank
+### Greeting Questions Bank:
 - "How are you today?"
 - "How was your day at school?"
 - "What did you do after school today?"
@@ -215,13 +108,123 @@ Do not rename keys. Do not add anything inside `policies`.
 - "Do you like being outside in nature?"
 - "What makes you happy today?"
 
-## Page Turning Bank
+## B) Cover Section (Fixed 2 steps, MUST)
+### Step 5 — cover (pages: [1])
+Use this prompt at first:
 - Clearly prompt student to turn to the cover page: "OK, let's begin the lesson and turn to the cover page."
-- Clearly guide the student to turn to page __: "Now, let`s turn to page __."
-- Clearly guide the student to turn to page __: "Turn to page __."
+Then:
+- Ask ONE prediction question about the cover picture.
 
-## Gentle Correction
-- Wait for the student’s response and correct mistakes
+### Step 6 — cover (pages: [])
+Use this prompt at first:
+- Introduce the text:
+Then followed by giving a fixed full-book overview sentence.
+End with the fixed question:
+- Then ask: "Let's start today’s lesson, OK?"
+Cover predictions are never corrected.
+
+## C) Main Reading Section (Page-by-page)
+### Global Rule
+- Every sentence on every main content page must be read aloud.
+- Reading is the core; questions focus on text meaning.
+- No using brackets such as ( ) or [ ].
+- Each prompt that requires a question should be followed by a general prompt:
+  - Wait for the student’s response and correct mistakes.
+- [CRITICAL] Before moving to the next page, it must clearly prompt to turn the page by using sentences from Page Turning Bank. For example: Clearly guide the student to turn to page 5: "Now, let`s turn to page 5."
+    #### Page Turning Prompt Bank:
+    - Clearly guide the student to turn to page __: "Now, let`s turn to page __."
+    - Clearly guide the student to turn to page __: "Turn to page __."
+    The blank spaces should be filled with the correct page number.
+
+Each page must include:
+### 1. Reading Steps (Required)
+There are two types of reading aloud: teacher-led reading and independent student reading. 
+Each page only requires choosing one method for reading aloud.
+The first few pages can be the teacher lead-reads and subsequent pages can be selected between the two method.
+Reading steps must use prompts from the respective prompt banks below.
+[CRITICAL] The teacher’s read-aloud content must be **completely** identical to the passage on the current page. Any reading of text from subsequent pages is **strictly prohibited**. You must repeatedly check that the read-aloud text is correct.
+#### Prompt banks:
+(a) Short page (1–2 sentences): Use 1 reading step.
+- Teacher lead-reads prompt:
+  - The teacher reads the text first: "Read aloud with me. __"   
+  Tips: The blank space contains the text to be read aloud.
+- Students read aloud independently prompt:
+  - Ask the student to read the text: "Can you read this text?"     
+
+(b) Long page (3–4+ sentences): Use 2 reading steps, first 2 sentences, then the rest.
+- Teacher lead-reads prompt:
+  - The teacher reads the text first: "Read aloud with me. __"
+  - After reading the first two sentences, then the teacher reads the text: "Go on reading. __"   
+  Tips: The blank space contains the text to be read aloud.
+- Students read aloud independently prompt:
+  - Ask the student to read the text: "Can you read first two sentences?"
+  - After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
+
+### 2. Text Question Step (Required)
+Add 1 step asking ONE text-based question direction.
+Do NOT write specific questions, only direction prompts:
+- Ask a question about an important detail in the text.
+- Ask a question about sequence (what happens first/next).
+- Ask a question about cause and effect in the text.
+- Ask a question to check the meaning of a key word/phrase from the text.
+- Ask a question about what might happen next in the story.
+- Ask a question about the actions in the text.
+- Ask a question to focus on specific elements or actions mentioned in the page.
+
+Short pages should NOT force main idea; use detail/vocab/picture instead.
+
+### 3. Picture Question Step (Required)
+Add 1 step asking ONE picture-based question direction.
+Do NOT write specific questions, only direction prompts:
+- Ask a question about the character's actions or their feeling.
+- Ask a question about how two things in current and last pages are alike or different.
+- Ask a question linking the text to the picture/diagram.
+- Ask a question about the details of the picture.
+
+### 4. Divergent Question Step (Optional, Limited)
+Only once every ~3 pages or at natural breakpoints.
+Use one short prompt:
+- Ask a divergent question about __.
+Attention: You should fill the blank with a topic that links between the story and the student’s life or experience.
+
+## D) Review Section (After Last Page)
+Add 2 step to review.
+Ensure lesson plan variety and avoid repeating the same question multiple times.
+### Review Step 1 — review
+Ask ONE question, choose one of these prompts:
+- Ask a question to review key vocabulary or concepts from the text.
+- Ask a question about specific details from the story.
+- Ask a question about the sentence structure or pattern used in the text.
+- Ask a question about making a sentence using the same structure as in the text.
+- Ask a question about a simple action in the text.
+If there is a vocabulary list, sometime you can choose to jump to the page containing the vocabulary list and use the prompts:
+  - Ask the student to read aloud these words from the vocabulary list.
+  Read aloud the vocabulary words is just a optional choice as review step 1.
+
+### Review Step 2 — review 
+Ask ONE question, choose one of these prompts:
+- Ask a question about the relationship between the character and another person/animal.
+- Ask a question about what would happen if the story continued.
+- Ask a question about what happens in the beginning of the story.
+- Ask a question about the character felt during different actions
+- Ask a question about the character's trying to achieve.
+- Ask a question about the main idea of the whole text.
+
+## E) Goodbye Section (Fixed 1 step)
+Use this prompt at the end:
+- The teacher gives a summary and ends the class: "Great job today! You smiled with every page! See you next time!"
+
+---
+
+# 5) Fixed Policies Block (MUST)
+
+Append exactly at the end:
+
+policies:
+  defaults:
+    step_turns: 1
+
+Do not rename keys. Do not add anything inside `policies`.
 
 ---
 # 7) Example
@@ -256,7 +259,7 @@ steps:
     title: "greet_2"
     pages: []
     plan_nl: |
-      Briefly chat only, then transition to the cover.
+      Briefly chat.
 
   - id: "5"
     title: "cover"
@@ -277,88 +280,97 @@ steps:
     pages: [3]
     plan_nl: |
       Clearly guide the student to turn to page 3: "Turn to page 3."
-      The teacher reads the text first: "I will read first. Animals are everywhere. Sometimes they gather in groups."
+      The teacher reads the text first: "Read aloud with me. Animals are everywhere. Sometimes they gather in groups."
 
   - id: "8"
     title: "page_3"
     pages: []
     plan_nl: |
-      The teacher reads the text: "Go on reading. Animal groups have different names."
+      After reading the first two sentences, then the teacher reads the text: "Go on reading. Animal groups have different names."
+      Wait for the student’s response and correct mistakes.
 
   - id: "9"
     title: "page_3"
     pages: []
     plan_nl: |
       Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "10"
     title: "page_3"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
 
   - id: "11"
     title: "page_4"
     pages: [4]
     plan_nl: |
       Clearly guide the student to turn to page 4: "Now, let`s turn to page 4."
-      The teacher reads the text first: "I will read first. A group of geese is a gaggle. A gaggle of geese stands together."
+      The teacher reads the text first: "Read aloud with me. A group of geese is a gaggle. A gaggle of geese stands together."
 
   - id: "12"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question to focus on specific elements or actions mentioned in the page.
+      Wait for the student’s response and correct mistakes.
 
   - id: "13"
     title: "page_4"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
   - id: "14"
     title: "page_5"
     pages: [5]
     plan_nl: |
       Clearly guide the student to turn to page 5: "Turn to page 5."
-      The teacher reads the text first: "I will read first. A group of bats is a colony. A colony of bats may leave its cave all at once."
+      The teacher reads the text first: "Read aloud with me. A group of bats is a colony. A colony of bats may leave its cave all at once."
 
   - id: "15"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "16"
     title: "page_5"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
   - id: "17"
     title: "page_6"
     pages: [6]
     plan_nl: |
       Clearly guide the student to turn to page 6: "Now, let`s turn to page 6."
-      The teacher reads the text first: "I will read first. A murder is a group of crows. This murder gathers at sunset."
+      The teacher reads the text first: "Read aloud with me. A murder is a group of crows. This murder gathers at sunset."
 
   - id: "18"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question linking the text to the picture/diagram.
+      Ask a question to check the meaning of a key word/phrase from the text.
+      Wait for the student’s response and correct mistakes.
 
   - id: "19"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
 
   - id: "20"
     title: "page_6"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a divergent question about flock of birds.
 
   - id: "21"
     title: "page_7"
@@ -371,166 +383,128 @@ steps:
     title: "page_7"
     pages: []
     plan_nl: |
+      Ask a question about an important detail in the text.
       Wait for the student’s response and correct mistakes.
 
   - id: "23"
     title: "page_7"
     pages: []
     plan_nl: |
-      Ask a question about an important detail in the text.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
 
   - id: "24"
-    title: "page_7"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
-
-  - id: "25"
     title: "page_8"
     pages: [8]
     plan_nl: |
       Clearly guide the student to turn to page 8: "Now, let`s turn to page 8."
       Ask the student to read the text: "Can you read this text?"
 
+  - id: "25"
+    title: "page_8"
+    pages: []
+    plan_nl: |
+      Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
+
   - id: "26"
     title: "page_8"
     pages: []
     plan_nl: |
+      Ask a question about how two things in current and last pages are alike or different.
       Wait for the student’s response and correct mistakes.
 
   - id: "27"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Ask a question linking the text to the picture/diagram.
-
-  - id: "28"
-    title: "page_8"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
-
-  - id: "29"
     title: "page_9"
     pages: [9]
     plan_nl: |
       Clearly guide the student to turn to page 9: "Turn to page 9."
       Ask the student to read the text: "Can you read this text?"
 
-  - id: "30"
-    title: "page_9"
-    pages: []
-    plan_nl: |
-      Wait for the student’s response and correct mistakes.
-
-  - id: "31"
+  - id: "28"
     title: "page_9"
     pages: []
     plan_nl: |
       Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "32"
+  - id: "29"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "33"
+  - id: "30"
     title: "page_9"
     pages: []
     plan_nl: |
-      Ask ONE light divergent question related to real life.
+      Ask a divergent question about visiting zoo.
 
-  - id: "34"
+  - id: "31"
     title: "page_10"
     pages: [10]
     plan_nl: |
       Clearly guide the student to turn to page 10: "Now, let`s turn to page 10."
       Ask the student to read the text: "Can you read this text?"
 
-  - id: "35"
-    title: "page_10"
-    pages: []
-    plan_nl: |
-      Wait for the student’s response and correct mistakes.
-
-  - id: "36"
+  - id: "32"
     title: "page_10"
     pages: []
     plan_nl: |
       Ask a question about cause and effect in the text.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "37"
+  - id: "33"
     title: "page_10"
     pages: []
     plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
+      Ask a question about the details of the picture.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "38"
+  - id: "34"
     title: "page_11"
     pages: [11]
     plan_nl: |
       Clearly guide the student to turn to page 11: "Turn to page 11."
       Ask the student to read the text: "Can you read first two sentences?"
 
-  - id: "39"
+  - id: "35"
     title: "page_11"
     pages: []
     plan_nl: |
       After the student reads the first two sentences, then ask the student to read: "Now, can you read the remaining sentences?"
       Wait for the student’s response and correct mistakes.
 
-  - id: "40"
+  - id: "36"
     title: "page_11"
     pages: []
     plan_nl: |
       Ask a question about an important detail in the text.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "41"
+  - id: "37"
     title: "page_11"
     pages: []
     plan_nl: |
-      Ask a question about the main point of the text.
+      Ask a question linking the text to the picture/diagram.
+      Wait for the student’s response and correct mistakes.
 
-  - id: "42"
-    title: "page_12"
-    pages: [12]
-    plan_nl: |
-      Clearly guide the student to turn to page 12: "Now, let`s turn to page 12."
-      The teacher reads the text first: "I will read first. Glossary colony (n.) a group of bats (p. 5) gaggle (n.) a group of geese that are on the ground (p. 4)"
-
-  - id: "43"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      The teacher reads the text: "Go on reading. gather (v.) to come together (p. 3) groups (n.) numbers of people or things gathered together (p. 3) herd (n.) a group of large land animals, such as cows or zebras (p. 9) murder (n.) a group of crows (p. 6) pack (n.) a group of wolves or wild dogs (p. 10) pod (n.) a group of whales or dolphins that live together (p. 7) smack (n.) a group of jellyfish (p. 8) together (adv.) with another person or thing (p. 4) Index colony, 5 family, 11 gaggle, 4 herd, 9 humans, 11 murder, 6 pack, 10 pod, 7 smack, 8"
-
-  - id: "44"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      Ask a question to check the meaning of a key word/phrase.
-
-  - id: "45"
-    title: "page_12"
-    pages: []
-    plan_nl: |
-      Ask a question about an important detail in the text.
-
-  - id: "46"
+  - id: "38"
     title: "review"
-    pages: []
-    plan_nl: |
-      Ask a question to review key vocabulary from the text.
-
-  - id: "47"
-    title: "review_retell"
     pages: [12]
     plan_nl: |
-      Ask a general comprehension question about the whole text.
-      Wait for the student’s response and give positive encouragement.
+      Clearly guide the student to turn to page 12: "Turn to page 12."
+      Ask the student to read aloud these words from the vocabulary list.
 
-  - id: "48"
+  - id: "39"
+    title: "review"
+    pages: [12]
+    plan_nl: |
+      Ask a question about the main idea of the whole text.
+      Wait for the student’s response and correct mistakes.
+
+  - id: "40"
     title: "goodbye"
     pages: []
     plan_nl: |
@@ -544,4 +518,3 @@ policies:
 
 # Now Generate
 Read the provided PDF content and page structure, then output the YAML lesson plan following ALL rules above **as a single ```yaml code block and nothing else**.
-
