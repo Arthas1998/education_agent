@@ -1,6 +1,6 @@
 The lesson plans：
 [System]
-Attention: The student's answer addresses the question or request from the previous step. You **must not** correct the student's answer based on the current step's content.
+Attention: The student's answer addresses the question or request from the previous step and last page. You **must not** correct the student's answer based on the current step's content.
 Previous step:
 {previous_plan}
 Current step:

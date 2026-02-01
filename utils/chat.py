@@ -80,6 +80,10 @@ class Chat:
         # 说明：图片为 OpenAI parts 结构中的 {"type": "image_url", ...}
         self.drop_old_images: bool = True
 
+        # 延迟一轮删除旧图：当“本轮 user 消息带新图且历史已有图”时置 True，
+        # 下一次 add_user_text(...) 调用时（无论是否带图）会触发清理，只保留最后一张图。
+        self._drop_old_images_next_turn: bool = False
+
         # 当前对话轮次数（每次渲染并追加 user 提示词后 +1）
         # 说明：这是“每个 Chat 会话实例”的计数，而非全局共享。
         self.turn_count: int = 1
@@ -156,20 +160,25 @@ class Chat:
         return isinstance(part, dict) and part.get("type") == "image_url"
 
     def _compress_drop_old_images(self) -> None:
-        """在 messages 中剔除历史图片，只保留最新一次出现的图片 parts。
+        """在 messages 中剔除历史图片，支持“新图到来时延迟一轮删除旧图”。
 
-        规则：
+        规则（按你的描述实现）：
+        - Chat 通过 add_user_text 追加 user 提示词；并不是每次 user 提示词都包含图片。
+        - 当某次追加的 user 提示词中包含图片，且此时 messages 中已经存在图片：
+          * 本次需要同时保留旧图和新图（最多两张：最近两次出现图片的 user 消息里的图）。
+          * 并标记：下一次 add_user_text(...) 调用时，无论该 user 提示词是否带图，都要删除旧图，只保留最后一个图。
+        - 其他情况下（例如：只有一张图；本轮不带图；本轮是第一次带图）则只保留最后一个图。
+
+        实现说明：
         - 仅处理 content 为 parts(list) 的消息。
-        - 找到最后一个包含 image_url part 的消息，将其图片保留。
-        - 其余更早消息中的 image_url parts 全部删除；若删除后 content 为空，则保留空 parts（不删除整条消息）。
-
-        目标：当后面添加了新图片后，去掉前面的图片，减少上下文体积。
+        - 删除图片只删除 image_url parts，不删除整条 message。
         """
         if not self.drop_old_images:
             return
         if not self.messages:
             return
 
+        # 找到最后一个包含图片的消息索引
         last_with_image_idx: Optional[int] = None
         for i in range(len(self.messages) - 1, -1, -1):
             msg = self.messages[i]
@@ -178,20 +187,52 @@ class Chat:
                 last_with_image_idx = i
                 break
 
-        # 没有任何图片，无需处理
+        # 没有任何图片：清空延迟标记并返回
         if last_with_image_idx is None:
+            self._drop_old_images_next_turn = False
             return
 
-        for i, msg in enumerate(self.messages):
-            if i == last_with_image_idx:
-                continue
+        # 判断：本次刚追加的最后一条消息是否带图
+        last_message_has_image = False
+        last_msg_content = self.messages[-1].get("content")
+        if isinstance(last_msg_content, list) and any(self._is_image_part(p) for p in last_msg_content):
+            last_message_has_image = True
+
+        # 找到倒数第二个包含图片的消息索引（若存在）
+        second_last_with_image_idx: Optional[int] = None
+        for i in range(last_with_image_idx - 1, -1, -1):
+            msg = self.messages[i]
             content = msg.get("content")
-            if not isinstance(content, list):
-                continue
-            # 移除所有 image_url parts
-            new_parts = [p for p in content if not self._is_image_part(p)]
-            if new_parts is not content:
-                msg["content"] = new_parts
+            if isinstance(content, list) and any(self._is_image_part(p) for p in content):
+                second_last_with_image_idx = i
+                break
+
+        has_old_image = second_last_with_image_idx is not None
+
+        def _drop_images_except(keep_indices: set[int]) -> None:
+            for i, msg in enumerate(self.messages):
+                if i in keep_indices:
+                    continue
+                content = msg.get("content")
+                if not isinstance(content, list):
+                    continue
+                msg["content"] = [p for p in content if not self._is_image_part(p)]
+
+        # 1) 若上轮已标记“本轮需要删旧图”，则无条件只保留最后一张图
+        if self._drop_old_images_next_turn:
+            _drop_images_except({last_with_image_idx})
+            self._drop_old_images_next_turn = False
+            return
+
+        # 2) 本轮带新图且历史已有图：本轮保留旧+新，并标记下一轮清回只留新
+        if last_message_has_image and has_old_image:
+            _drop_images_except({last_with_image_idx, second_last_with_image_idx})
+            self._drop_old_images_next_turn = True
+            return
+
+        # 3) 其他情况：只保留最后一张图
+        _drop_images_except({last_with_image_idx})
+        self._drop_old_images_next_turn = False
 
     def add_user_text(self, text: str):
         """添加用户文本消息（每一轮都通过 PromptLoader 渲染 user 模板）。"""
